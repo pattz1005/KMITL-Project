@@ -1,0 +1,1 @@
+clcclearclose allp = 2*pi;t = 0:0.01:p;y = asin(sin(3*t));figureplot(y);

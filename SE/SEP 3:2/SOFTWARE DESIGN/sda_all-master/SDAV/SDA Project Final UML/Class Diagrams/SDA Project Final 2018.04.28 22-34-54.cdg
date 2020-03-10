@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="SDA Project Final">
+  <ClassDiagramComponents>
+    <Class name="DatabaseMovieFinder" package="movie" visibility="public" xPosition="304.0" yPosition="339.0">
+      <Fields>
+        <Field name="factory" type="SessionFactory" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="filename"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="searchByMovieName" returnType="List&lt;Movie&gt;" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="searchByGenre" returnType="List&lt;Movie&gt;" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="searchByDirectorName" returnType="List&lt;Movie&gt;" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="searchByYear" returnType="List&lt;Movie&gt;" visibility="public">
+          <Argument type="int" name="year"/>
+        </Method>
+        <Method name="getAllMovies" returnType="List&lt;Movie&gt;" visibility="public"/>
+        <Method name="cleanUp" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="GenRecords" package="movie" visibility="public" xPosition="1049.0" yPosition="30.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Movie" package="movie" visibility="public" xPosition="1115.0" yPosition="216.0">
+      <Fields>
+        <Field name="movieName" type="String" visibility="private"/>
+        <Field name="genre" type="String" visibility="private"/>
+        <Field name="description" type="String" visibility="private"/>
+        <Field name="directorName" type="String" visibility="private"/>
+        <Field name="year" type="int" visibility="private"/>
+        <Field name="id" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="movieName"/>
+          <Argument type="String" name="genre"/>
+          <Argument type="String" name="description"/>
+          <Argument type="String" name="directorName"/>
+          <Argument type="int" name="year"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="movieName"/>
+          <Argument type="String" name="genre"/>
+          <Argument type="String" name="description"/>
+          <Argument type="String" name="directorName"/>
+          <Argument type="int" name="year"/>
+          <Argument type="int" name="id"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="getMovieName" returnType="String" visibility="public"/>
+        <Method name="getDirectorName" returnType="String" visibility="public"/>
+        <Method name="getDescription" returnType="String" visibility="public"/>
+        <Method name="getGenre" returnType="String" visibility="public"/>
+        <Method name="getYear" returnType="int" visibility="public"/>
+        <Method name="setMovieName" returnType="void" visibility="public">
+          <Argument type="String" name="movieName"/>
+        </Method>
+        <Method name="setGenre" returnType="void" visibility="public">
+          <Argument type="String" name="genre"/>
+        </Method>
+        <Method name="setDescription" returnType="void" visibility="public">
+          <Argument type="String" name="description"/>
+        </Method>
+        <Method name="setDirectorName" returnType="void" visibility="public">
+          <Argument type="String" name="directorName"/>
+        </Method>
+        <Method name="setYear" returnType="void" visibility="public">
+          <Argument type="int" name="year"/>
+        </Method>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="MovieLister" package="movie" visibility="public" xPosition="151.0" yPosition="30.0">
+      <Fields>
+        <Field name="movieFinder" type="MovieFinder" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="setmovieFinder" returnType="void" visibility="public">
+          <Argument type="MovieFinder" name="movieFinder"/>
+        </Method>
+        <Method name="searchByGenre" returnType="List&lt;Movie&gt;" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="searchByMovieName" returnType="List&lt;Movie&gt;" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="searchByDirectorName" returnType="List&lt;Movie&gt;" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="searchByYear" returnType="List&lt;Movie&gt;" visibility="public">
+          <Argument type="int" name="year"/>
+        </Method>
+        <Method name="getAllMovies" returnType="List&lt;Movie&gt;" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="MyApp" package="movie" visibility="public" xPosition="1268.0" yPosition="30.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+        <Method name="displayMovies" returnType="void" visibility="private" isStatic="true">
+          <Argument type="List&lt;Movie&gt;" name="movies"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TabDelimitedMovieFinder" package="movie" visibility="public" xPosition="694.0" yPosition="339.0">
+      <Fields>
+        <Field name="movies" type="ArrayList&lt;Movie&gt;" visibility="private"/>
+        <Field name="idCounter" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="filename"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="addMoive" returnType="void" visibility="private">
+          <Argument type="String" name="newline"/>
+        </Method>
+        <Method name="searchByMovieName" returnType="List&lt;Movie&gt;" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="searchByDirectorName" returnType="List&lt;Movie&gt;" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="searchByYear" returnType="List&lt;Movie&gt;" visibility="public">
+          <Argument type="int" name="year"/>
+        </Method>
+        <Method name="searchByGenre" returnType="List&lt;Movie&gt;" visibility="public">
+          <Argument type="String" name="genre"/>
+        </Method>
+        <Method name="getAllMovies" returnType="List&lt;Movie&gt;" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="MovieFinder" package="movie" visibility="public" xPosition="598.0" yPosition="30.0">
+      <Methods>
+        <Method name="searchByMovieName" returnType="List&lt;Movie&gt;" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="searchByGenre" returnType="List&lt;Movie&gt;" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="searchByDirectorName" returnType="List&lt;Movie&gt;" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="searchByYear" returnType="List&lt;Movie&gt;" visibility="public">
+          <Argument type="int" name="year"/>
+        </Method>
+        <Method name="getAllMovies" returnType="List&lt;Movie&gt;" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="movie.TabDelimitedMovieFinder" target="movie.MovieFinder"/>
+    <HasRelation name="movies" source="movie.TabDelimitedMovieFinder" target="movie.Movie" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Movie&gt;"/>
+    <HasRelation name="movieFinder" source="movie.MovieLister" target="movie.MovieFinder" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="movie.DatabaseMovieFinder" target="movie.MovieFinder"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

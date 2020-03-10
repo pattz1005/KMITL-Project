@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5294e1d7-396b-4494-83c3-5bb4b5e17501" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../SDALab8/src/Iterator_Comp/Object_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SDALab8/src/Iterator_Comp/Object_Component.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SDALab7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SDALab7/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SDALab8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SDALab8/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SDALab8/src/Iterator_Comp/Cube.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SDALab8/src/Iterator_Comp/Cube.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SDALab8/src/Iterator_Comp/test_prims.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SDALab8/src/Iterator_Comp/test_prims.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SDAV/SDA Lab8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SDAV/SDA Lab8/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/breakfast/EatBreakfast.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="61">
+              <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/breakfast/Omelette.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/breakfast/EggRecipe.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="uml://JAVA/breakfast">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>breakfast</OriginalElement>
+              <nodes>
+                <node x="123.0" y="79.0">breakfast.ScrambledEggs</node>
+                <node x="203.0" y="0.0">breakfast.EggRecipe</node>
+                <node x="273.0" y="79.0">breakfast.Omelette</node>
+                <node x="0.0" y="79.0">breakfast.SunnySide</node>
+                <node x="198.5" y="158.0">breakfast.EatBreakfast</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="breakfast.EatBreakfast" target="breakfast.SunnySide">
+                  <point x="-42.0" y="-14.5" />
+                  <point x="212.5" y="138.0" />
+                  <point x="51.5" y="138.0" />
+                  <point x="0.0" y="14.5" />
+                </edge>
+                <edge source="breakfast.ScrambledEggs" target="breakfast.EggRecipe">
+                  <point x="0.0" y="-14.5" />
+                  <point x="188.0" y="59.0" />
+                  <point x="241.625" y="59.0" />
+                  <point x="-12.875" y="14.5" />
+                </edge>
+                <edge source="breakfast.SunnySide" target="breakfast.EggRecipe">
+                  <point x="0.0" y="-14.5" />
+                  <point x="51.5" y="49.0" />
+                  <point x="215.875" y="49.0" />
+                  <point x="-38.625" y="14.5" />
+                </edge>
+                <edge source="breakfast.EatBreakfast" target="breakfast.Omelette">
+                  <point x="14.0" y="-14.5" />
+                  <point x="268.5" y="128.0" />
+                  <point x="321.0" y="128.0" />
+                  <point x="0.0" y="14.5" />
+                </edge>
+                <edge source="breakfast.EatBreakfast" target="breakfast.EggRecipe">
+                  <point x="42.0" y="-14.5" />
+                  <point x="296.5" y="138.0" />
+                  <point x="379.5" y="138.0" />
+                  <point x="379.5" y="49.0" />
+                  <point x="293.125" y="49.0" />
+                  <point x="38.625" y="14.5" />
+                </edge>
+                <edge source="breakfast.EatBreakfast" target="breakfast.ScrambledEggs">
+                  <point x="-14.0" y="-14.5" />
+                  <point x="240.5" y="128.0" />
+                  <point x="188.0" y="128.0" />
+                  <point x="0.0" y="14.5" />
+                </edge>
+                <edge source="breakfast.Omelette" target="breakfast.EggRecipe">
+                  <point x="0.0" y="-14.5" />
+                  <point x="321.0" y="59.0" />
+                  <point x="267.375" y="59.0" />
+                  <point x="12.875" y="14.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.0" x="-25.0" y="85.5" />
+              <SelectedNodes />
+              <Categories />
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/editor/Command.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/editor/DocumentWriteCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/breakfast/ScrambledEggs.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/editor/Document.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/editor/DocumentBoldCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/editor/DocumentEraseCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/editor/TestEditor.java" />
+        <option value="$PROJECT_DIR$/src/breakfast/EatBreakfast.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="949" />
+    <option name="y" value="46" />
+    <option name="width" value="980" />
+    <option name="height" value="1044" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SDALab5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SDALab5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SDALab5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SDALab5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SDALab5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SDALab5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="breakfast" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SDALab5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SDALab5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="editor" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553053813702" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SDALab6" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Berák">
+    <configuration name="Berák" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="breakfast.EatBreakfast" />
+      <module name="SDALab5" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Editor" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="editor.TestEditor" />
+      <module name="SDALab5" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Editor" />
+      <item itemvalue="Application.Berák" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5294e1d7-396b-4494-83c3-5bb4b5e17501" name="Default Changelist" comment="" />
+      <created>1550164001746</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1550164001746</updated>
+      <workItem from="1550164004830" duration="615000" />
+      <workItem from="1550284376419" duration="2611000" />
+      <workItem from="1550631900868" duration="2013000" />
+      <workItem from="1550843293712" duration="4653000" />
+      <workItem from="1551230453971" duration="2199000" />
+      <workItem from="1551233605388" duration="2168000" />
+      <workItem from="1551437566872" duration="126000" />
+      <workItem from="1551773002590" duration="613000" />
+      <workItem from="1551812999007" duration="16000" />
+      <workItem from="1552452183242" duration="5000" />
+      <workItem from="1553047493266" duration="1129000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="16148000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="23" width="1295" height="704" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27206478" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.052447554" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Sequence" order="12" />
+      <window_info anchor="bottom" id="Messages" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/breakfast/SunnySide.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/editor/DocumentInvoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/editor/DocumentRemoveBoldCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/editor">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>editor</OriginalElement>
+          <nodes>
+            <node x="656.0" y="79.0">editor.DocumentEraseCommand</node>
+            <node x="410.0" y="79.0">editor.DocumentRemoveBoldCommand</node>
+            <node x="335.0" y="153.0">editor.TestEditor</node>
+            <node x="207.00000000000003" y="79.0">editor.DocumentBoldCommand</node>
+            <node x="0.0" y="153.0">editor.DocumentInvoker</node>
+            <node x="0.0" y="79.0">editor.DocumentWriteCommand</node>
+            <node x="358.75" y="0.0">editor.Command</node>
+            <node x="187.0" y="153.0">editor.Document</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="editor.DocumentWriteCommand" target="editor.Command">
+              <point x="0.0" y="-14.5" />
+              <point x="93.5" y="49.0" />
+              <point x="371.75" y="49.0" />
+              <point x="-39.0" y="14.5" />
+            </edge>
+            <edge source="editor.DocumentBoldCommand" target="editor.Command">
+              <point x="0.0" y="-14.5" />
+              <point x="298.5" y="59.0" />
+              <point x="397.75" y="59.0" />
+              <point x="-13.0" y="14.5" />
+            </edge>
+            <edge source="editor.DocumentEraseCommand" target="editor.Command">
+              <point x="0.0" y="-14.5" />
+              <point x="749.0" y="49.0" />
+              <point x="449.75" y="49.0" />
+              <point x="39.0" y="14.5" />
+            </edge>
+            <edge source="editor.DocumentRemoveBoldCommand" target="editor.Command">
+              <point x="0.0" y="-14.5" />
+              <point x="523.0" y="59.0" />
+              <point x="423.75" y="59.0" />
+              <point x="13.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="196.0" y="71.0" />
+          <SelectedNodes>
+            <node>editor.Command</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/editor/TestEditor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/editor/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/breakfast/ScrambledEggs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/editor/Document.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/editor/DocumentBoldCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/editor/DocumentEraseCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/editor/DocumentWriteCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/breakfast/EatBreakfast.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/breakfast">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>breakfast</OriginalElement>
+          <nodes>
+            <node x="123.0" y="79.0">breakfast.ScrambledEggs</node>
+            <node x="203.0" y="0.0">breakfast.EggRecipe</node>
+            <node x="273.0" y="79.0">breakfast.Omelette</node>
+            <node x="0.0" y="79.0">breakfast.SunnySide</node>
+            <node x="198.5" y="158.0">breakfast.EatBreakfast</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="breakfast.EatBreakfast" target="breakfast.SunnySide">
+              <point x="-42.0" y="-14.5" />
+              <point x="212.5" y="138.0" />
+              <point x="51.5" y="138.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="breakfast.ScrambledEggs" target="breakfast.EggRecipe">
+              <point x="0.0" y="-14.5" />
+              <point x="188.0" y="59.0" />
+              <point x="241.625" y="59.0" />
+              <point x="-12.875" y="14.5" />
+            </edge>
+            <edge source="breakfast.SunnySide" target="breakfast.EggRecipe">
+              <point x="0.0" y="-14.5" />
+              <point x="51.5" y="49.0" />
+              <point x="215.875" y="49.0" />
+              <point x="-38.625" y="14.5" />
+            </edge>
+            <edge source="breakfast.EatBreakfast" target="breakfast.Omelette">
+              <point x="14.0" y="-14.5" />
+              <point x="268.5" y="128.0" />
+              <point x="321.0" y="128.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="breakfast.EatBreakfast" target="breakfast.EggRecipe">
+              <point x="42.0" y="-14.5" />
+              <point x="296.5" y="138.0" />
+              <point x="379.5" y="138.0" />
+              <point x="379.5" y="49.0" />
+              <point x="293.125" y="49.0" />
+              <point x="38.625" y="14.5" />
+            </edge>
+            <edge source="breakfast.EatBreakfast" target="breakfast.ScrambledEggs">
+              <point x="-14.0" y="-14.5" />
+              <point x="240.5" y="128.0" />
+              <point x="188.0" y="128.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="breakfast.Omelette" target="breakfast.EggRecipe">
+              <point x="0.0" y="-14.5" />
+              <point x="321.0" y="59.0" />
+              <point x="267.375" y="59.0" />
+              <point x="12.875" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-25.0" y="85.5" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/breakfast/Omelette.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/breakfast/EggRecipe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

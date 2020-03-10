@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="memento">
+  <ClassDiagramComponents>
+    <Class name="LoadDialog" package="memento" visibility="public" xPosition="347.0" yPosition="540.0">
+      <Fields>
+        <Field name="observers" type="ArrayList&lt;Observer&gt;" visibility="private"/>
+        <Field name="OkBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="cancelBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="inputLabel" type="java.awt.Label" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jTextField3" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="label1" type="java.awt.Label" visibility="private"/>
+        <Field name="label2" type="java.awt.Label" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="java.awt.Frame" name="parent"/>
+          <Argument type="boolean" name="modal"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="cancelBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="OkBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="setTotal" returnType="void" visibility="public">
+          <Argument type="int" name="total"/>
+        </Method>
+        <Method name="addObserver" returnType="void" visibility="public">
+          <Argument type="Observer" name="o"/>
+        </Method>
+        <Method name="notifyObserver" returnType="void" visibility="public">
+          <Argument type="int" name="i"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Memento" package="memento" visibility="public" isAbstract="true" xPosition="277.0" yPosition="56.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getColumnIdentifiers" returnType="Vector" visibility="public" isAbstract="true"/>
+        <Method name="getDataVector" returnType="Vector" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="NullMemento" package="memento" visibility="public" xPosition="419.0" yPosition="296.0">
+      <Fields>
+        <Field name="data" type="Object[][]" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="columnNames" type="String[]" visibility="private" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getColumnIdentifiers" returnType="Vector" visibility="public"/>
+        <Method name="getDataVector" returnType="Vector" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ScheduleGUI" package="memento" visibility="public" xPosition="73.0" yPosition="578.0">
+      <Fields>
+        <Field name="tableModel" type="ScheduleTableModel" visibility="private"/>
+        <Field name="loadDialog" type="LoadDialog" visibility="private"/>
+        <Field name="fileLocation" type="String" visibility="private" isStatic="true"/>
+        <Field name="suffix" type="String" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getMementoCount" returnType="int" visibility="private"/>
+        <Method name="loadMemento" returnType="Memento" visibility="private">
+          <Argument type="int" name="index"/>
+        </Method>
+        <Method name="saveMemento" returnType="void" visibility="public"/>
+        <Method name="initComponents" returnType="void" visibility="protected"/>
+        <Method name="exit" returnType="void" visibility="protected"/>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ScheduleTableModel" package="memento" visibility="public" xPosition="-221.0" yPosition="654.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Memento" name="m"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="createMemento" returnType="TableMemento" visibility="public"/>
+        <Method name="setMemento" returnType="void" visibility="public">
+          <Argument type="Memento" name="memento"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TableMemento" package="memento" visibility="public" xPosition="37.0" yPosition="296.0">
+      <Fields>
+        <Field name="columnIdentifiers" type="Vector" visibility="private"/>
+        <Field name="dataList" type="Vector" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Vector" name="columnIdentifiers"/>
+          <Argument type="Vector" name="dataList"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getColumnIdentifiers" returnType="Vector" visibility="public"/>
+        <Method name="getDataVector" returnType="Vector" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="Observer" package="memento" visibility="public" xPosition="763.0" yPosition="402.0">
+      <Methods>
+        <Method name="update" returnType="void" visibility="public">
+          <Argument type="int" name="i"/>
+        </Method>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="memento.NullMemento" target="memento.Memento"/>
+    <IsRelation name="is" source="memento.TableMemento" target="memento.Memento"/>
+    <HasRelation name="loadDialog" source="memento.ScheduleGUI" target="memento.LoadDialog" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="tableModel" source="memento.ScheduleGUI" target="memento.ScheduleTableModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="observers" source="memento.LoadDialog" target="memento.Observer" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Observer&gt;"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

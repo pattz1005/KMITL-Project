@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3c8ed106-1227-4a4a-af50-ec86eea1e89f" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Mediator2/Demo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Mediator2/SwedishBuyer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Mediator2/Mediator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Bridge/example/Printer.java" />
+        <option value="$PROJECT_DIR$/src/Bridge/example/Rectangle.java" />
+        <option value="$PROJECT_DIR$/src/Bridge/example/Screen.java" />
+        <option value="$PROJECT_DIR$/src/Bridge/example/Shape.java" />
+        <option value="$PROJECT_DIR$/src/Bridge/example/WrapPrinter.java" />
+        <option value="$PROJECT_DIR$/src/Bridge/example/WrapScreen.java" />
+        <option value="$PROJECT_DIR$/src/Bridge/example/WrapXmlWriter.java" />
+        <option value="$PROJECT_DIR$/src/Bridge/example/XmlWriter.java" />
+        <option value="$PROJECT_DIR$/src/Bridge/src_lab/Line.java" />
+        <option value="$PROJECT_DIR$/src/Bridge/src_lab/Square.java" />
+        <option value="$PROJECT_DIR$/src/Bridge/src_lab/WrapDataProjector.java" />
+        <option value="$PROJECT_DIR$/src/Bridge/src_lab/WrapMonitor.java" />
+        <option value="$PROJECT_DIR$/src/Bridge/src_lab/DataProjector.java" />
+        <option value="$PROJECT_DIR$/src/Bridge/src_lab/Arc.java" />
+        <option value="$PROJECT_DIR$/src/Bridge/src_lab/Monitor.java" />
+        <option value="$PROJECT_DIR$/src/Mediator/AmericanSeller.java" />
+        <option value="$PROJECT_DIR$/src/Mediator/Buyer.java" />
+        <option value="$PROJECT_DIR$/src/Mediator/Demo.java" />
+        <option value="$PROJECT_DIR$/src/Mediator/DollarConverter.java" />
+        <option value="$PROJECT_DIR$/src/Mediator/FrenchBuyer.java" />
+        <option value="$PROJECT_DIR$/src/Mediator/SwedishBuyer.java" />
+        <option value="$PROJECT_DIR$/src/Mediator/Mediator.java" />
+        <option value="$PROJECT_DIR$/src/Bridge/src_lab/Circle.java" />
+        <option value="$PROJECT_DIR$/src/Bridge/src_lab/Shape.java" />
+        <option value="$PROJECT_DIR$/src/Bridge/src_lab/Rectangle.java" />
+        <option value="$PROJECT_DIR$/src/Bridge/src_lab/Polygon.java" />
+        <option value="$PROJECT_DIR$/src/Bridge/src_lab/WrapXMLWriter.java" />
+        <option value="$PROJECT_DIR$/src/Bridge/src_lab/XMLWriter.java" />
+        <option value="$PROJECT_DIR$/src/Bridge/src_lab/DrawingService.java" />
+        <option value="$PROJECT_DIR$/src/Bridge/src_lab/Screen.java" />
+        <option value="$PROJECT_DIR$/src/Bridge/src_lab/WrapScreen.java" />
+        <option value="$PROJECT_DIR$/src/Bridge/src_lab/Printer.java" />
+        <option value="$PROJECT_DIR$/src/Bridge/src_lab/WrapPrinter.java" />
+        <option value="$PROJECT_DIR$/src/Bridge/src_lab/Test.java" />
+        <option value="$PROJECT_DIR$/src/Mediatore/AmericanSeller.java" />
+        <option value="$PROJECT_DIR$/src/Mediatore/Buyer.java" />
+        <option value="$PROJECT_DIR$/src/Mediatore/Demo.java" />
+        <option value="$PROJECT_DIR$/src/Mediatore/DollarConverter.java" />
+        <option value="$PROJECT_DIR$/src/Mediatore/FrenchBuyer.java" />
+        <option value="$PROJECT_DIR$/src/Mediatore/Mediator.java" />
+        <option value="$PROJECT_DIR$/src/Mediatore/SwedishBuyer.java" />
+        <option value="$PROJECT_DIR$/src/Mediator_/Mediator.java" />
+        <option value="$PROJECT_DIR$/src/Mediator_/Demo.java" />
+        <option value="$PROJECT_DIR$/src/Mediator_/Mediator_Concrete.java" />
+        <option value="$PROJECT_DIR$/src/Mediator2/AmericanSeller.java" />
+        <option value="$PROJECT_DIR$/src/Mediator2/Buyer.java" />
+        <option value="$PROJECT_DIR$/src/Mediator2/Demo.java" />
+        <option value="$PROJECT_DIR$/src/Mediator2/DollarConverter.java" />
+        <option value="$PROJECT_DIR$/src/Mediator2/FrenchBuyer.java" />
+        <option value="$PROJECT_DIR$/src/Mediator2/Mediator.java" />
+        <option value="$PROJECT_DIR$/src/Mediator2/SwedishBuyer.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="948" />
+    <option name="y" value="45" />
+    <option name="width" value="981" />
+    <option name="height" value="1044" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SDALab9" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SDALab9" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SDALab9" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SDALab9" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SDALab9" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SDALab9" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="src_lab" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554263737903" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Bridge.src_lab" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.með_2">
+    <configuration name="bri" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Bridge.src_lab.Test" />
+      <module name="SDALab9" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="með" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Mediator_.Demo" />
+      <module name="SDALab9" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="með_2" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Mediator2.Demo" />
+      <module name="SDALab9" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.bri" />
+      <item itemvalue="Application.með_2" />
+      <item itemvalue="Application.með" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3c8ed106-1227-4a4a-af50-ec86eea1e89f" name="Default Changelist" comment="" />
+      <created>1553652119743</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553652119743</updated>
+      <workItem from="1553652124914" duration="541000" />
+      <workItem from="1553652858083" duration="5297000" />
+      <workItem from="1553699291887" duration="591000" />
+      <workItem from="1554062362789" duration="3973000" />
+      <workItem from="1554257248815" duration="3773000" />
+      <workItem from="1558409674113" duration="133000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="14308000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="827" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2653791" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32867134" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24081632" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Sequence" order="12" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32867134" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Bridge/src_lab/WrapMonitor.java" />
+    <entry file="file://$PROJECT_DIR$/src/Bridge/src_lab/Monitor.java" />
+    <entry file="file://$PROJECT_DIR$/src/Bridge/example/Circle.java" />
+    <entry file="file://$PROJECT_DIR$/src/Bridge/example/Shape.java" />
+    <entry file="file://$PROJECT_DIR$/src/Bridge/example/Rectangle.java" />
+    <entry file="file://$PROJECT_DIR$/src/Bridge/src_lab/Square.java" />
+    <entry file="file://$PROJECT_DIR$/src/Bridge/example/Polygon.java" />
+    <entry file="file://$PROJECT_DIR$/src/Bridge/src_lab/Circle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bridge/src_lab/Line.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bridge/example/XmlWriter.java" />
+    <entry file="file://$PROJECT_DIR$/src/Bridge/example/WrapXmlWriter.java" />
+    <entry file="file://$PROJECT_DIR$/src/Bridge/src_lab/XMLWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bridge/src_lab/Shape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bridge/src_lab/Rectangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bridge/example/BridgeTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/Bridge/src_lab/DrawingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bridge/src_lab/WrapPrinter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding>
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#258#259#0" expanded="true" />
+            <element signature="e#306#307#0" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bridge/example/WrapPrinter.java" />
+    <entry file="file://$PROJECT_DIR$/src/Bridge/src_lab/WrapScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bridge/src_lab/Screen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bridge/src_lab/WrapXMLWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bridge/src_lab/Printer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bridge/example/Printer.java" />
+    <entry file="file://$PROJECT_DIR$/src/Bridge/example/Screen.java" />
+    <entry file="file://$PROJECT_DIR$/src/Bridge/src_lab/Polygon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mediatore/Buyer.java" />
+    <entry file="file://$PROJECT_DIR$/src/Mediatore/DollarConverter.java" />
+    <entry file="file://$PROJECT_DIR$/src/Mediatore/FrenchBuyer.java" />
+    <entry file="file://$PROJECT_DIR$/src/Mediatore/SwedishBuyer.java" />
+    <entry file="file://$PROJECT_DIR$/src/Mediatore/AmericanSeller.java" />
+    <entry file="file://$PROJECT_DIR$/src/Mediatore/Demo.java" />
+    <entry file="file://$PROJECT_DIR$/src/Mediatore/Mediator.java" />
+    <entry file="file://$PROJECT_DIR$/src/Mediator_/Mediator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="62" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mediator_/FrenchBuyer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mediator_/Buyer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mediator_/Mediator_Concrete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mediator_/AmericanSeller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mediator_/SwedishBuyer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mediator_/DollarConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mediator_/Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mediator2/AmericanSeller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mediator2/Buyer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mediator2/DollarConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mediator2/FrenchBuyer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bridge/src_lab/Arc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/Bridge.src_lab">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>Bridge.src_lab</OriginalElement>
+          <nodes>
+            <node x="32.125" y="89.0">Bridge.src_lab.XMLWriter</node>
+            <node x="562.0" y="89.0">Bridge.src_lab.Shape</node>
+            <node x="281.0" y="178.0">Bridge.src_lab.WrapScreen</node>
+            <node x="0.0" y="351.0">Bridge.src_lab.Line</node>
+            <node x="414.0" y="178.0">Bridge.src_lab.Rectangle</node>
+            <node x="398.88988095238085" y="277.0">Bridge.src_lab.Test</node>
+            <node x="533.0" y="178.0">Bridge.src_lab.Polygon</node>
+            <node x="288.0" y="0.0">Bridge.src_lab.DrawingService</node>
+            <node x="113.0" y="351.0">Bridge.src_lab.Arc</node>
+            <node x="311.0" y="89.0">Bridge.src_lab.Screen</node>
+            <node x="151.0" y="178.0">Bridge.src_lab.WrapPrinter</node>
+            <node x="180.5" y="89.0">Bridge.src_lab.Printer</node>
+            <node x="645.0" y="178.0">Bridge.src_lab.Circle</node>
+            <node x="0.0" y="178.0">Bridge.src_lab.WrapXMLWriter</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="Bridge.src_lab.Test" target="Bridge.src_lab.WrapScreen">
+              <point x="-12.9375" y="-14.5" />
+              <point x="420.45238095238085" y="237.0" />
+              <point x="336.5" y="237.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="Bridge.src_lab.WrapScreen" target="Bridge.src_lab.Screen">
+              <point x="37.0" y="-14.5" />
+              <point x="20.5" y="14.5" />
+            </edge>
+            <edge source="Bridge.src_lab.Test" target="Bridge.src_lab.Rectangle">
+              <point x="4.3125" y="-14.5" />
+              <point x="437.70238095238085" y="227.0" />
+              <point x="463.5" y="227.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="Bridge.src_lab.WrapXMLWriter" target="Bridge.src_lab.XMLWriter">
+              <point x="43.66666666666666" y="-14.5" />
+              <point x="25.75" y="14.5" />
+            </edge>
+            <edge source="Bridge.src_lab.Test" target="Bridge.src_lab.Circle">
+              <point x="21.5625" y="-14.5" />
+              <point x="454.95238095238085" y="247.0" />
+              <point x="683.0" y="247.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="Bridge.src_lab.Test" target="Bridge.src_lab.DrawingService">
+              <point x="-4.3125" y="-14.5" />
+              <point x="429.07738095238085" y="227.0" />
+              <point x="403.5" y="227.0" />
+              <point x="403.5" y="69.0" />
+              <point x="362.66666666666663" y="69.0" />
+              <point x="10.666666666666629" y="14.5" />
+            </edge>
+            <edge source="Bridge.src_lab.WrapScreen" target="Bridge.src_lab.DrawingService">
+              <point x="-37.0" y="-14.5" />
+              <point x="299.5" y="158.0" />
+              <point x="289.9862764550264" y="158.0" />
+              <point x="289.9862764550264" y="69.0" />
+              <point x="341.33333333333337" y="69.0" />
+              <point x="-10.666666666666686" y="14.5" />
+            </edge>
+            <edge source="Bridge.src_lab.Test" target="Bridge.src_lab.Polygon">
+              <point x="12.9375" y="-14.5" />
+              <point x="446.32738095238085" y="237.0" />
+              <point x="579.0" y="237.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="Bridge.src_lab.WrapXMLWriter" target="Bridge.src_lab.DrawingService">
+              <point x="-43.66666666666663" y="-14.5" />
+              <point x="21.625" y="49.0" />
+              <point x="298.66666666666674" y="49.0" />
+              <point x="-53.333333333333314" y="14.5" />
+            </edge>
+            <edge source="Bridge.src_lab.Shape" target="Bridge.src_lab.DrawingService">
+              <point x="20.0" y="-14.5" />
+              <point x="622.0" y="49.0" />
+              <point x="405.33333333333337" y="49.0" />
+              <point x="53.333333333333314" y="14.5" />
+            </edge>
+            <edge source="Bridge.src_lab.Polygon" target="Bridge.src_lab.Shape">
+              <point x="23.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="Bridge.src_lab.Rectangle" target="Bridge.src_lab.Shape">
+              <point x="24.75" y="-14.5" />
+              <point x="488.25" y="148.0" />
+              <point x="579.1428571428571" y="148.0" />
+              <point x="-22.85714285714289" y="14.5" />
+            </edge>
+            <edge source="Bridge.src_lab.Circle" target="Bridge.src_lab.Shape">
+              <point x="-19.0" y="-14.5" />
+              <point x="664.0" y="158.0" />
+              <point x="613.4285714285713" y="158.0" />
+              <point x="11.428571428571388" y="14.5" />
+            </edge>
+            <edge source="Bridge.src_lab.Test" target="Bridge.src_lab.WrapPrinter">
+              <point x="-21.5625" y="-14.5" />
+              <point x="411.82738095238085" y="247.0" />
+              <point x="206.0" y="247.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="Bridge.src_lab.WrapPrinter" target="Bridge.src_lab.Printer">
+              <point x="36.66666666666663" y="-14.5" />
+              <point x="20.5" y="14.5" />
+            </edge>
+            <edge source="Bridge.src_lab.WrapPrinter" target="Bridge.src_lab.DrawingService">
+              <point x="-36.66666666666663" y="-14.5" />
+              <point x="169.33333333333337" y="158.0" />
+              <point x="162.19460978835974" y="158.0" />
+              <point x="162.19460978835974" y="59.0" />
+              <point x="320.0" y="59.0" />
+              <point x="-32.0" y="14.5" />
+            </edge>
+            <edge source="Bridge.src_lab.Test" target="Bridge.src_lab.Shape">
+              <point x="30.1875" y="-14.5" />
+              <point x="463.57738095238085" y="257.0" />
+              <point x="731.5" y="257.0" />
+              <point x="731.5" y="138.0" />
+              <point x="636.2857142857142" y="138.0" />
+              <point x="34.28571428571428" y="14.5" />
+            </edge>
+            <edge source="Bridge.src_lab.Test" target="Bridge.src_lab.WrapXMLWriter">
+              <point x="-30.1875" y="-14.5" />
+              <point x="403.20238095238085" y="257.0" />
+              <point x="65.5" y="257.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.7762237762237763" x="196.0" y="195.0" />
+          <SelectedNodes>
+            <node>Bridge.src_lab.Printer</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bridge/src_lab/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/Mediator2">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>Mediator2</OriginalElement>
+          <nodes>
+            <node x="138.76681286549706" y="317.0">Mediator2.Demo</node>
+            <node x="115.53801169590645" y="109.0">Mediator2.Mediator</node>
+            <node x="57.15277777777777" y="0.0">Mediator2.AmericanSeller</node>
+            <node x="219.05409356725147" y="208.0">Mediator2.SwedishBuyer</node>
+            <node x="68.05409356725147" y="208.0">Mediator2.DollarConverter</node>
+            <node x="359.05409356725147" y="208.0">Mediator2.FrenchBuyer</node>
+            <node x="253.03801169590645" y="0.0">Mediator2.Buyer</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="Mediator2.Demo" target="Mediator2.DollarConverter">
+              <point x="0.0" y="-14.5" />
+              <point x="178.76681286549706" y="257.0" />
+              <point x="165.55409356725147" y="257.0" />
+              <point x="32.5" y="14.5" />
+            </edge>
+            <edge source="Mediator2.Mediator" target="Mediator2.DollarConverter">
+              <point x="-6.0" y="14.5" />
+              <point x="157.53801169590645" y="188.0" />
+              <point x="149.30409356725147" y="188.0" />
+              <point x="16.25" y="-14.5" />
+            </edge>
+            <edge source="Mediator2.FrenchBuyer" target="Mediator2.Buyer">
+              <point x="0.0" y="-14.5" />
+              <point x="415.05409356725147" y="188.0" />
+              <point x="426.20467836257313" y="188.0" />
+              <point x="426.20467836257313" y="79.0" />
+              <point x="308.64912280701753" y="79.0" />
+              <point x="17.111111111111114" y="14.5" />
+            </edge>
+            <edge source="Mediator2.Demo" target="Mediator2.Mediator">
+              <point x="8.888888888888886" y="-14.5" />
+              <point x="187.65570175438597" y="267.0" />
+              <point x="208.55409356725147" y="267.0" />
+              <point x="208.55409356725147" y="178.0" />
+              <point x="181.53801169590645" y="178.0" />
+              <point x="18.0" y="14.5" />
+            </edge>
+            <edge source="Mediator2.Mediator" target="Mediator2.AmericanSeller">
+              <point x="-30.0" y="-14.5" />
+              <point x="133.53801169590645" y="89.0" />
+              <point x="130.06944444444446" y="89.0" />
+              <point x="10.416666666666686" y="14.5" />
+            </edge>
+            <edge source="Mediator2.SwedishBuyer" target="Mediator2.Buyer">
+              <point x="40.0" y="-14.5" />
+              <point x="319.05409356725147" y="188.0" />
+              <point x="315.75073099415204" y="188.0" />
+              <point x="315.75073099415204" y="89.0" />
+              <point x="300.093567251462" y="89.0" />
+              <point x="8.555555555555571" y="14.5" />
+            </edge>
+            <edge source="Mediator2.Demo" target="Mediator2.SwedishBuyer">
+              <point x="17.77777777777777" y="-14.5" />
+              <point x="196.54459064327483" y="277.0" />
+              <point x="279.05409356725147" y="277.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="Mediator2.Demo" target="Mediator2.AmericanSeller">
+              <point x="-26.666666666666657" y="-14.5" />
+              <point x="152.10014619883043" y="287.0" />
+              <point x="34.388888888888914" y="287.0" />
+              <point x="34.388888888888914" y="89.0" />
+              <point x="88.40277777777777" y="89.0" />
+              <point x="-31.25" y="14.5" />
+            </edge>
+            <edge source="Mediator2.Buyer" target="Mediator2.Mediator">
+              <point x="-8.555555555555543" y="14.5" />
+              <point x="282.9824561403509" y="89.0" />
+              <point x="205.53801169590645" y="89.0" />
+              <point x="42.0" y="-14.5" />
+            </edge>
+            <edge source="Mediator2.DollarConverter" target="Mediator2.Mediator">
+              <point x="-16.25" y="-14.5" />
+              <point x="116.80409356725147" y="178.0" />
+              <point x="145.53801169590645" y="178.0" />
+              <point x="-18.0" y="14.5" />
+            </edge>
+            <edge source="Mediator2.Demo" target="Mediator2.Buyer">
+              <point x="35.55555555555554" y="-14.5" />
+              <point x="214.3223684210526" y="297.0" />
+              <point x="481.55409356725147" y="297.0" />
+              <point x="481.55409356725147" y="59.0" />
+              <point x="325.7602339181287" y="59.0" />
+              <point x="34.22222222222223" y="14.5" />
+            </edge>
+            <edge source="Mediator2.FrenchBuyer" target="Mediator2.Mediator">
+              <point x="-37.33333333333334" y="-14.5" />
+              <point x="377.7207602339181" y="158.0" />
+              <point x="205.53801169590645" y="158.0" />
+              <point x="42.0" y="14.5" />
+            </edge>
+            <edge source="Mediator2.AmericanSeller" target="Mediator2.Mediator">
+              <point x="31.25" y="14.5" />
+              <point x="150.90277777777777" y="89.0" />
+              <point x="145.53801169590645" y="89.0" />
+              <point x="-18.0" y="-14.5" />
+            </edge>
+            <edge source="Mediator2.Mediator" target="Mediator2.Buyer">
+              <point x="18.0" y="-14.5" />
+              <point x="181.53801169590645" y="69.0" />
+              <point x="265.8713450292398" y="69.0" />
+              <point x="-25.666666666666657" y="14.5" />
+            </edge>
+            <edge source="Mediator2.SwedishBuyer" target="Mediator2.Mediator">
+              <point x="-40.0" y="-14.5" />
+              <point x="239.05409356725147" y="168.0" />
+              <point x="193.53801169590645" y="168.0" />
+              <point x="30.0" y="14.5" />
+            </edge>
+            <edge source="Mediator2.Demo" target="Mediator2.FrenchBuyer">
+              <point x="26.666666666666686" y="-14.5" />
+              <point x="205.43347953216374" y="287.0" />
+              <point x="415.05409356725147" y="287.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="150.0" y="222.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mediator2/Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mediator2/SwedishBuyer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mediator2/Mediator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:lang="http://www.springframework.org/schema/lang"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-2.5.xsd">
+  
+  <bean id="secondary_config" class="java.lang.String">
+    <constructor-arg type="java.lang.String" value="secondary_config.xml" />
+  </bean>
+  
+  <bean id="secondary_context" class="org.springframework.context.support.ClassPathXmlApplicationContext" >
+      <constructor-arg ref="secondary_config" />
+  </bean>
+  
+  <bean id="movie_factory" class="movielister.ConcreteMovieFactory" >
+      <constructor-arg index="0" ref="secondary_context" />
+  </bean>
+  
+  <bean id="file_reader_factory" class="movielister.ConcreteFileReaderFactory" >
+      <constructor-arg index="0" ref="secondary_context" />
+  </bean>
+  
+  <bean id="finder" class="movielister.DatabaseMovieFinder" />
+  
+  <bean id="database_finder" class="movielister.DatabaseMovieFinder" />
+  
+  <bean id="file_finder" class="movielister.TabDelimitedMovieFinder" >
+      <constructor-arg index="0" ref="movie_factory" />
+      <constructor-arg index="1" ref="file_reader_factory" />
+  </bean>
+
+  <bean id="lister" class="movielister.MovieLister" >
+    <constructor-arg ref="file_finder" />
+  </bean>
+</beans>

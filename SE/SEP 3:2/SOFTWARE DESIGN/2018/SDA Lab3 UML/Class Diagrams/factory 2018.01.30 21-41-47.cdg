@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="factory">
+  <ClassDiagramComponents>
+    <Class name="NJSlotBonus" package="factory" visibility="public" xPosition="132.0" yPosition="359.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="NJSlotProgressive" package="factory" visibility="public" xPosition="132.0" yPosition="220.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="ship" returnType="void" visibility="package"/>
+      </Methods>
+    </Class>
+    <Class name="NJSlotStore" package="factory" visibility="public" xPosition="1598.0" yPosition="307.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="makeSlot" returnType="Slot" visibility="protected">
+          <Argument type="slottype" name="type"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="NJSlotStraight" package="factory" visibility="public" xPosition="132.0" yPosition="100.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="NVSlotBonus" package="factory" visibility="public" xPosition="672.0" yPosition="498.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="NVSlotProgressive" package="factory" visibility="public" xPosition="290.0" yPosition="498.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="NVSlotStore" package="factory" visibility="public" xPosition="1102.0" yPosition="307.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="makeSlot" returnType="Slot" visibility="protected">
+          <Argument type="slottype" name="type"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="NVSlotStraight" package="factory" visibility="public" xPosition="467.0" yPosition="498.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Slot" package="factory" visibility="public" isAbstract="true" xPosition="467.0" yPosition="71.0">
+      <Fields>
+        <Field name="cost" type="float" visibility="package"/>
+        <Field name="name" type="String" visibility="package"/>
+        <Field name="software" type="String" visibility="package"/>
+        <Field name="components" type="ArrayList" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="collectParts" returnType="void" visibility="package"/>
+        <Method name="assembleParts" returnType="void" visibility="package"/>
+        <Method name="test" returnType="void" visibility="package">
+          <Argument type="String" name="type"/>
+        </Method>
+        <Method name="uploadSoftware" returnType="void" visibility="package"/>
+        <Method name="ship" returnType="void" visibility="package"/>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="cost" returnType="float" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="SlotStore" package="factory" visibility="public" isAbstract="true" xPosition="1447.0" yPosition="82.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="orderSlot" returnType="Slot" visibility="public">
+          <Argument type="slottype" name="type"/>
+        </Method>
+        <Method name="makeSlot" returnType="Slot" visibility="protected" isAbstract="true">
+          <Argument type="slottype" name="type"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TestSlots" package="factory" visibility="public" xPosition="1021.0" yPosition="100.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="WASlotBonus" package="factory" visibility="public" xPosition="770.0" yPosition="220.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="WASlotProgressive" package="factory" visibility="public" xPosition="770.0" yPosition="100.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="WASlotStore" package="factory" visibility="public" xPosition="1314.0" yPosition="307.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="makeSlot" returnType="Slot" visibility="protected">
+          <Argument type="slottype" name="type"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="WASlotStraight" package="factory" visibility="public" xPosition="770.0" yPosition="341.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Enum name="slottype" package="factory" visibility="public" xPosition="1460.0" yPosition="485.0">
+      <Literals>
+        <Literal name="progressive"/>
+        <Literal name="straight"/>
+        <Literal name="bonus"/>
+      </Literals>
+    </Enum>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="factory.NJSlotStore" target="factory.SlotStore"/>
+    <IsRelation name="is" source="factory.NVSlotStraight" target="factory.Slot"/>
+    <IsRelation name="is" source="factory.WASlotBonus" target="factory.Slot"/>
+    <IsRelation name="is" source="factory.WASlotStore" target="factory.SlotStore"/>
+    <IsRelation name="is" source="factory.WASlotStraight" target="factory.Slot"/>
+    <IsRelation name="is" source="factory.NVSlotStore" target="factory.SlotStore"/>
+    <IsRelation name="is" source="factory.NJSlotProgressive" target="factory.Slot"/>
+    <IsRelation name="is" source="factory.NVSlotBonus" target="factory.Slot"/>
+    <UseRelation source="factory.NJSlotStore" target="factory.slottype" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="factory.SlotStore" target="factory.slottype" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="factory.WASlotStore" target="factory.slottype" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="factory.NJSlotStraight" target="factory.Slot"/>
+    <IsRelation name="is" source="factory.WASlotProgressive" target="factory.Slot"/>
+    <UseRelation source="factory.NVSlotStore" target="factory.slottype" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="factory.NJSlotBonus" target="factory.Slot"/>
+    <IsRelation name="is" source="factory.NVSlotProgressive" target="factory.Slot"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

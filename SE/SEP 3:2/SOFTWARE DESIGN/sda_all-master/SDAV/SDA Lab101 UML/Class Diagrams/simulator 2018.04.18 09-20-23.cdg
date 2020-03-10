@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="simulator">
+  <ClassDiagramComponents>
+    <Class name="AbstractDuckFactory" package="simulator" visibility="public" isAbstract="true" xPosition="420.0" yPosition="788.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="createMallardDuck" returnType="Quackable" visibility="public" isAbstract="true"/>
+        <Method name="createRedheadDuck" returnType="Quackable" visibility="public" isAbstract="true"/>
+        <Method name="createDuckCall" returnType="Quackable" visibility="public" isAbstract="true"/>
+        <Method name="createRubberDuck" returnType="Quackable" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="CountingDuckFactory" package="simulator" visibility="public" xPosition="230.0" yPosition="1022.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="createMallardDuck" returnType="Quackable" visibility="public"/>
+        <Method name="createRedheadDuck" returnType="Quackable" visibility="public"/>
+        <Method name="createDuckCall" returnType="Quackable" visibility="public"/>
+        <Method name="createRubberDuck" returnType="Quackable" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="DecoyDuck" package="simulator" visibility="public" xPosition="1204.0" yPosition="553.0">
+      <Fields>
+        <Field name="observable" type="Observable" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="quack" returnType="void" visibility="public"/>
+        <Method name="registerObserver" returnType="void" visibility="public">
+          <Argument type="Observer" name="observer"/>
+        </Method>
+        <Method name="notifyObservers" returnType="void" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="DuckCall" package="simulator" visibility="public" xPosition="615.0" yPosition="553.0">
+      <Fields>
+        <Field name="observable" type="Observable" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="quack" returnType="void" visibility="public"/>
+        <Method name="registerObserver" returnType="void" visibility="public">
+          <Argument type="Observer" name="observer"/>
+        </Method>
+        <Method name="notifyObservers" returnType="void" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="DuckFactory" package="simulator" visibility="public" xPosition="637.0" yPosition="1022.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="createMallardDuck" returnType="Quackable" visibility="public"/>
+        <Method name="createRedheadDuck" returnType="Quackable" visibility="public"/>
+        <Method name="createDuckCall" returnType="Quackable" visibility="public"/>
+        <Method name="createRubberDuck" returnType="Quackable" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="DuckSimulator" package="simulator" visibility="public" xPosition="1657.0" yPosition="5.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+        <Method name="simulate" returnType="void" visibility="package">
+          <Argument type="AbstractDuckFactory" name="duckFactory"/>
+        </Method>
+        <Method name="simulate" returnType="void" visibility="package">
+          <Argument type="Quackable" name="duck"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Flock" package="simulator" visibility="public" xPosition="1776.0" yPosition="553.0">
+      <Fields>
+        <Field name="ducks" type="ArrayList" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="add" returnType="void" visibility="public">
+          <Argument type="Quackable" name="duck"/>
+        </Method>
+        <Method name="quack" returnType="void" visibility="public"/>
+        <Method name="registerObserver" returnType="void" visibility="public">
+          <Argument type="Observer" name="observer"/>
+        </Method>
+        <Method name="notifyObservers" returnType="void" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Goose" package="simulator" visibility="public" xPosition="1430.0" yPosition="889.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="honk" returnType="void" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="GooseAdapter" package="simulator" visibility="public" xPosition="1492.0" yPosition="553.0">
+      <Fields>
+        <Field name="goose" type="Goose" visibility="package"/>
+        <Field name="observable" type="Observable" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Goose" name="goose"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="quack" returnType="void" visibility="public"/>
+        <Method name="registerObserver" returnType="void" visibility="public">
+          <Argument type="Observer" name="observer"/>
+        </Method>
+        <Method name="notifyObservers" returnType="void" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="MallardDuck" package="simulator" visibility="public" xPosition="916.0" yPosition="553.0">
+      <Fields>
+        <Field name="observable" type="Observable" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="quack" returnType="void" visibility="public"/>
+        <Method name="registerObserver" returnType="void" visibility="public">
+          <Argument type="Observer" name="observer"/>
+        </Method>
+        <Method name="notifyObservers" returnType="void" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Observable" package="simulator" visibility="public" xPosition="355.0" yPosition="179.0">
+      <Fields>
+        <Field name="observers" type="ArrayList" visibility="package"/>
+        <Field name="duck" type="QuackObservable" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="QuackObservable" name="duck"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="registerObserver" returnType="void" visibility="public">
+          <Argument type="Observer" name="observer"/>
+        </Method>
+        <Method name="notifyObservers" returnType="void" visibility="public"/>
+        <Method name="getObservers" returnType="Iterator" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="QuackCounter" package="simulator" visibility="public" xPosition="2084.0" yPosition="553.0">
+      <Fields>
+        <Field name="duck" type="Quackable" visibility="package"/>
+        <Field name="numberOfQuacks" type="int" visibility="package" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Quackable" name="duck"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="quack" returnType="void" visibility="public"/>
+        <Method name="getQuacks" returnType="int" visibility="public" isStatic="true"/>
+        <Method name="registerObserver" returnType="void" visibility="public">
+          <Argument type="Observer" name="observer"/>
+        </Method>
+        <Method name="notifyObservers" returnType="void" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Quackologist" package="simulator" visibility="public" xPosition="1325.0" yPosition="141.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="update" returnType="void" visibility="public">
+          <Argument type="QuackObservable" name="duck"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="RedheadDuck" package="simulator" visibility="public" xPosition="305.0" yPosition="553.0">
+      <Fields>
+        <Field name="observable" type="Observable" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="quack" returnType="void" visibility="public"/>
+        <Method name="registerObserver" returnType="void" visibility="public">
+          <Argument type="Observer" name="observer"/>
+        </Method>
+        <Method name="notifyObservers" returnType="void" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="RubberDuck" package="simulator" visibility="public" xPosition="18.0" yPosition="553.0">
+      <Fields>
+        <Field name="observable" type="Observable" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="quack" returnType="void" visibility="public"/>
+        <Method name="registerObserver" returnType="void" visibility="public">
+          <Argument type="Observer" name="observer"/>
+        </Method>
+        <Method name="notifyObservers" returnType="void" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="Observer" package="simulator" visibility="public" xPosition="1325.0" yPosition="5.0">
+      <Methods>
+        <Method name="update" returnType="void" visibility="public">
+          <Argument type="QuackObservable" name="duck"/>
+        </Method>
+      </Methods>
+    </Interface>
+    <Interface name="Quackable" package="simulator" visibility="public" xPosition="1029.0" yPosition="216.0">
+      <Methods>
+        <Method name="quack" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="QuackObservable" package="simulator" visibility="public" xPosition="784.0" yPosition="19.0">
+      <Methods>
+        <Method name="registerObserver" returnType="void" visibility="public">
+          <Argument type="Observer" name="observer"/>
+        </Method>
+        <Method name="notifyObservers" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="observable" source="simulator.RubberDuck" target="simulator.Observable" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="goose" source="simulator.GooseAdapter" target="simulator.Goose" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="simulator.Quackologist" target="simulator.Observer"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="simulator.RedheadDuck" target="simulator.Quackable"/>
+    <HasRelation name="observable" source="simulator.DuckCall" target="simulator.Observable" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="duck" source="simulator.QuackCounter" target="simulator.Quackable" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="observable" source="simulator.MallardDuck" target="simulator.Observable" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="simulator.DuckCall" target="simulator.Quackable"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="simulator.QuackCounter" target="simulator.Quackable"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="simulator.RubberDuck" target="simulator.Quackable"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="simulator.GooseAdapter" target="simulator.Quackable"/>
+    <IsRelation name="is" source="simulator.Quackable" target="simulator.QuackObservable"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="simulator.MallardDuck" target="simulator.Quackable"/>
+    <HasRelation name="observable" source="simulator.DecoyDuck" target="simulator.Observable" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="simulator.Observable" target="simulator.QuackObservable"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="simulator.Flock" target="simulator.Quackable"/>
+    <IsRelation name="is" source="simulator.CountingDuckFactory" target="simulator.AbstractDuckFactory"/>
+    <HasRelation name="observable" source="simulator.GooseAdapter" target="simulator.Observable" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="observable" source="simulator.RedheadDuck" target="simulator.Observable" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="duck" source="simulator.Observable" target="simulator.QuackObservable" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="simulator.DuckFactory" target="simulator.AbstractDuckFactory"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="simulator.DecoyDuck" target="simulator.Quackable"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

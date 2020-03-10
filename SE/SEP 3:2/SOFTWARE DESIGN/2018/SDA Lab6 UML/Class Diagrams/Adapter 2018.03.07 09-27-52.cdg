@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Adapter">
+  <ClassDiagramComponents>
+    <Class name="AdapterTest" package="Adapter" visibility="public" xPosition="269.0" yPosition="569.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Database" package="Adapter" visibility="public" xPosition="269.0" yPosition="236.0">
+      <Fields>
+        <Field name="employees" type="Vector&lt;Employee&gt;" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="addEmployee" returnType="void" visibility="public">
+          <Argument type="Employee" name="employee"/>
+        </Method>
+        <Method name="deleteEmployee" returnType="void" visibility="public">
+          <Argument type="long" name="emp_num"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Employee" package="Adapter" visibility="public" xPosition="595.0" yPosition="569.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="surname" type="String" visibility="private"/>
+        <Field name="emp_num" type="long" visibility="private"/>
+        <Field name="salary" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="surname"/>
+          <Argument type="long" name="emp_num"/>
+          <Argument type="double" name="salary"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="getSurname" returnType="String" visibility="public"/>
+        <Method name="getEmpNum" returnType="long" visibility="public"/>
+        <Method name="getSalary" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="RecordAdapter" package="Adapter" visibility="public" xPosition="670.0" yPosition="162.0">
+      <Fields>
+        <Field name="records" type="Records" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Records" name="r"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="addEmployee" returnType="void" visibility="public">
+          <Argument type="Employee" name="e"/>
+        </Method>
+        <Method name="deleteEmployee" returnType="void" visibility="public">
+          <Argument type="long" name="e_num"/>
+        </Method>
+        <Method name="isEmployee" returnType="boolean" visibility="public">
+          <Argument type="long" name="e_num"/>
+        </Method>
+        <Method name="printEmployee" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Records" package="Adapter" visibility="public" xPosition="1031.0" yPosition="217.0">
+      <Fields>
+        <Field name="employees" type="ArrayList&lt;Employee&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="insert" returnType="void" visibility="public">
+          <Argument type="Employee" name="employee"/>
+        </Method>
+        <Method name="remove" returnType="void" visibility="public">
+          <Argument type="long" name="emp_num"/>
+        </Method>
+        <Method name="isEmployee" returnType="boolean" visibility="public">
+          <Argument type="long" name="emp_num"/>
+        </Method>
+        <Method name="printEmployee" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Adapter.RecordAdapter" target="Adapter.Database"/>
+    <HasRelation name="records" source="Adapter.RecordAdapter" target="Adapter.Records" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="employees" source="Adapter.Records" target="Adapter.Employee" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Employee&gt;"/>
+    <HasRelation name="employees" source="Adapter.Database" target="Adapter.Employee" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

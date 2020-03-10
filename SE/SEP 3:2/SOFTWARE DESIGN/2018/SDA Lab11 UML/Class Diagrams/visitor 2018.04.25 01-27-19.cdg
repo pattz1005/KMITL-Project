@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="visitor">
+  <ClassDiagramComponents>
+    <Class name="Body" package="visitor" visibility="public" xPosition="284.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="accept" returnType="void" visibility="public">
+          <Argument type="CarElementVisitor" name="visitor"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Car" package="visitor" visibility="public" xPosition="541.0" yPosition="420.0">
+      <Fields>
+        <Field name="elements" type="CarElement[]" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="accept" returnType="void" visibility="public">
+          <Argument type="CarElementVisitor" name="visitor"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="CarElementDoVisitor" package="visitor" visibility="public" xPosition="1111.0" yPosition="298.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="visit" returnType="void" visibility="public">
+          <Argument type="Wheel" name="wheel"/>
+        </Method>
+        <Method name="visit" returnType="void" visibility="public">
+          <Argument type="Engine" name="engine"/>
+        </Method>
+        <Method name="visit" returnType="void" visibility="public">
+          <Argument type="Body" name="body"/>
+        </Method>
+        <Method name="visit" returnType="void" visibility="public">
+          <Argument type="Car" name="car"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="CarElementPrintVisitor" package="visitor" visibility="public" xPosition="1366.0" yPosition="298.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="visit" returnType="void" visibility="public">
+          <Argument type="Wheel" name="wheel"/>
+        </Method>
+        <Method name="visit" returnType="void" visibility="public">
+          <Argument type="Engine" name="engine"/>
+        </Method>
+        <Method name="visit" returnType="void" visibility="public">
+          <Argument type="Body" name="body"/>
+        </Method>
+        <Method name="visit" returnType="void" visibility="public">
+          <Argument type="Car" name="car"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Engine" package="visitor" visibility="public" xPosition="810.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="accept" returnType="void" visibility="public">
+          <Argument type="CarElementVisitor" name="visitor"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="VisitorDemo" package="visitor" visibility="public" xPosition="918.0" yPosition="54.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Wheel" package="visitor" visibility="public" xPosition="20.0" yPosition="420.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="accept" returnType="void" visibility="public">
+          <Argument type="CarElementVisitor" name="visitor"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="CarElement" package="visitor" visibility="public" xPosition="454.0" yPosition="122.0">
+      <Methods>
+        <Method name="accept" returnType="void" visibility="package">
+          <Argument type="CarElementVisitor" name="visitor"/>
+        </Method>
+      </Methods>
+    </Interface>
+    <Interface name="CarElementVisitor" package="visitor" visibility="public" xPosition="1258.0" yPosition="54.0">
+      <Methods>
+        <Method name="visit" returnType="void" visibility="package">
+          <Argument type="Wheel" name="wheel"/>
+        </Method>
+        <Method name="visit" returnType="void" visibility="package">
+          <Argument type="Engine" name="engine"/>
+        </Method>
+        <Method name="visit" returnType="void" visibility="package">
+          <Argument type="Body" name="body"/>
+        </Method>
+        <Method name="visit" returnType="void" visibility="package">
+          <Argument type="Car" name="car"/>
+        </Method>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="visitor.Engine" target="visitor.CarElement"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="visitor.Car" target="visitor.CarElement"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="visitor.CarElementDoVisitor" target="visitor.CarElementVisitor"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="visitor.CarElementPrintVisitor" target="visitor.CarElementVisitor"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="visitor.Body" target="visitor.CarElement"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="visitor.Wheel" target="visitor.CarElement"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

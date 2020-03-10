@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="composite">
+  <ClassDiagramComponents>
+    <Class name="Composite" package="composite" visibility="public" xPosition="1173.0" yPosition="388.0">
+      <Fields>
+        <Field name="prims" type="ArrayList&lt;Prim&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="add" returnType="void" visibility="public">
+          <Argument type="Prim" name="m"/>
+        </Method>
+        <Method name="render" returnType="void" visibility="public"/>
+        <Method name="volume" returnType="float" visibility="public"/>
+        <Method name="createIterator" returnType="Iterator" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="CompositeIterator" package="composite" visibility="public" xPosition="555.0" yPosition="162.0">
+      <Fields>
+        <Field name="stack" type="Stack" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Iterator" name="iterator"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="hasNext" returnType="boolean" visibility="public"/>
+        <Method name="next" returnType="Prim" visibility="public"/>
+        <Method name="remove" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Cube" package="composite" visibility="public" xPosition="956.0" yPosition="388.0">
+      <Fields>
+        <Field name="height" type="float" visibility="private"/>
+        <Field name="width" type="float" visibility="private"/>
+        <Field name="length" type="float" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="float" name="h"/>
+          <Argument type="float" name="w"/>
+          <Argument type="float" name="l"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="render" returnType="void" visibility="public"/>
+        <Method name="volume" returnType="float" visibility="public"/>
+        <Method name="createIterator" returnType="Iterator" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="NullIterator" package="composite" visibility="public" xPosition="555.0" yPosition="369.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="hasNext" returnType="boolean" visibility="public"/>
+        <Method name="next" returnType="Object" visibility="public"/>
+        <Method name="remove" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Prim" package="composite" visibility="public" isAbstract="true" xPosition="979.0" yPosition="103.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="render" returnType="void" visibility="public" isAbstract="true"/>
+        <Method name="volume" returnType="float" visibility="public" isAbstract="true"/>
+        <Method name="createIterator" returnType="Iterator" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="Sphere" package="composite" visibility="public" xPosition="775.0" yPosition="388.0">
+      <Fields>
+        <Field name="radius" type="float" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="float" name="r"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="render" returnType="void" visibility="public"/>
+        <Method name="volume" returnType="float" visibility="public"/>
+        <Method name="createIterator" returnType="Iterator" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="test_prims" package="composite" visibility="public" xPosition="1379.0" yPosition="103.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="composite.Sphere" target="composite.Prim"/>
+    <IsRelation name="is" source="composite.Cube" target="composite.Prim"/>
+    <IsRelation name="is" source="composite.Composite" target="composite.Prim"/>
+    <HasRelation name="prims" source="composite.Composite" target="composite.Prim" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Prim&gt;"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

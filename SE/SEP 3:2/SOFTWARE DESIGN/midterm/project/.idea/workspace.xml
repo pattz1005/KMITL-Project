@@ -1,0 +1,1153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9c543239-c941-43d3-9853-ea16cc9a8b91" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/Store/Memento_Demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/Store/Memento_Demo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Store/Inventory_Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/Inventory_Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Store/Memento_Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/Memento_Demo.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Store/Inventory_Decorator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Store/Memento_Demo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="66" lean-forward="true" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="uml://JAVA/Store">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>Store</OriginalElement>
+              <nodes>
+                <node x="293.75" y="0.0">Store.Command</node>
+                <node x="97.25" y="153.0">Store.Inventory</node>
+                <node x="150.0" y="232.0">Store.Inventory_Decorator</node>
+                <node x="174.0" y="79.0">Store.Command_AddBook</node>
+                <node x="545.0" y="79.0">Store.Command_AddCopy</node>
+                <node x="144.0" y="306.0">Store.Book</node>
+                <node x="0.0" y="306.0">Store.Memento</node>
+                <node x="350.0" y="153.0">Store.Memento_Demo</node>
+                <node x="352.0" y="79.0">Store.Command_ChangePrice</node>
+                <node x="0.0" y="79.0">Store.Command_SellBook</node>
+                <node x="0.0" y="232.0">Store.Inventory_Store</node>
+                <node x="531.0" y="153.0">Store.CareTaker</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="Store.Command_AddCopy" target="Store.Command">
+                  <point x="0.0" y="-14.5" />
+                  <point x="624.5" y="49.0" />
+                  <point x="384.75" y="49.0" />
+                  <point x="39.0" y="14.5" />
+                </edge>
+                <edge source="Store.Command_ChangePrice" target="Store.Command">
+                  <point x="0.0" y="-14.5" />
+                  <point x="438.5" y="59.0" />
+                  <point x="358.75" y="59.0" />
+                  <point x="13.0" y="14.5" />
+                </edge>
+                <edge source="Store.Command_AddBook" target="Store.Command">
+                  <point x="0.0" y="-14.5" />
+                  <point x="253.0" y="59.0" />
+                  <point x="332.75" y="59.0" />
+                  <point x="-13.0" y="14.5" />
+                </edge>
+                <edge source="Store.Inventory_Store" target="Store.Inventory">
+                  <point x="0.0" y="-14.5" />
+                  <point x="65.0" y="207.0" />
+                  <point x="121.75" y="207.0" />
+                  <point x="-24.5" y="14.5" />
+                </edge>
+                <edge source="Store.Inventory_Decorator" target="Store.Inventory">
+                  <point x="0.0" y="-14.5" />
+                  <point x="227.5" y="207.0" />
+                  <point x="170.75" y="207.0" />
+                  <point x="24.5" y="14.5" />
+                </edge>
+                <edge source="Store.Command_SellBook" target="Store.Command">
+                  <point x="0.0" y="-14.5" />
+                  <point x="77.0" y="49.0" />
+                  <point x="306.75" y="49.0" />
+                  <point x="-39.0" y="14.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.9000000000000007" x="566.8035775713788" y="296.6666666666664" />
+              <SelectedNodes />
+              <Categories />
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Store/Inventory_Store.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Store/Command_AddBook.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#204#205#0" expanded="true" />
+                <element signature="e#228#229#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Store/Command_AddCopy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Store/Command_ChangePrice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Store/Command_SellBook.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Store/Inventory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>̵</find>
+      <find>InventoryDecora</find>
+      <find>invent</find>
+      <find>memen</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/sample/AddCopyCommand.java" />
+        <option value="$PROJECT_DIR$/src/sample/AddMovieCommand.java" />
+        <option value="$PROJECT_DIR$/src/sample/ChangePriceCommand.java" />
+        <option value="$PROJECT_DIR$/src/sample/Command.java" />
+        <option value="$PROJECT_DIR$/src/sample/InventoryInterface.java" />
+        <option value="$PROJECT_DIR$/src/sample/MatchNotFoundException.java" />
+        <option value="$PROJECT_DIR$/src/sample/Memento.java" />
+        <option value="$PROJECT_DIR$/src/sample/Movie.java" />
+        <option value="$PROJECT_DIR$/src/sample/SellMovieCommand.java" />
+        <option value="$PROJECT_DIR$/src/sample/InventoryTest.java" />
+        <option value="$PROJECT_DIR$/src/store/Originator.java" />
+        <option value="$PROJECT_DIR$/src/store/MementoPatternDemo.java" />
+        <option value="$PROJECT_DIR$/src/store/CareTaker.java" />
+        <option value="$PROJECT_DIR$/src/store/Command_AddBook.java" />
+        <option value="$PROJECT_DIR$/src/store/Command_AddCopy.java" />
+        <option value="$PROJECT_DIR$/src/store/Command_SellBook.java" />
+        <option value="$PROJECT_DIR$/src/store/Command_ChangePrice.java" />
+        <option value="$PROJECT_DIR$/src/store/Memento.java" />
+        <option value="$PROJECT_DIR$/src/store/Inventory.java" />
+        <option value="$PROJECT_DIR$/src/store/Book.java" />
+        <option value="$PROJECT_DIR$/src/store/Command.java" />
+        <option value="$PROJECT_DIR$/src/store/Inventory_Concrete.java" />
+        <option value="$PROJECT_DIR$/src/Inventory/Inventory_Concrete.java" />
+        <option value="$PROJECT_DIR$/src/Store/Inventory_Concrete.java" />
+        <option value="$PROJECT_DIR$/src/memento_example/Memento.java" />
+        <option value="$PROJECT_DIR$/src/memento_example/Originator.java" />
+        <option value="$PROJECT_DIR$/src/memento_example/MementoDemo.java" />
+        <option value="$PROJECT_DIR$/src/sample/Inventory.java" />
+        <option value="$PROJECT_DIR$/src/Store/Program flow" />
+        <option value="$PROJECT_DIR$/src/sample/demo.java" />
+        <option value="$PROJECT_DIR$/src/sample/CareTaker.java" />
+        <option value="$PROJECT_DIR$/src/sample/InventoryDecorator.java" />
+        <option value="$PROJECT_DIR$/src/Store/Demo.java" />
+        <option value="$PROJECT_DIR$/src/from_alok/Project1.java" />
+        <option value="$PROJECT_DIR$/src/memento_example/Caretaker.java" />
+        <option value="$PROJECT_DIR$/src/from_alok/InventoryDecorator.java" />
+        <option value="$PROJECT_DIR$/src/Store/Command.java" />
+        <option value="$PROJECT_DIR$/src/Store/Book.java" />
+        <option value="$PROJECT_DIR$/src/Store/CareTaker.java" />
+        <option value="$PROJECT_DIR$/src/Store/Command_AddBook.java" />
+        <option value="$PROJECT_DIR$/src/Store/Command_AddCopy.java" />
+        <option value="$PROJECT_DIR$/src/Store/Command_ChangePrice.java" />
+        <option value="$PROJECT_DIR$/src/Store/Command_SellBook.java" />
+        <option value="$PROJECT_DIR$/src/Store/Inventory.java" />
+        <option value="$PROJECT_DIR$/src/Store/Memento.java" />
+        <option value="$PROJECT_DIR$/src/Store/Inventory_Decorator.java" />
+        <option value="$PROJECT_DIR$/src/Store/Memento_Demo.java" />
+        <option value="$PROJECT_DIR$/src/Store/Inventory_Store.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1720" />
+    <option name="y" value="516" />
+    <option name="width" value="1946" />
+    <option name="height" value="708" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SDAProj1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SDAProj1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SDAProj1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Store" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551113881513" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Project">
+    <configuration name="Alok" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="from_alok.Project1" />
+      <module name="project" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Memex" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="memento_example.MementoDemo" />
+      <module name="project" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Project" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Store.Memento_Demo" />
+      <module name="project" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Memex" />
+      <item itemvalue="Application.Alok" />
+      <item itemvalue="Application.Project" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9c543239-c941-43d3-9853-ea16cc9a8b91" name="Default Changelist" comment="" />
+      <created>1550823311805</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1550823311805</updated>
+      <workItem from="1550823314783" duration="5737000" />
+      <workItem from="1550832153333" duration="33238000" />
+      <workItem from="1550901506365" duration="17544000" />
+      <workItem from="1551018004926" duration="5375000" />
+      <workItem from="1551087339541" duration="5387000" />
+      <workItem from="1551093107329" duration="14573000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="81854000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1912" y="327" width="1382" height="754" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16565809" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32867134" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" weight="0.28502417" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50040483" side_tool="true" weight="0.30944055" />
+      <window_info anchor="bottom" id="Sequence" order="12" />
+      <window_info anchor="bottom" id="Duplicate detector" order="13" weight="0.32867134" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32867134" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/sample/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/ChangePriceCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/MatchNotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/SellMovieCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Movie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/AddCopyCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/AddMovieCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Store/Program flow" />
+    <entry file="file://$PROJECT_DIR$/src/memento_example/MementoDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/from_alok/SellBookCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/from_alok/ChangePriceCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/from_alok/CareTaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-323">
+          <caret line="26" column="39" lean-forward="true" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Memento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="23" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/from_alok/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/from_alok/ConcreteBook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/from_alok/AddCopyCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/from_alok">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>from_alok</OriginalElement>
+          <nodes>
+            <node x="668.6132897603485" y="119.0">from_alok.Inventory</node>
+            <node x="74.16889978213499" y="307.0">from_alok.NewBookCommand</node>
+            <node x="856.5" y="0.0">from_alok.Book</node>
+            <node x="619.0022331154684" y="456.0">from_alok.InventoryDecorator</node>
+            <node x="0.0" y="228.0">from_alok.ConcreteBook</node>
+            <node x="806.168899782135" y="228.0">from_alok.ConcreteInventory</node>
+            <node x="978.5413943355119" y="307.0">from_alok.Memento</node>
+            <node x="1097.541394335512" y="456.0">from_alok.Originator</node>
+            <node x="978.5413943355119" y="456.0">from_alok.CareTaker</node>
+            <node x="686.5022331154684" y="535.0">from_alok.Project1</node>
+            <node x="431.50223311546836" y="307.0">from_alok.ChangePriceCommand</node>
+            <node x="619.5022331154684" y="307.0">from_alok.SellBookCommand</node>
+            <node x="248.168899782135" y="307.0">from_alok.AddCopyCommand</node>
+            <node x="364.83556644880167" y="228.0">from_alok.Command</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="from_alok.NewBookCommand" target="from_alok.Inventory">
+              <point x="30.799999999999955" y="-14.5" />
+              <point x="181.96889978213494" y="287.0" />
+              <point x="176.58616557734206" y="287.0" />
+              <point x="176.58616557734206" y="178.0" />
+              <point x="674.057734204793" y="178.0" />
+              <point x="-43.55555555555554" y="14.5" />
+            </edge>
+            <edge source="from_alok.InventoryDecorator" target="from_alok.Inventory">
+              <point x="20.83333333333337" y="-14.5" />
+              <point x="714.8355664488017" y="376.0" />
+              <point x="787.3355664488017" y="376.0" />
+              <point x="787.3355664488017" y="188.0" />
+              <point x="739.3910675381262" y="188.0" />
+              <point x="21.777777777777715" y="14.5" />
+            </edge>
+            <edge source="from_alok.InventoryDecorator" target="from_alok.NewBookCommand">
+              <point x="-62.5" y="-14.5" />
+              <point x="631.5022331154684" y="426.0" />
+              <point x="189.668899782135" y="426.0" />
+              <point x="38.5" y="14.5" />
+            </edge>
+            <edge source="from_alok.InventoryDecorator" target="from_alok.Book">
+              <point x="54.16666666666663" y="-14.5" />
+              <point x="748.168899782135" y="416.0" />
+              <point x="960.668899782135" y="416.0" />
+              <point x="960.668899782135" y="89.0" />
+              <point x="903.375" y="89.0" />
+              <point x="9.375" y="14.5" />
+            </edge>
+            <edge source="from_alok.SellBookCommand" target="from_alok.Command">
+              <point x="-37.25" y="-14.5" />
+              <point x="656.7522331154684" y="277.0" />
+              <point x="460.16889978213504" y="277.0" />
+              <point x="43.33333333333337" y="14.5" />
+            </edge>
+            <edge source="from_alok.Project1" target="from_alok.CareTaker">
+              <point x="36.0" y="-14.5" />
+              <point x="767.5022331154684" y="515.0" />
+              <point x="1052.791394335512" y="515.0" />
+              <point x="24.75" y="14.5" />
+            </edge>
+            <edge source="from_alok.NewBookCommand" target="from_alok.Book">
+              <point x="0.0" y="-14.5" />
+              <point x="151.168899782135" y="287.0" />
+              <point x="143.5" y="287.0" />
+              <point x="143.5" y="69.0" />
+              <point x="872.125" y="69.0" />
+              <point x="-21.875" y="14.5" />
+            </edge>
+            <edge source="from_alok.Originator" target="from_alok.Book">
+              <point x="38.25" y="-14.5" />
+              <point x="1186.791394335512" y="436.0" />
+              <point x="1179.541394335512" y="436.0" />
+              <point x="1179.541394335512" y="49.0" />
+              <point x="928.375" y="49.0" />
+              <point x="34.375" y="14.5" />
+            </edge>
+            <edge source="from_alok.NewBookCommand" target="from_alok.Command">
+              <point x="61.59999999999991" y="-14.5" />
+              <point x="212.7688997821349" y="277.0" />
+              <point x="373.5022331154683" y="277.0" />
+              <point x="-43.33333333333337" y="14.5" />
+            </edge>
+            <edge source="from_alok.ChangePriceCommand" target="from_alok.Command">
+              <point x="-42.0" y="-14.5" />
+              <point x="473.50223311546836" y="287.0" />
+              <point x="442.83556644880167" y="287.0" />
+              <point x="26.0" y="14.5" />
+            </edge>
+            <edge source="from_alok.Memento" target="from_alok.Book">
+              <point x="24.75" y="-14.5" />
+              <point x="1052.791394335512" y="287.0" />
+              <point x="1028.7639433551199" y="287.0" />
+              <point x="1028.7639433551199" y="69.0" />
+              <point x="915.875" y="69.0" />
+              <point x="21.875" y="14.5" />
+            </edge>
+            <edge source="from_alok.AddCopyCommand" target="from_alok.Command">
+              <point x="38.5" y="-14.5" />
+              <point x="363.668899782135" y="287.0" />
+              <point x="390.83556644880167" y="287.0" />
+              <point x="-26.0" y="14.5" />
+            </edge>
+            <edge source="from_alok.InventoryDecorator" target="from_alok.AddCopyCommand">
+              <point x="-54.16666666666663" y="-14.5" />
+              <point x="639.8355664488017" y="416.0" />
+              <point x="286.668899782135" y="416.0" />
+              <point x="-38.5" y="14.5" />
+            </edge>
+            <edge source="from_alok.InventoryDecorator" target="from_alok.Command">
+              <point x="-37.5" y="-14.5" />
+              <point x="656.5022331154684" y="396.0" />
+              <point x="412.668899782135" y="396.0" />
+              <point x="412.668899782135" y="287.0" />
+              <point x="408.16889978213504" y="287.0" />
+              <point x="-8.666666666666629" y="14.5" />
+            </edge>
+            <edge source="from_alok.CareTaker" target="from_alok.Memento">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="from_alok.Project1" target="from_alok.ConcreteBook">
+              <point x="-36.0" y="-14.5" />
+              <point x="695.5022331154684" y="515.0" />
+              <point x="30.5" y="515.0" />
+              <point x="-30.5" y="14.5" />
+            </edge>
+            <edge source="from_alok.Inventory" target="from_alok.Book">
+              <point x="0.0" y="-14.5" />
+              <point x="717.6132897603485" y="79.0" />
+              <point x="878.375" y="79.0" />
+              <point x="-15.625" y="14.5" />
+            </edge>
+            <edge source="from_alok.Project1" target="from_alok.InventoryDecorator">
+              <point x="0.0" y="-14.5" />
+              <point x="37.5" y="14.5" />
+            </edge>
+            <edge source="from_alok.ConcreteBook" target="from_alok.Book">
+              <point x="0.0" y="-14.5" />
+              <point x="61.0" y="49.0" />
+              <point x="859.625" y="49.0" />
+              <point x="-34.375" y="14.5" />
+            </edge>
+            <edge source="from_alok.Command" target="from_alok.Inventory">
+              <point x="0.0" y="-14.5" />
+              <point x="416.83556644880167" y="198.0" />
+              <point x="695.8355119825707" y="198.0" />
+              <point x="-21.77777777777783" y="14.5" />
+            </edge>
+            <edge source="from_alok.ConcreteInventory" target="from_alok.Book">
+              <point x="-18.0" y="-14.5" />
+              <point x="860.168899782135" y="208.0" />
+              <point x="877.3747276688451" y="208.0" />
+              <point x="877.3747276688451" y="89.0" />
+              <point x="884.625" y="89.0" />
+              <point x="-9.375" y="14.5" />
+            </edge>
+            <edge source="from_alok.ConcreteInventory" target="from_alok.Inventory">
+              <point x="-54.0" y="-14.5" />
+              <point x="824.168899782135" y="168.0" />
+              <point x="761.168845315904" y="168.0" />
+              <point x="43.55555555555554" y="14.5" />
+            </edge>
+            <edge source="from_alok.AddCopyCommand" target="from_alok.Inventory">
+              <point x="-38.5" y="-14.5" />
+              <point x="286.668899782135" y="188.0" />
+              <point x="684.9466230936819" y="188.0" />
+              <point x="-32.66666666666663" y="14.5" />
+            </edge>
+            <edge source="from_alok.NewBookCommand" target="from_alok.ConcreteBook">
+              <point x="-61.60000000000002" y="-14.5" />
+              <point x="89.56889978213496" y="287.0" />
+              <point x="91.5" y="287.0" />
+              <point x="30.5" y="14.5" />
+            </edge>
+            <edge source="from_alok.Originator" target="from_alok.Memento">
+              <point x="-38.25" y="-14.5" />
+              <point x="1110.291394335512" y="436.0" />
+              <point x="1047.8413943355117" y="436.0" />
+              <point x="19.799999999999983" y="14.5" />
+            </edge>
+            <edge source="from_alok.InventoryDecorator" target="from_alok.ConcreteInventory">
+              <point x="45.83333333333337" y="-14.5" />
+              <point x="739.8355664488017" y="406.0" />
+              <point x="874.6666666666666" y="406.0" />
+              <point x="874.6666666666666" y="287.0" />
+              <point x="914.168899782135" y="287.0" />
+              <point x="36.0" y="14.5" />
+            </edge>
+            <edge source="from_alok.ChangePriceCommand" target="from_alok.Inventory">
+              <point x="42.0" y="-14.5" />
+              <point x="557.5022331154684" y="208.0" />
+              <point x="706.7244008714596" y="208.0" />
+              <point x="-10.888888888888914" y="14.5" />
+            </edge>
+            <edge source="from_alok.InventoryDecorator" target="from_alok.Memento">
+              <point x="62.5" y="-14.5" />
+              <point x="756.5022331154684" y="426.0" />
+              <point x="988.4413943355119" y="426.0" />
+              <point x="-39.599999999999994" y="14.5" />
+            </edge>
+            <edge source="from_alok.SellBookCommand" target="from_alok.Inventory">
+              <point x="37.25" y="-14.5" />
+              <point x="731.2522331154684" y="208.0" />
+              <point x="717.6132897603485" y="208.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="from_alok.InventoryDecorator" target="from_alok.ChangePriceCommand">
+              <point x="-20.83333333333337" y="-14.5" />
+              <point x="673.168899782135" y="376.0" />
+              <point x="473.50223311546836" y="376.0" />
+              <point x="-42.0" y="14.5" />
+            </edge>
+            <edge source="from_alok.InventoryDecorator" target="from_alok.SellBookCommand">
+              <point x="-4.166666666666629" y="-14.5" />
+              <point x="689.8355664488017" y="356.0" />
+              <point x="656.7522331154684" y="356.0" />
+              <point x="-37.25" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.8408903544929925" x="265.0" y="258.0" />
+          <SelectedNodes>
+            <node>from_alok.ConcreteInventory</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/from_alok/Project1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="29" column="64" lean-forward="true" selection-start-line="29" selection-start-column="64" selection-end-line="29" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Store/Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/CareTaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="53" lean-forward="true" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/InventoryInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/from_alok/Memento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/from_alok/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/memento_example/Originator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/memento_example/Memento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding>
+            <element signature="e#109#110#0" expanded="true" />
+            <element signature="e#143#144#0" expanded="true" />
+            <element signature="e#175#176#0" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/memento_example/Caretaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/from_alok/NewBookCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Command.ser">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="159" selection-start-column="159" selection-end-column="159" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/InventoryDecorator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1816">
+          <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/from_alok/Inventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/from_alok/Originator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Store/Memento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Inventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="121" column="43" lean-forward="true" selection-start-line="121" selection-start-column="43" selection-end-line="121" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmdfile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/from_alok/ConcreteInventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-270">
+          <caret line="41" column="33" selection-start-line="41" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/from_alok/InventoryDecorator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1392">
+          <caret line="181" selection-start-line="181" selection-end-line="186" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Store/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="64" column="37" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
+          <folding>
+            <element signature="e#874#875#0" expanded="true" />
+            <element signature="e#899#900#0" expanded="true" />
+            <element signature="e#939#940#0" expanded="true" />
+            <element signature="e#967#968#0" expanded="true" />
+            <element signature="e#997#998#0" expanded="true" />
+            <element signature="e#1026#1027#0" expanded="true" />
+            <element signature="e#1067#1068#0" expanded="true" />
+            <element signature="e#1103#1104#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Store/CareTaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Store/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Store/Command_AddBook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#204#205#0" expanded="true" />
+            <element signature="e#228#229#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Store/Command_AddCopy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Store/Command_ChangePrice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Store/Command_SellBook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Store/Inventory_Store.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Store/Inventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Store/Inventory_Decorator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Store/Memento_Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="66" lean-forward="true" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Package Store.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="uml://JAVA/Store">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>Store</OriginalElement>
+          <nodes>
+            <node x="293.75" y="0.0">Store.Command</node>
+            <node x="97.25" y="153.0">Store.Inventory</node>
+            <node x="150.0" y="232.0">Store.Inventory_Decorator</node>
+            <node x="174.0" y="79.0">Store.Command_AddBook</node>
+            <node x="545.0" y="79.0">Store.Command_AddCopy</node>
+            <node x="144.0" y="306.0">Store.Book</node>
+            <node x="0.0" y="306.0">Store.Memento</node>
+            <node x="350.0" y="153.0">Store.Memento_Demo</node>
+            <node x="352.0" y="79.0">Store.Command_ChangePrice</node>
+            <node x="0.0" y="79.0">Store.Command_SellBook</node>
+            <node x="0.0" y="232.0">Store.Inventory_Store</node>
+            <node x="531.0" y="153.0">Store.CareTaker</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="Store.Command_AddCopy" target="Store.Command">
+              <point x="0.0" y="-14.5" />
+              <point x="624.5" y="49.0" />
+              <point x="384.75" y="49.0" />
+              <point x="39.0" y="14.5" />
+            </edge>
+            <edge source="Store.Command_ChangePrice" target="Store.Command">
+              <point x="0.0" y="-14.5" />
+              <point x="438.5" y="59.0" />
+              <point x="358.75" y="59.0" />
+              <point x="13.0" y="14.5" />
+            </edge>
+            <edge source="Store.Command_AddBook" target="Store.Command">
+              <point x="0.0" y="-14.5" />
+              <point x="253.0" y="59.0" />
+              <point x="332.75" y="59.0" />
+              <point x="-13.0" y="14.5" />
+            </edge>
+            <edge source="Store.Inventory_Store" target="Store.Inventory">
+              <point x="0.0" y="-14.5" />
+              <point x="65.0" y="207.0" />
+              <point x="121.75" y="207.0" />
+              <point x="-24.5" y="14.5" />
+            </edge>
+            <edge source="Store.Inventory_Decorator" target="Store.Inventory">
+              <point x="0.0" y="-14.5" />
+              <point x="227.5" y="207.0" />
+              <point x="170.75" y="207.0" />
+              <point x="24.5" y="14.5" />
+            </edge>
+            <edge source="Store.Command_SellBook" target="Store.Command">
+              <point x="0.0" y="-14.5" />
+              <point x="77.0" y="49.0" />
+              <point x="306.75" y="49.0" />
+              <point x="-39.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.9000000000000007" x="566.8035775713788" y="296.6666666666664" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>project</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

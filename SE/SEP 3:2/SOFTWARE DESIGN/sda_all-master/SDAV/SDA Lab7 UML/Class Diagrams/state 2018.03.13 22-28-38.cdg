@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="state">
+  <ClassDiagramComponents>
+    <Class name="Lock" package="state" visibility="public" xPosition="901.0" yPosition="47.0">
+      <Fields>
+        <Field name="remote" type="RemoteDevice" visibility="private"/>
+        <Field name="beforeLockState" type="State" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="RemoteDevice" name="remote"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="pressPlay" returnType="boolean" visibility="public"/>
+        <Method name="pressPause" returnType="boolean" visibility="public"/>
+        <Method name="pressStop" returnType="boolean" visibility="public"/>
+        <Method name="pressRewind" returnType="boolean" visibility="public"/>
+        <Method name="pressLock" returnType="boolean" visibility="public"/>
+        <Method name="setBeforeLockState" returnType="void" visibility="public">
+          <Argument type="State" name="beforeLockState"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Paused" package="state" visibility="public" xPosition="887.0" yPosition="807.0">
+      <Fields>
+        <Field name="remote" type="RemoteDevice" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="RemoteDevice" name="remote"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="pressPlay" returnType="boolean" visibility="public"/>
+        <Method name="pressPause" returnType="boolean" visibility="public"/>
+        <Method name="pressStop" returnType="boolean" visibility="public"/>
+        <Method name="pressRewind" returnType="boolean" visibility="public"/>
+        <Method name="pressLock" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Playing" package="state" visibility="public" xPosition="890.0" yPosition="571.0">
+      <Fields>
+        <Field name="remote" type="RemoteDevice" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="RemoteDevice" name="remote"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="pressPlay" returnType="boolean" visibility="public"/>
+        <Method name="pressPause" returnType="boolean" visibility="public"/>
+        <Method name="pressStop" returnType="boolean" visibility="public"/>
+        <Method name="pressRewind" returnType="boolean" visibility="public"/>
+        <Method name="pressLock" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="RemoteDevice" package="state" visibility="public" xPosition="37.0" yPosition="301.0">
+      <Fields>
+        <Field name="playing" type="State" visibility="private"/>
+        <Field name="paused" type="State" visibility="private"/>
+        <Field name="stopped" type="State" visibility="private"/>
+        <Field name="lock" type="State" visibility="private"/>
+        <Field name="currentState" type="State" visibility="private"/>
+        <Field name="currentPosition" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="setState" returnType="void" visibility="public">
+          <Argument type="State" name="currentState"/>
+        </Method>
+        <Method name="setPosition" returnType="void" visibility="public">
+          <Argument type="int" name="position"/>
+        </Method>
+        <Method name="getPosition" returnType="int" visibility="public"/>
+        <Method name="pressPlay" returnType="void" visibility="public"/>
+        <Method name="pressPause" returnType="void" visibility="public"/>
+        <Method name="pressStop" returnType="void" visibility="public"/>
+        <Method name="pressRewind" returnType="void" visibility="public"/>
+        <Method name="pressLock" returnType="void" visibility="public"/>
+        <Method name="getPlayingState" returnType="State" visibility="public"/>
+        <Method name="getPausedState" returnType="State" visibility="public"/>
+        <Method name="getStoppedState" returnType="State" visibility="public"/>
+        <Method name="getLockState" returnType="State" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="RemoteDeviceV1" package="state" visibility="public" xPosition="37.0" yPosition="95.0">
+      <Fields>
+        <Field name="currentState" type="State" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="pressPlay" returnType="void" visibility="public"/>
+        <Method name="pressPause" returnType="void" visibility="public"/>
+        <Method name="pressStop" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Stopped" package="state" visibility="public" xPosition="901.0" yPosition="330.0">
+      <Fields>
+        <Field name="remote" type="RemoteDevice" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="RemoteDevice" name="remote"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="pressPlay" returnType="boolean" visibility="public"/>
+        <Method name="pressPause" returnType="boolean" visibility="public"/>
+        <Method name="pressStop" returnType="boolean" visibility="public"/>
+        <Method name="pressRewind" returnType="boolean" visibility="public"/>
+        <Method name="pressLock" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="TestDrive" package="state" visibility="public" xPosition="45.0" yPosition="824.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="State" package="state" visibility="public" xPosition="512.0" yPosition="95.0">
+      <Methods>
+        <Method name="pressPlay" returnType="boolean" visibility="public"/>
+        <Method name="pressPause" returnType="boolean" visibility="public"/>
+        <Method name="pressStop" returnType="boolean" visibility="public"/>
+        <Method name="pressRewind" returnType="boolean" visibility="public"/>
+        <Method name="pressLock" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="playing" source="state.RemoteDevice" target="state.State" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="currentState" source="state.RemoteDeviceV1" target="state.State" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="lock" source="state.RemoteDevice" target="state.State" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="state.Paused" target="state.State"/>
+    <HasRelation name="stopped" source="state.RemoteDevice" target="state.State" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="remote" source="state.Lock" target="state.RemoteDevice" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="beforeLockState" source="state.Lock" target="state.State" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="state.Stopped" target="state.State"/>
+    <HasRelation name="remote" source="state.Stopped" target="state.RemoteDevice" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="remote" source="state.Playing" target="state.RemoteDevice" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="paused" source="state.RemoteDevice" target="state.State" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="state.Lock" target="state.State"/>
+    <HasRelation name="currentState" source="state.RemoteDevice" target="state.State" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="state.Playing" target="state.State"/>
+    <HasRelation name="remote" source="state.Paused" target="state.RemoteDevice" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

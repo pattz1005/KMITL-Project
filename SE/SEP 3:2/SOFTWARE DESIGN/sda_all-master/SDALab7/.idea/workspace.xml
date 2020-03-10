@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="150cebc8-518f-430c-afbc-c80bd9f74e2c" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/memento/ScheduleGUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+              <folding>
+                <element signature="e#1409#1542#0" expanded="true" />
+                <element signature="e#1541#1542#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/State_/TestDrive.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="49" lean-forward="true" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/State_/State.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/State_/RemoteDeviceV1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/State_/Playing.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="26">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/State_/Paused.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/State_/RemoteDevice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/State_/Lock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-138">
+              <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>package memento;</find>
+      <find>package state;</find>
+      <find>vir`</find>
+      <find>savem</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>package memento_exp;</replace>
+      <replace>package state_exp;</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>E:\Studium\Universitat\2019-1\SDA\ALL LABS\all2\SDALab7\src\memento</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/memento_exp/LoadDialog.java" />
+        <option value="$PROJECT_DIR$/src/memento_exp/ScheduleGUI.java" />
+        <option value="$PROJECT_DIR$/src/state/Paused.java" />
+        <option value="$PROJECT_DIR$/src/state/Playing.java" />
+        <option value="$PROJECT_DIR$/src/state/RemoteDevice.java" />
+        <option value="$PROJECT_DIR$/src/state/RemoteDeviceV1.java" />
+        <option value="$PROJECT_DIR$/src/state/State.java" />
+        <option value="$PROJECT_DIR$/src/state/Stopped.java" />
+        <option value="$PROJECT_DIR$/src/state/TestDrive.java" />
+        <option value="$PROJECT_DIR$/src/state/Lock.java" />
+        <option value="$PROJECT_DIR$/src/State_/Lock.java" />
+        <option value="$PROJECT_DIR$/src/State_/Playing.java" />
+        <option value="$PROJECT_DIR$/src/State_/Paused.java" />
+        <option value="$PROJECT_DIR$/src/State_/RemoteDevice.java" />
+        <option value="$PROJECT_DIR$/src/State_/RemoteDeviceV1.java" />
+        <option value="$PROJECT_DIR$/src/State_/State.java" />
+        <option value="$PROJECT_DIR$/src/State_/Stopped.java" />
+        <option value="$PROJECT_DIR$/src/State_/TestDrive.java" />
+        <option value="$PROJECT_DIR$/src/memento/TableMemento.java" />
+        <option value="$PROJECT_DIR$/src/memento/ScheduleTableModel.java" />
+        <option value="$PROJECT_DIR$/src/memento/ScheduleGUI.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="827" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SDALab7" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SDALab7" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SDALab7" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SDALab7" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SDALab7" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SDALab7" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SDALab7" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SDALab7" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="memento" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SDALab7" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SDALab7" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="State_" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556080730235" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.s">
+    <configuration name="m" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="memento.ScheduleGUI" />
+      <module name="SDALab7" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mexp" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="memento.ScheduleGUI" />
+      <module name="SDALab7" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="s" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="State_.TestDrive" />
+      <module name="SDALab7" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sexp" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="state_exp.TestDrive" />
+      <module name="SDALab7" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.mexp" />
+      <item itemvalue="Application.m" />
+      <item itemvalue="Application.s" />
+      <item itemvalue="Application.sexp" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="150cebc8-518f-430c-afbc-c80bd9f74e2c" name="Default Changelist" comment="" />
+      <created>1552436260198</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552436260198</updated>
+      <workItem from="1552436261834" duration="7411000" />
+      <workItem from="1552452199498" duration="369000" />
+      <workItem from="1553047066473" duration="25000" />
+      <workItem from="1553047128598" duration="1388000" />
+      <workItem from="1553589140137" duration="1191000" />
+      <workItem from="1553662161752" duration="265000" />
+      <workItem from="1554262982274" duration="915000" />
+      <workItem from="1554434905551" duration="71000" />
+      <workItem from="1556035751177" duration="2025000" />
+      <workItem from="1556039885417" duration="113000" />
+      <workItem from="1556071058672" duration="1342000" />
+      <workItem from="1558364510871" duration="509000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="19432000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="827" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30472103" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32867134" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28435373" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Sequence" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32867134" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/SDALab7.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/IllegalArgumentException.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/awt/Container.java" />
+    <entry file="file://$PROJECT_DIR$/src/state_exp/Playing.java" />
+    <entry file="file://$PROJECT_DIR$/src/state_exp/Paused.java" />
+    <entry file="file://$PROJECT_DIR$/src/state_exp/Lock.java" />
+    <entry file="file://$PROJECT_DIR$/src/state_exp/RemoteDeviceV1.java" />
+    <entry file="file://$PROJECT_DIR$/src/state_exp/TestDrive.java" />
+    <entry file="file://$PROJECT_DIR$/src/state_exp/Stopped.java" />
+    <entry file="file://$PROJECT_DIR$/src/state_exp/State.java" />
+    <entry file="file://$PROJECT_DIR$/src/memento_exp/ScheduleGUI.java" />
+    <entry file="file://$PROJECT_DIR$/src/memento_exp/TableMemento.java" />
+    <entry file="file://$PROJECT_DIR$/src/memento_exp/Observer.java" />
+    <entry file="file://$PROJECT_DIR$/src/memento_exp/LoadDialog.form" />
+    <entry file="file://$PROJECT_DIR$/src/memento_exp/LoadDialog.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/javax/swing/table/DefaultTableModel.java" />
+    <entry file="file://$PROJECT_DIR$/src/memento_exp/ScheduleTableModel.java" />
+    <entry file="file://$PROJECT_DIR$/src/memento_exp/Memento.java" />
+    <entry file="file://$PROJECT_DIR$/src/memento_exp/NullMemento.java" />
+    <entry file="uml://JAVA/State_">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>State_</OriginalElement>
+          <nodes>
+            <node x="10.5" y="178.0">State_.Playing</node>
+            <node x="138.58333333333334" y="307.0">State_.RemoteDevice</node>
+            <node x="116.5" y="178.0">State_.Paused</node>
+            <node x="390.7142857142857" y="0.0">State_.RemoteDeviceV1</node>
+            <node x="241.21428571428572" y="178.0">State_.Stopped</node>
+            <node x="179.85714285714286" y="99.0">State_.Lock</node>
+            <node x="152.58333333333334" y="386.0">State_.TestDrive</node>
+            <node x="169.68207282913164" y="0.0">State_.State</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="State_.Lock" target="State_.RemoteDevice">
+              <point x="18.0" y="14.5" />
+              <point x="233.85714285714286" y="158.0" />
+              <point x="230.71428571428572" y="158.0" />
+              <point x="230.71428571428572" y="247.0" />
+              <point x="222.72619047619048" y="247.0" />
+              <point x="22.14285714285714" y="-14.5" />
+            </edge>
+            <edge source="State_.Playing" target="State_.State">
+              <point x="-21.5" y="-14.5" />
+              <point x="32.0" y="59.0" />
+              <point x="183.55707282913164" y="59.0" />
+              <point x="-23.125" y="14.5" />
+            </edge>
+            <edge source="State_.Playing" target="State_.RemoteDevice">
+              <point x="0.0" y="14.5" />
+              <point x="53.5" y="267.0" />
+              <point x="160.72619047619045" y="267.0" />
+              <point x="-39.85714285714289" y="-14.5" />
+            </edge>
+            <edge source="State_.Paused" target="State_.RemoteDevice">
+              <point x="28.666666666666686" y="14.5" />
+              <point x="188.16666666666669" y="227.0" />
+              <point x="196.1547619047619" y="227.0" />
+              <point x="-4.428571428571445" y="-14.5" />
+            </edge>
+            <edge source="State_.Paused" target="State_.State">
+              <point x="-21.5" y="-14.5" />
+              <point x="138.0" y="69.0" />
+              <point x="192.80707282913164" y="69.0" />
+              <point x="-13.875" y="14.5" />
+            </edge>
+            <edge source="State_.RemoteDevice" target="State_.Paused">
+              <point x="-22.142857142857167" y="-14.5" />
+              <point x="178.44047619047618" y="247.0" />
+              <point x="130.83333333333334" y="247.0" />
+              <point x="-28.666666666666657" y="14.5" />
+            </edge>
+            <edge source="State_.Stopped" target="State_.RemoteDevice">
+              <point x="31.333333333333314" y="14.5" />
+              <point x="319.54761904761904" y="277.0" />
+              <point x="249.29761904761907" y="277.0" />
+              <point x="48.714285714285715" y="-14.5" />
+            </edge>
+            <edge source="State_.Stopped" target="State_.State">
+              <point x="23.5" y="-14.5" />
+              <point x="311.7142857142857" y="59.0" />
+              <point x="229.80707282913164" y="59.0" />
+              <point x="23.125" y="14.5" />
+            </edge>
+            <edge source="State_.Playing" target="State_.Lock">
+              <point x="21.5" y="-14.5" />
+              <point x="75.0" y="148.0" />
+              <point x="185.85714285714286" y="148.0" />
+              <point x="-30.0" y="14.5" />
+            </edge>
+            <edge source="State_.Paused" target="State_.Lock">
+              <point x="21.5" y="-14.5" />
+              <point x="181.0" y="158.0" />
+              <point x="197.85714285714286" y="158.0" />
+              <point x="-18.0" y="14.5" />
+            </edge>
+            <edge source="State_.Stopped" target="State_.Lock">
+              <point x="-23.5" y="-14.5" />
+              <point x="264.7142857142857" y="158.0" />
+              <point x="245.85714285714286" y="158.0" />
+              <point x="30.0" y="14.5" />
+            </edge>
+            <edge source="State_.Lock" target="State_.State">
+              <point x="0.0" y="-14.5" />
+              <point x="215.85714285714286" y="79.0" />
+              <point x="211.30707282913164" y="79.0" />
+              <point x="4.625" y="14.5" />
+            </edge>
+            <edge source="State_.TestDrive" target="State_.RemoteDevice">
+              <point x="-24.0" y="-14.5" />
+              <point x="176.58333333333334" y="361.0" />
+              <point x="169.58333333333334" y="361.0" />
+              <point x="-31.0" y="14.5" />
+            </edge>
+            <edge source="State_.RemoteDevice" target="State_.Stopped">
+              <point x="31.0" y="-14.5" />
+              <point x="231.58333333333334" y="257.0" />
+              <point x="256.8809523809524" y="257.0" />
+              <point x="-31.333333333333332" y="14.5" />
+            </edge>
+            <edge source="State_.RemoteDevice" target="State_.Playing">
+              <point x="-48.71428571428575" y="-14.5" />
+              <point x="151.8690476190476" y="277.0" />
+              <point x="24.833333333333343" y="277.0" />
+              <point x="-28.666666666666657" y="14.5" />
+            </edge>
+            <edge source="State_.RemoteDevice" target="State_.State">
+              <point x="57.57142857142855" y="-14.5" />
+              <point x="258.1547619047619" y="287.0" />
+              <point x="345.7142857142857" y="287.0" />
+              <point x="345.7142857142857" y="49.0" />
+              <point x="239.05707282913164" y="49.0" />
+              <point x="32.375" y="14.5" />
+            </edge>
+            <edge source="State_.RemoteDevice" target="State_.Lock">
+              <point x="4.428571428571416" y="-14.5" />
+              <point x="205.01190476190476" y="227.0" />
+              <point x="213.0" y="227.0" />
+              <point x="213.0" y="158.0" />
+              <point x="209.85714285714286" y="158.0" />
+              <point x="-6.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="199.0" y="222.0" />
+          <SelectedNodes>
+            <node>State_.State</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/State_/Stopped.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/memento/TableMemento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/memento/ScheduleTableModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="50" column="9" lean-forward="true" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MODULES/mdl-SDALab7">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MODULES</ID>
+          <OriginalElement>mdl-SDALab7</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">mdl-SDALab7</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-127.0" y="76.0" />
+          <SelectedNodes>
+            <node>mdl-SDALab7</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/memento">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>memento</OriginalElement>
+          <nodes>
+            <node x="76.875" y="158.0">memento.ScheduleGUI</node>
+            <node x="61.26166666666667" y="0.0">memento.TableMemento</node>
+            <node x="0.0" y="79.0">memento.ScheduleTableModel</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="memento.ScheduleTableModel" target="memento.TableMemento">
+              <point x="52.33333333333334" y="-14.5" />
+              <point x="130.83333333333334" y="59.0" />
+              <point x="124.76166666666667" y="59.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="memento.ScheduleGUI" target="memento.TableMemento">
+              <point x="42.75" y="-14.5" />
+              <point x="176.625" y="133.0" />
+              <point x="178.5" y="133.0" />
+              <point x="178.5" y="59.0" />
+              <point x="175.56166666666667" y="59.0" />
+              <point x="50.80000000000001" y="14.5" />
+            </edge>
+            <edge source="memento.ScheduleGUI" target="memento.ScheduleTableModel">
+              <point x="-42.75" y="-14.5" />
+              <point x="91.125" y="133.0" />
+              <point x="39.25" y="133.0" />
+              <point x="-39.25" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="79.0" y="170.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/memento/ScheduleGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding>
+            <element signature="e#1409#1542#0" expanded="true" />
+            <element signature="e#1541#1542#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/State_/TestDrive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="49" lean-forward="true" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/State_/State.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/State_/RemoteDeviceV1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/State_/Playing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/State_/Paused.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/State_/Lock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-138">
+          <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/State_/RemoteDevice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8.0_211</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>SDALab7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

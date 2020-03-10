@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="builder">
+  <ClassDiagramComponents>
+    <Class name="BuilderDemo" package="builder" visibility="public" xPosition="77.0" yPosition="306.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="BurgerMealBuilder" package="builder" visibility="public" xPosition="425.0" yPosition="398.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="buildEntree" returnType="void" visibility="public"/>
+        <Method name="buildDrink" returnType="void" visibility="public"/>
+        <Method name="buildSide" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Cook" package="builder" visibility="public" xPosition="77.0" yPosition="48.0">
+      <Fields>
+        <Field name="builder" type="MealBuilder" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="setMealBuilder" returnType="void" visibility="public">
+          <Argument type="MealBuilder" name="builder"/>
+        </Method>
+        <Method name="getMeal" returnType="Meal" visibility="public"/>
+        <Method name="constructMeal" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="HealthyMealBuilder" package="builder" visibility="public" xPosition="658.0" yPosition="398.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="buildEntree" returnType="void" visibility="public"/>
+        <Method name="buildDrink" returnType="void" visibility="public"/>
+        <Method name="buildSide" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Meal" package="builder" visibility="public" xPosition="816.0" yPosition="18.0">
+      <Fields>
+        <Field name="entree" type="String" visibility="private"/>
+        <Field name="side" type="String" visibility="private"/>
+        <Field name="drink" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="setEntree" returnType="void" visibility="public">
+          <Argument type="String" name="entree"/>
+        </Method>
+        <Method name="setSide" returnType="void" visibility="public">
+          <Argument type="String" name="side"/>
+        </Method>
+        <Method name="setDrink" returnType="void" visibility="public">
+          <Argument type="String" name="drink"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="MealBuilder" package="builder" visibility="public" isAbstract="true" xPosition="529.0" yPosition="20.0">
+      <Fields>
+        <Field name="theMeal" type="Meal" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getMeal" returnType="Meal" visibility="public"/>
+        <Method name="createMeal" returnType="void" visibility="public"/>
+        <Method name="buildEntree" returnType="void" visibility="public" isAbstract="true"/>
+        <Method name="buildDrink" returnType="void" visibility="public" isAbstract="true"/>
+        <Method name="buildSide" returnType="void" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="builder.HealthyMealBuilder" target="builder.MealBuilder"/>
+    <IsRelation name="is" source="builder.BurgerMealBuilder" target="builder.MealBuilder"/>
+    <HasRelation name="builder" source="builder.Cook" target="builder.MealBuilder" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="theMeal" source="builder.MealBuilder" target="builder.Meal" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

@@ -1,0 +1,128 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset222 Thonburi;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh15700\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 Talk about cortex-M device\
+\
+Intro to Arm Cortex-M processors\
+	-programmer model\
+	the arm processor family \
+	many cores are developed over the years\
+	-application processor\
+	-real-time processor\
+	-microcontroller processor\
+Arm Cortex-M	-low area (cortex-M0) 9nm\
+			-highest energy efficiency (cortex-M0+)\
+			-energy performance balance (cortex-M3)\
+			-blended MCU and digital signal processing (cortex-M4)\
+			-highest performance (cortex-M7)\
+\
+Serving all application \
+-energy grid\
+-automotive\
+-smart city\
+-sensor\
+-farming\
+-industrial \
+-smart lighting\
+-space\
+-retail\
+-healthcare\
+\
+Armv6-M(m0/M0+)\
+-efficient instruction set for simple application\
+-ultra low power\
+-not full optimised (fewer memory)\
+-ideal for 8/16 bits(ultra low design)\
+\
+Armv7-M\
+-powerful instruction set\
+-cortex-M3 is very capable for many applications\
+	-high performance, low power\
+	-rich debug, trace features\
+\
+Armv8-M brings trustzone to the cortex-M family\
+-cortex-M33/23\
+\
+Chosen by leading MCU suppliers\
+Such as NXP, Toshiba, Microchip, Nuvoton, etc\
+\
+Design Start: the fastest route to silicon\
+-Fast, simple and no-risk access \
+-design with confidence \
+\
+Baseline programmer\'92s model\
+-register banks\
+	-r0 to r15\
+	-r13 stack pointer\
+	-r14 link register\
+	-15 program counter\
+-special register\
+	-program status register\
+	-CONTROL\
+
+\f1 M3/4 have additional register mask\
+\
+Predefined memory map \
+-4GB linear memory space\
+-standard across all cortex-M implementations\
+-optional memory protection unit\
+\
+Support both 32/64 bits except cortex-M0/0+ 32bits only\
+\
+Nested vector interrupt controller (NVIC)\
+-support multiple sources\
+-vectored interrupt/exception service\
+-stack exception handling\
+-automatic nested IRQ handling\
+-each interrupt has a programable priority level\
+		-priority level registers are 8 bits, with 2 bits implemented for Armv6-M or 3-8 bits implemented for Armv7-M\
+-high priority IQR can pre-empt a lower priority IQR\
+\
+\
+System Timer - SysTick\
+-flexible system timer \
+	-24 bits self-reloading counter \
+	-reload on count == 0\
+	-reload register\
+\
+Debug and Trace\
+-debug\
+	-multicore debug support\
+	-memory access while the processor is running \
+-trace\
+	-program trace with ETM on cortex-M3/4/7\
+	-low cost program trace with MTB on cortex-M0+\
+\
+
+\f0 \
+What is CMSIS?\
+A vendor independent standard for silicon partner, tool vendors and end users.\
+Establishes a software foundation.\
+\
+CMSIS5\
+Consistent software framework for Arm Cortex-M and Cortex-A5/7/9 based systems\
+
+\f1 Has own software pack to communicate with microcontroller \
+\
+CMSIS-DSP library \
+-collection of 61 algorithm for basic math, filtering, matrix \
+\
+CMSIS-RTOS implementation\
+CMSIS-NN: Optimum ML performance on Arm\
+\
+MDK-Middleware\
+-enable user to develop faster\
+\
+Device support\
+-support for 5000+ devices family packs\
+De 
+\f0 \
+\
+\
+\
+\
+}

@@ -1,0 +1,1383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a64a0c4c-5187-45bd-88e3-632c69cc3982" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../SDALab12/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SDALab12/src/e1/flyweight/AbstractIcon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SDALab12/src/e1/flyweight/FlyweightDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SDALab12/src/e1/flyweight/FolderIcon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SDALab12/src/e1/flyweight/IconFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SDALab12/src/e1/flyweight/JavaIcon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SDALab12/src/e1/flyweight/PdfIcon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SDALab12/src/e1/flyweight/PictureIcon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SDALab12/src/e1/flyweight/TextIcon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SDALab12/src/e1/flyweight/UnknownIcon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SDALab12/src/e1/flyweight/images/folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SDALab12/src/e1/flyweight/images/folder_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SDALab12/src/e1/flyweight/images/pdf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SDALab12/src/e1/flyweight/images/picture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SDALab12/src/e1/flyweight/images/source_java.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SDALab12/src/e1/flyweight/images/txt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SDALab12/src/e1/flyweight/images/unknown.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Project_2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SDALab10.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SDALab10.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SDALab10/L10_3/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SDALab10/L10_3/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SDALab10_3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SDALab10_3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SDALab11_/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SDALab11_/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SDALab7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SDALab7/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SDALab7/out/production/SDALab7/memento/ScheduleGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SDALab7/out/production/SDALab7/memento/ScheduleGUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SDALab7/out/production/SDALab7/memento/ScheduleGUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SDALab7/out/production/SDALab7/memento/ScheduleGUI$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SDALab7/out/production/SDALab7/memento/ScheduleGUI$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SDALab7/out/production/SDALab7/memento/ScheduleGUI$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SDALab7/out/production/SDALab7/memento/ScheduleGUI$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SDALab7/out/production/SDALab7/memento/ScheduleGUI$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SDALab7/out/production/SDALab7/memento/ScheduleGUI$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SDALab7/out/production/SDALab7/memento/ScheduleGUI$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SDALab7/out/production/SDALab7/memento/ScheduleGUI$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SDALab7/out/production/SDALab7/memento/ScheduleGUI$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SDALab7/out/production/SDALab7/memento/ScheduleGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SDALab7/out/production/SDALab7/memento/ScheduleGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SDALab7/src/memento/ScheduleGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SDALab7/src/memento/ScheduleGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SDALab7/src/memento/ScheduleTableModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SDALab7/src/memento/ScheduleTableModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SDALab7/src/memento/TableMemento.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SDALab7/src/memento/TableMemento.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/L10_1/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="uml://JAVA/L10_1">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>L10_1</OriginalElement>
+              <nodes>
+                <node x="879.2619047619048" y="496.0">L10_1.QuackCounter</node>
+                <node x="175.1190476190476" y="496.0">L10_1.RubberDuck</node>
+                <node x="1223.011904761905" y="367.0">L10_1.Quackologist</node>
+                <node x="308.1190476190477" y="496.0">L10_1.MallardDuck</node>
+                <node x="442.1190476190477" y="496.0">L10_1.RedHeadDuck</node>
+                <node x="982.0119047619048" y="635.0">L10_1.DuckSimulator</node>
+                <node x="569.9325446216895" y="635.0">L10_1.CountingDuckFactory</node>
+                <node x="10.5" y="367.0">L10_1.Goose</node>
+                <node x="727.8869047619048" y="119.0">L10_1.QuackObservable</node>
+                <node x="10.166666666666629" y="496.0">L10_1.GooseAdapter</node>
+                <node x="543.9940476190476" y="0.0">L10_1.Observer</node>
+                <node x="344.30754462168954" y="635.0">L10_1.DuckFactory</node>
+                <node x="729.2619047619048" y="198.0">L10_1.Quackable</node>
+                <node x="1128.0119047619048" y="367.0">L10_1.Flock</node>
+                <node x="585.1190476190477" y="496.0">L10_1.DuckCall</node>
+                <node x="316.1825446216896" y="367.0">L10_1.Observable</node>
+                <node x="702.2619047619048" y="496.0">L10_1.AbstractDuckFactory</node>
+                <node x="1009.2220183059001" y="744.0">L10_1.Test</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="L10_1.Flock" target="L10_1.QuackObservable">
+                  <point x="15.0" y="-14.5" />
+                  <point x="1180.5119047619048" y="347.0" />
+                  <point x="1182.5119047619048" y="347.0" />
+                  <point x="1182.5119047619048" y="178.0" />
+                  <point x="816.0119047619048" y="178.0" />
+                  <point x="17.625" y="14.5" />
+                </edge>
+                <edge source="L10_1.RubberDuck" target="L10_1.Observable">
+                  <point x="14.125" y="-14.5" />
+                  <point x="245.7440476190476" y="456.0" />
+                  <point x="338.6825446216896" y="456.0" />
+                  <point x="-31.5" y="14.5" />
+                </edge>
+                <edge source="L10_1.RedHeadDuck" target="L10_1.Observable">
+                  <point x="-15.375" y="-14.5" />
+                  <point x="488.2440476190477" y="456.0" />
+                  <point x="383.6825446216896" y="456.0" />
+                  <point x="13.5" y="14.5" />
+                </edge>
+                <edge source="L10_1.RedHeadDuck" target="L10_1.Quackable">
+                  <point x="46.125" y="-14.5" />
+                  <point x="549.7440476190477" y="476.0" />
+                  <point x="554.5156717808034" y="476.0" />
+                  <point x="554.5156717808034" y="327.0" />
+                  <point x="764.4987468671679" y="327.0" />
+                  <point x="-16.263157894736878" y="14.5" />
+                </edge>
+                <edge source="L10_1.RubberDuck" target="L10_1.Quackable">
+                  <point x="-14.125" y="-14.5" />
+                  <point x="217.4940476190476" y="426.0" />
+                  <point x="208.8690476190476" y="426.0" />
+                  <point x="208.8690476190476" y="287.0" />
+                  <point x="742.8145363408523" y="287.0" />
+                  <point x="-37.9473684210526" y="14.5" />
+                </edge>
+                <edge source="L10_1.DuckCall" target="L10_1.Observable">
+                  <point x="-34.87500000000006" y="-14.5" />
+                  <point x="596.7440476190477" y="446.0" />
+                  <point x="392.6825446216896" y="446.0" />
+                  <point x="22.5" y="14.5" />
+                </edge>
+                <edge source="L10_1.DuckFactory" target="L10_1.Quackable">
+                  <point x="-47.083333333333314" y="-14.5" />
+                  <point x="353.72421128835623" y="615.0" />
+                  <point x="144.66666666666663" y="615.0" />
+                  <point x="144.66666666666663" y="277.0" />
+                  <point x="737.3934837092734" y="277.0" />
+                  <point x="-43.36842105263156" y="14.5" />
+                </edge>
+                <edge source="L10_1.MallardDuck" target="L10_1.Quackable">
+                  <point x="42.75" y="-14.5" />
+                  <point x="407.8690476190477" y="476.0" />
+                  <point x="464.4950446216896" y="476.0" />
+                  <point x="464.4950446216896" y="317.0" />
+                  <point x="759.077694235589" y="317.0" />
+                  <point x="-21.684210526315837" y="14.5" />
+                </edge>
+                <edge source="L10_1.Flock" target="L10_1.Observer">
+                  <point x="30.0" y="-14.5" />
+                  <point x="1195.5119047619048" y="347.0" />
+                  <point x="1193.5119047619048" y="347.0" />
+                  <point x="1193.5119047619048" y="59.0" />
+                  <point x="627.9940476190476" y="59.0" />
+                  <point x="36.0" y="14.5" />
+                </edge>
+                <edge source="L10_1.Test" target="L10_1.DuckFactory">
+                  <point x="-24.149999999999977" y="-14.5" />
+                  <point x="1019.5720183059001" y="714.0" />
+                  <point x="429.05754462168954" y="714.0" />
+                  <point x="28.25" y="14.5" />
+                </edge>
+                <edge source="L10_1.Test" target="L10_1.Quackable">
+                  <point x="3.4500000000000455" y="-14.5" />
+                  <point x="1047.1720183059" y="684.0" />
+                  <point x="1117.5119047619048" y="684.0" />
+                  <point x="1117.5119047619048" y="307.0" />
+                  <point x="807.8671679197996" y="307.0" />
+                  <point x="27.105263157894683" y="14.5" />
+                </edge>
+                <edge source="L10_1.QuackCounter" target="L10_1.Observer">
+                  <point x="51.25" y="-14.5" />
+                  <point x="992.0119047619048" y="476.0" />
+                  <point x="987.9371998408184" y="476.0" />
+                  <point x="987.9371998408184" y="69.0" />
+                  <point x="619.9940476190476" y="69.0" />
+                  <point x="28.0" y="14.5" />
+                </edge>
+                <edge source="L10_1.CountingDuckFactory" target="L10_1.RubberDuck">
+                  <point x="-69.42857142857144" y="-14.5" />
+                  <point x="581.5039731931181" y="565.0" />
+                  <point x="259.8690476190476" y="565.0" />
+                  <point x="28.25" y="14.5" />
+                </edge>
+                <edge source="L10_1.DuckSimulator" target="L10_1.Quackable">
+                  <point x="31.25" y="-14.5" />
+                  <point x="1075.7619047619048" y="317.0" />
+                  <point x="802.4461152882207" y="317.0" />
+                  <point x="21.684210526315724" y="14.5" />
+                </edge>
+                <edge source="L10_1.GooseAdapter" target="L10_1.Quackable">
+                  <point x="10.333333333333371" y="-14.5" />
+                  <point x="82.5" y="426.0" />
+                  <point x="103.0" y="426.0" />
+                  <point x="103.0" y="267.0" />
+                  <point x="731.9724310776944" y="267.0" />
+                  <point x="-48.78947368421052" y="14.5" />
+                </edge>
+                <edge source="L10_1.RedHeadDuck" target="L10_1.Observer">
+                  <point x="15.375" y="-14.5" />
+                  <point x="518.9940476190477" y="476.0" />
+                  <point x="532.7548690137507" y="476.0" />
+                  <point x="532.7548690137507" y="99.0" />
+                  <point x="587.9940476190476" y="99.0" />
+                  <point x="-4.0" y="14.5" />
+                </edge>
+                <edge source="L10_1.RubberDuck" target="L10_1.Observer">
+                  <point x="-42.375" y="-14.5" />
+                  <point x="189.2440476190476" y="426.0" />
+                  <point x="194.94236901375064" y="426.0" />
+                  <point x="194.94236901375064" y="59.0" />
+                  <point x="555.9940476190476" y="59.0" />
+                  <point x="-36.0" y="14.5" />
+                </edge>
+                <edge source="L10_1.DuckCall" target="L10_1.Observer">
+                  <point x="11.624999999999943" y="-14.5" />
+                  <point x="643.2440476190477" y="476.0" />
+                  <point x="649.3690476190477" y="476.0" />
+                  <point x="649.3690476190477" y="99.0" />
+                  <point x="595.9940476190476" y="99.0" />
+                  <point x="4.0" y="14.5" />
+                </edge>
+                <edge source="L10_1.Observable" target="L10_1.QuackObservable">
+                  <point x="0.0" y="-14.5" />
+                  <point x="370.1825446216896" y="178.0" />
+                  <point x="745.5119047619048" y="178.0" />
+                  <point x="-52.875" y="14.5" />
+                </edge>
+                <edge source="L10_1.MallardDuck" target="L10_1.Observable">
+                  <point x="-14.25" y="-14.5" />
+                  <point x="350.8690476190477" y="476.0" />
+                  <point x="356.6825446216896" y="476.0" />
+                  <point x="-13.5" y="14.5" />
+                </edge>
+                <edge source="L10_1.AbstractDuckFactory" target="L10_1.Quackable">
+                  <point x="0.0" y="-14.5" />
+                  <point x="0.0" y="14.5" />
+                </edge>
+                <edge source="L10_1.GooseAdapter" target="L10_1.Observer">
+                  <point x="-51.66666666666663" y="-14.5" />
+                  <point x="20.5" y="476.0" />
+                  <point x="0.0" y="476.0" />
+                  <point x="0.0" y="49.0" />
+                  <point x="547.9940476190476" y="49.0" />
+                  <point x="-44.0" y="14.5" />
+                </edge>
+                <edge source="L10_1.Flock" target="L10_1.Quackable">
+                  <point x="0.0" y="-14.5" />
+                  <point x="1165.5119047619048" y="277.0" />
+                  <point x="824.1303258145365" y="277.0" />
+                  <point x="43.36842105263156" y="14.5" />
+                </edge>
+                <edge source="L10_1.CountingDuckFactory" target="L10_1.QuackCounter">
+                  <point x="69.42857142857144" y="-14.5" />
+                  <point x="720.361116050261" y="615.0" />
+                  <point x="910.0119047619048" y="615.0" />
+                  <point x="-30.75" y="14.5" />
+                </edge>
+                <edge source="L10_1.Quackologist" target="L10_1.Observer">
+                  <point x="39.33333333333326" y="-14.5" />
+                  <point x="1321.345238095238" y="347.0" />
+                  <point x="1307.1785714285716" y="347.0" />
+                  <point x="1307.1785714285716" y="49.0" />
+                  <point x="635.9940476190476" y="49.0" />
+                  <point x="44.0" y="14.5" />
+                </edge>
+                <edge source="L10_1.Quackable" target="L10_1.QuackObservable">
+                  <point x="0.0" y="-14.5" />
+                  <point x="-17.625" y="14.5" />
+                </edge>
+                <edge source="L10_1.CountingDuckFactory" target="L10_1.RedHeadDuck">
+                  <point x="-23.142857142857224" y="-14.5" />
+                  <point x="627.7896874788323" y="545.0" />
+                  <point x="534.3690476190477" y="545.0" />
+                  <point x="30.75" y="14.5" />
+                </edge>
+                <edge source="L10_1.Observer" target="L10_1.QuackObservable">
+                  <point x="20.0" y="14.5" />
+                  <point x="611.9940476190476" y="79.0" />
+                  <point x="833.6369047619048" y="79.0" />
+                  <point x="35.25" y="-14.5" />
+                </edge>
+                <edge source="L10_1.QuackCounter" target="L10_1.Quackable">
+                  <point x="10.25" y="-14.5" />
+                  <point x="951.0119047619048" y="476.0" />
+                  <point x="955.7619047619048" y="476.0" />
+                  <point x="955.7619047619048" y="337.0" />
+                  <point x="791.6040100250627" y="337.0" />
+                  <point x="10.842105263157919" y="14.5" />
+                </edge>
+                <edge source="L10_1.Quackologist" target="L10_1.QuackObservable">
+                  <point x="0.0" y="-14.5" />
+                  <point x="1282.011904761905" y="347.0" />
+                  <point x="1296.1785714285716" y="347.0" />
+                  <point x="1296.1785714285716" y="168.0" />
+                  <point x="851.2619047619048" y="168.0" />
+                  <point x="52.875" y="14.5" />
+                </edge>
+                <edge source="L10_1.Test" target="L10_1.CountingDuckFactory">
+                  <point x="-17.25" y="-14.5" />
+                  <point x="1026.4720183059" y="704.0" />
+                  <point x="610.4325446216895" y="704.0" />
+                  <point x="-40.5" y="14.5" />
+                </edge>
+                <edge source="L10_1.QuackObservable" target="L10_1.Observer">
+                  <point x="-35.25" y="-14.5" />
+                  <point x="763.1369047619048" y="89.0" />
+                  <point x="603.9940476190476" y="89.0" />
+                  <point x="12.0" y="14.5" />
+                </edge>
+                <edge source="L10_1.QuackCounter" target="L10_1.Observable">
+                  <point x="-30.75" y="-14.5" />
+                  <point x="910.0119047619048" y="416.0" />
+                  <point x="419.6825446216896" y="416.0" />
+                  <point x="49.5" y="14.5" />
+                </edge>
+                <edge source="L10_1.DuckFactory" target="L10_1.MallardDuck">
+                  <point x="-9.416666666666686" y="-14.5" />
+                  <point x="391.39087795502286" y="595.0" />
+                  <point x="336.6190476190477" y="595.0" />
+                  <point x="-28.5" y="14.5" />
+                </edge>
+                <edge source="L10_1.DuckFactory" target="L10_1.RubberDuck">
+                  <point x="-28.25" y="-14.5" />
+                  <point x="372.55754462168954" y="605.0" />
+                  <point x="203.3690476190476" y="605.0" />
+                  <point x="-28.25" y="14.5" />
+                </edge>
+                <edge source="L10_1.CountingDuckFactory" target="L10_1.MallardDuck">
+                  <point x="-46.285714285714334" y="-14.5" />
+                  <point x="604.6468303359752" y="555.0" />
+                  <point x="393.6190476190477" y="555.0" />
+                  <point x="28.5" y="14.5" />
+                </edge>
+                <edge source="L10_1.Observable" target="L10_1.Observer">
+                  <point x="-43.19999999999999" y="-14.5" />
+                  <point x="326.9825446216896" y="257.0" />
+                  <point x="317.910920459934" y="257.0" />
+                  <point x="317.910920459934" y="79.0" />
+                  <point x="571.9940476190476" y="79.0" />
+                  <point x="-20.0" y="14.5" />
+                </edge>
+                <edge source="L10_1.GooseAdapter" target="L10_1.Goose">
+                  <point x="-10.333333333333329" y="-14.5" />
+                  <point x="61.83333333333326" y="476.0" />
+                  <point x="72.0" y="476.0" />
+                  <point x="20.5" y="14.5" />
+                </edge>
+                <edge source="L10_1.Test" target="L10_1.Quackologist">
+                  <point x="31.049999999999955" y="-14.5" />
+                  <point x="1074.7720183059" y="724.0" />
+                  <point x="1284.6720183059" y="724.0" />
+                  <point x="1284.6720183059" y="476.0" />
+                  <point x="1311.511904761905" y="476.0" />
+                  <point x="29.5" y="14.5" />
+                </edge>
+                <edge source="L10_1.CountingDuckFactory" target="L10_1.AbstractDuckFactory">
+                  <point x="46.285714285714334" y="-14.5" />
+                  <point x="697.2182589074039" y="605.0" />
+                  <point x="780.7619047619048" y="605.0" />
+                  <point x="0.0" y="14.5" />
+                </edge>
+                <edge source="L10_1.Quackologist" target="L10_1.Quackable">
+                  <point x="-39.33333333333326" y="-14.5" />
+                  <point x="1242.6785714285716" y="267.0" />
+                  <point x="829.5513784461155" y="267.0" />
+                  <point x="48.78947368421052" y="14.5" />
+                </edge>
+                <edge source="L10_1.Test" target="L10_1.QuackCounter">
+                  <point x="-3.4500000000000455" y="-14.5" />
+                  <point x="1040.2720183059" y="684.0" />
+                  <point x="971.5119047619048" y="684.0" />
+                  <point x="30.75" y="14.5" />
+                </edge>
+                <edge source="L10_1.Observable" target="L10_1.Quackable">
+                  <point x="43.19999999999999" y="-14.5" />
+                  <point x="413.3825446216896" y="307.0" />
+                  <point x="753.65664160401" y="307.0" />
+                  <point x="-27.105263157894797" y="14.5" />
+                </edge>
+                <edge source="L10_1.GooseAdapter" target="L10_1.Observable">
+                  <point x="51.66666666666667" y="-14.5" />
+                  <point x="123.83333333333326" y="446.0" />
+                  <point x="329.6825446216896" y="446.0" />
+                  <point x="-40.5" y="14.5" />
+                </edge>
+                <edge source="L10_1.DuckSimulator" target="L10_1.AbstractDuckFactory">
+                  <point x="-31.25" y="-14.5" />
+                  <point x="1013.2619047619048" y="605.0" />
+                  <point x="833.0952380952383" y="605.0" />
+                  <point x="52.33333333333337" y="14.5" />
+                </edge>
+                <edge source="L10_1.DuckFactory" target="L10_1.RedHeadDuck">
+                  <point x="9.416666666666686" y="-14.5" />
+                  <point x="410.22421128835623" y="575.0" />
+                  <point x="472.8690476190477" y="575.0" />
+                  <point x="-30.75" y="14.5" />
+                </edge>
+                <edge source="L10_1.MallardDuck" target="L10_1.Observer">
+                  <point x="-42.75" y="-14.5" />
+                  <point x="322.3690476190477" y="426.0" />
+                  <point x="275.410920459934" y="426.0" />
+                  <point x="275.410920459934" y="69.0" />
+                  <point x="563.9940476190476" y="69.0" />
+                  <point x="-28.0" y="14.5" />
+                </edge>
+                <edge source="L10_1.Test" target="L10_1.Flock">
+                  <point x="17.25" y="-14.5" />
+                  <point x="1060.9720183059" y="704.0" />
+                  <point x="1168.9619047619049" y="704.0" />
+                  <point x="1168.9619047619049" y="476.0" />
+                  <point x="1184.2619047619048" y="476.0" />
+                  <point x="18.75" y="14.5" />
+                </edge>
+                <edge source="L10_1.CountingDuckFactory" target="L10_1.Quackable">
+                  <point x="23.14285714285711" y="-14.5" />
+                  <point x="674.0754017645467" y="585.0" />
+                  <point x="691.7619047619048" y="585.0" />
+                  <point x="691.7619047619048" y="347.0" />
+                  <point x="775.3408521303259" y="347.0" />
+                  <point x="-5.421052631578959" y="14.5" />
+                </edge>
+                <edge source="L10_1.CountingDuckFactory" target="L10_1.DuckCall">
+                  <point x="0.0" y="-14.5" />
+                  <point x="650.9325446216895" y="585.0" />
+                  <point x="654.8690476190477" y="585.0" />
+                  <point x="23.25" y="14.5" />
+                </edge>
+                <edge source="L10_1.DuckCall" target="L10_1.Quackable">
+                  <point x="34.87499999999994" y="-14.5" />
+                  <point x="666.4940476190477" y="476.0" />
+                  <point x="660.8986969111971" y="476.0" />
+                  <point x="660.8986969111971" y="337.0" />
+                  <point x="769.9197994987469" y="337.0" />
+                  <point x="-10.842105263157919" y="14.5" />
+                </edge>
+                <edge source="L10_1.DuckFactory" target="L10_1.DuckCall">
+                  <point x="28.25" y="-14.5" />
+                  <point x="429.05754462168954" y="585.0" />
+                  <point x="608.3690476190477" y="585.0" />
+                  <point x="-23.25" y="14.5" />
+                </edge>
+                <edge source="L10_1.DuckFactory" target="L10_1.AbstractDuckFactory">
+                  <point x="47.083333333333314" y="-14.5" />
+                  <point x="447.89087795502286" y="595.0" />
+                  <point x="728.4285714285716" y="595.0" />
+                  <point x="-52.33333333333337" y="14.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.8" x="721.75" y="305.625" />
+              <SelectedNodes />
+              <Categories />
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/L10_1/AbstractDuckFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/L10_1/DuckSimulator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/L10_1/Flock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/AbstractDuckFactory.java" />
+        <option value="$PROJECT_DIR$/src/CountingDuckFactory.java" />
+        <option value="$PROJECT_DIR$/src/DuckCall.java" />
+        <option value="$PROJECT_DIR$/src/DuckFactory.java" />
+        <option value="$PROJECT_DIR$/src/DuckSimulator.java" />
+        <option value="$PROJECT_DIR$/src/Goose.java" />
+        <option value="$PROJECT_DIR$/src/GooseAdapter.java" />
+        <option value="$PROJECT_DIR$/src/MallardDuck.java" />
+        <option value="$PROJECT_DIR$/src/Quackable.java" />
+        <option value="$PROJECT_DIR$/src/Observer.java" />
+        <option value="$PROJECT_DIR$/src/QuackCounter.java" />
+        <option value="$PROJECT_DIR$/src/QuackObservable.java" />
+        <option value="$PROJECT_DIR$/src/Quackologist.java" />
+        <option value="$PROJECT_DIR$/src/RedHeadDuck.java" />
+        <option value="$PROJECT_DIR$/src/RubberDuck.java" />
+        <option value="$PROJECT_DIR$/src/Test.java" />
+        <option value="$PROJECT_DIR$/src/Flock.java" />
+        <option value="$PROJECT_DIR$/src/Observable.java" />
+        <option value="$PROJECT_DIR$/src/L10_1/Observable.java" />
+        <option value="$PROJECT_DIR$/src/EGE/User.java" />
+        <option value="$PROJECT_DIR$/src/EGE/DomainObject.java" />
+        <option value="$PROJECT_DIR$/src/EGE/Employee.java" />
+        <option value="$PROJECT_DIR$/src/EGE/Office.java" />
+        <option value="$PROJECT_DIR$/src/EGE/PostalAddress.java" />
+        <option value="$PROJECT_DIR$/src/ege2/Office.java" />
+        <option value="$PROJECT_DIR$/src/ege2/Example.java" />
+        <option value="$PROJECT_DIR$/src/ege2/Employee.java" />
+        <option value="$PROJECT_DIR$/src/L10_2/Example.java" />
+        <option value="$PROJECT_DIR$/src/L10_2/DomainObject.java" />
+        <option value="$PROJECT_DIR$/src/L10_2/PostalAddress.java" />
+        <option value="$PROJECT_DIR$/src/L10_2/Office.java" />
+        <option value="$PROJECT_DIR$/src/L10_2/Employee.java" />
+        <option value="$PROJECT_DIR$/src/L10_2/XJPATest.java" />
+        <option value="$PROJECT_DIR$/src/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/L10_3/Employee.java" />
+        <option value="$PROJECT_DIR$/src/L10_3/Example.java" />
+        <option value="$PROJECT_DIR$/src/L10_3/Office.java" />
+        <option value="$PROJECT_DIR$/src/L10_3/hibernate.cfg.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-255" />
+    <option name="y" value="-15" />
+    <option name="width" value="2073" />
+    <option name="height" value="1107" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SDALab10" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SDALab10" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SDALab10" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SDALab10" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SDALab10" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SDALab10" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="L10_1" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556080899573" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SDALab11" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="L10_1" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="L10_2" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.L101">
+    <configuration name="L101" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="L10_1.Test" />
+      <module name="SDALab10" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="L102" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="L10_2.XJPATest" />
+      <module name="SDALab10" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="L103" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="L10_3.Example" />
+      <module name="SDALab10" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.L101" />
+      <item itemvalue="Application.L102" />
+      <item itemvalue="Application.L103" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a64a0c4c-5187-45bd-88e3-632c69cc3982" name="Default Changelist" comment="" />
+      <created>1554875892701</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554875892701</updated>
+      <workItem from="1554875894200" duration="4579000" />
+      <workItem from="1554976073607" duration="2729000" />
+      <workItem from="1555335877178" duration="2404000" />
+      <workItem from="1555915161017" duration="62000" />
+      <workItem from="1555996741464" duration="512000" />
+      <workItem from="1556022862956" duration="4479000" />
+      <workItem from="1556070844003" duration="2162000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="17440000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="23" width="1295" height="704" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1659919" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Persistence" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32867134" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31993008" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Sequence" order="12" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32867134" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/L10_1/DuckCall.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/L10_1/Goose.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/L10_1/GooseAdapter.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/L10_1/MallardDuck.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/L10_1/Quackable.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/L10_1/Observer.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/L10_1/QuackCounter.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/L10_1/QuackObservable.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/L10_1/Quackologist.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/L10_1/RedHeadDuck.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/L10_1/RubberDuck.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/L10_1/Observable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EGE/Provider.java" />
+    <entry file="file://$PROJECT_DIR$/src/EGE/Office.java" />
+    <entry file="file://$PROJECT_DIR$/src/ege2/Example.java" />
+    <entry file="file://$PROJECT_DIR$/src/ege2/Office.java" />
+    <entry file="file://$PROJECT_DIR$/src/EGE/DomainObject.java" />
+    <entry file="file://$PROJECT_DIR$/src/ege2/Employee.java" />
+    <entry file="file://$PROJECT_DIR$/src/EGE/Employee.java" />
+    <entry file="uml://JAVA/L10_2">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>L10_2</OriginalElement>
+          <nodes>
+            <node x="" y="">L10_2.Example</node>
+            <node x="" y="">L10_2.DomainObject</node>
+            <node x="" y="">L10_2.PostalAddress</node>
+            <node x="" y="">L10_2.Employee</node>
+            <node x="" y="">L10_2.Office</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="100.0" y="128.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EGE/State.java" />
+    <entry file="file://$PROJECT_DIR$/src/EGE/PostalAddress.java" />
+    <entry file="file://$PROJECT_DIR$/SDALab10.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/L10_2/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/L10_2/DomainObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/L10_2/Office.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/L10_2/PostalAddress.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/L10_3/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/L10_3/Office.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/L10_2/XJPATest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/L10_3/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/L10_3/Employee.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/L10_3/Example.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/L10_1/CountingDuckFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/L10_1/DuckFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/L10_1/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/L10_1/AbstractDuckFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/L10_1/DuckSimulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/L10_1/Flock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/L10_1">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>L10_1</OriginalElement>
+          <nodes>
+            <node x="879.2619047619048" y="496.0">L10_1.QuackCounter</node>
+            <node x="175.1190476190476" y="496.0">L10_1.RubberDuck</node>
+            <node x="1223.011904761905" y="367.0">L10_1.Quackologist</node>
+            <node x="308.1190476190477" y="496.0">L10_1.MallardDuck</node>
+            <node x="442.1190476190477" y="496.0">L10_1.RedHeadDuck</node>
+            <node x="982.0119047619048" y="635.0">L10_1.DuckSimulator</node>
+            <node x="569.9325446216895" y="635.0">L10_1.CountingDuckFactory</node>
+            <node x="10.5" y="367.0">L10_1.Goose</node>
+            <node x="727.8869047619048" y="119.0">L10_1.QuackObservable</node>
+            <node x="10.166666666666629" y="496.0">L10_1.GooseAdapter</node>
+            <node x="543.9940476190476" y="0.0">L10_1.Observer</node>
+            <node x="344.30754462168954" y="635.0">L10_1.DuckFactory</node>
+            <node x="729.2619047619048" y="198.0">L10_1.Quackable</node>
+            <node x="1128.0119047619048" y="367.0">L10_1.Flock</node>
+            <node x="585.1190476190477" y="496.0">L10_1.DuckCall</node>
+            <node x="316.1825446216896" y="367.0">L10_1.Observable</node>
+            <node x="702.2619047619048" y="496.0">L10_1.AbstractDuckFactory</node>
+            <node x="1009.2220183059001" y="744.0">L10_1.Test</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="L10_1.Flock" target="L10_1.QuackObservable">
+              <point x="15.0" y="-14.5" />
+              <point x="1180.5119047619048" y="347.0" />
+              <point x="1182.5119047619048" y="347.0" />
+              <point x="1182.5119047619048" y="178.0" />
+              <point x="816.0119047619048" y="178.0" />
+              <point x="17.625" y="14.5" />
+            </edge>
+            <edge source="L10_1.RubberDuck" target="L10_1.Observable">
+              <point x="14.125" y="-14.5" />
+              <point x="245.7440476190476" y="456.0" />
+              <point x="338.6825446216896" y="456.0" />
+              <point x="-31.5" y="14.5" />
+            </edge>
+            <edge source="L10_1.RedHeadDuck" target="L10_1.Observable">
+              <point x="-15.375" y="-14.5" />
+              <point x="488.2440476190477" y="456.0" />
+              <point x="383.6825446216896" y="456.0" />
+              <point x="13.5" y="14.5" />
+            </edge>
+            <edge source="L10_1.RedHeadDuck" target="L10_1.Quackable">
+              <point x="46.125" y="-14.5" />
+              <point x="549.7440476190477" y="476.0" />
+              <point x="554.5156717808034" y="476.0" />
+              <point x="554.5156717808034" y="327.0" />
+              <point x="764.4987468671679" y="327.0" />
+              <point x="-16.263157894736878" y="14.5" />
+            </edge>
+            <edge source="L10_1.RubberDuck" target="L10_1.Quackable">
+              <point x="-14.125" y="-14.5" />
+              <point x="217.4940476190476" y="426.0" />
+              <point x="208.8690476190476" y="426.0" />
+              <point x="208.8690476190476" y="287.0" />
+              <point x="742.8145363408523" y="287.0" />
+              <point x="-37.9473684210526" y="14.5" />
+            </edge>
+            <edge source="L10_1.DuckCall" target="L10_1.Observable">
+              <point x="-34.87500000000006" y="-14.5" />
+              <point x="596.7440476190477" y="446.0" />
+              <point x="392.6825446216896" y="446.0" />
+              <point x="22.5" y="14.5" />
+            </edge>
+            <edge source="L10_1.DuckFactory" target="L10_1.Quackable">
+              <point x="-47.083333333333314" y="-14.5" />
+              <point x="353.72421128835623" y="615.0" />
+              <point x="144.66666666666663" y="615.0" />
+              <point x="144.66666666666663" y="277.0" />
+              <point x="737.3934837092734" y="277.0" />
+              <point x="-43.36842105263156" y="14.5" />
+            </edge>
+            <edge source="L10_1.MallardDuck" target="L10_1.Quackable">
+              <point x="42.75" y="-14.5" />
+              <point x="407.8690476190477" y="476.0" />
+              <point x="464.4950446216896" y="476.0" />
+              <point x="464.4950446216896" y="317.0" />
+              <point x="759.077694235589" y="317.0" />
+              <point x="-21.684210526315837" y="14.5" />
+            </edge>
+            <edge source="L10_1.Flock" target="L10_1.Observer">
+              <point x="30.0" y="-14.5" />
+              <point x="1195.5119047619048" y="347.0" />
+              <point x="1193.5119047619048" y="347.0" />
+              <point x="1193.5119047619048" y="59.0" />
+              <point x="627.9940476190476" y="59.0" />
+              <point x="36.0" y="14.5" />
+            </edge>
+            <edge source="L10_1.Test" target="L10_1.DuckFactory">
+              <point x="-24.149999999999977" y="-14.5" />
+              <point x="1019.5720183059001" y="714.0" />
+              <point x="429.05754462168954" y="714.0" />
+              <point x="28.25" y="14.5" />
+            </edge>
+            <edge source="L10_1.Test" target="L10_1.Quackable">
+              <point x="3.4500000000000455" y="-14.5" />
+              <point x="1047.1720183059" y="684.0" />
+              <point x="1117.5119047619048" y="684.0" />
+              <point x="1117.5119047619048" y="307.0" />
+              <point x="807.8671679197996" y="307.0" />
+              <point x="27.105263157894683" y="14.5" />
+            </edge>
+            <edge source="L10_1.QuackCounter" target="L10_1.Observer">
+              <point x="51.25" y="-14.5" />
+              <point x="992.0119047619048" y="476.0" />
+              <point x="987.9371998408184" y="476.0" />
+              <point x="987.9371998408184" y="69.0" />
+              <point x="619.9940476190476" y="69.0" />
+              <point x="28.0" y="14.5" />
+            </edge>
+            <edge source="L10_1.CountingDuckFactory" target="L10_1.RubberDuck">
+              <point x="-69.42857142857144" y="-14.5" />
+              <point x="581.5039731931181" y="565.0" />
+              <point x="259.8690476190476" y="565.0" />
+              <point x="28.25" y="14.5" />
+            </edge>
+            <edge source="L10_1.DuckSimulator" target="L10_1.Quackable">
+              <point x="31.25" y="-14.5" />
+              <point x="1075.7619047619048" y="317.0" />
+              <point x="802.4461152882207" y="317.0" />
+              <point x="21.684210526315724" y="14.5" />
+            </edge>
+            <edge source="L10_1.GooseAdapter" target="L10_1.Quackable">
+              <point x="10.333333333333371" y="-14.5" />
+              <point x="82.5" y="426.0" />
+              <point x="103.0" y="426.0" />
+              <point x="103.0" y="267.0" />
+              <point x="731.9724310776944" y="267.0" />
+              <point x="-48.78947368421052" y="14.5" />
+            </edge>
+            <edge source="L10_1.RedHeadDuck" target="L10_1.Observer">
+              <point x="15.375" y="-14.5" />
+              <point x="518.9940476190477" y="476.0" />
+              <point x="532.7548690137507" y="476.0" />
+              <point x="532.7548690137507" y="99.0" />
+              <point x="587.9940476190476" y="99.0" />
+              <point x="-4.0" y="14.5" />
+            </edge>
+            <edge source="L10_1.RubberDuck" target="L10_1.Observer">
+              <point x="-42.375" y="-14.5" />
+              <point x="189.2440476190476" y="426.0" />
+              <point x="194.94236901375064" y="426.0" />
+              <point x="194.94236901375064" y="59.0" />
+              <point x="555.9940476190476" y="59.0" />
+              <point x="-36.0" y="14.5" />
+            </edge>
+            <edge source="L10_1.DuckCall" target="L10_1.Observer">
+              <point x="11.624999999999943" y="-14.5" />
+              <point x="643.2440476190477" y="476.0" />
+              <point x="649.3690476190477" y="476.0" />
+              <point x="649.3690476190477" y="99.0" />
+              <point x="595.9940476190476" y="99.0" />
+              <point x="4.0" y="14.5" />
+            </edge>
+            <edge source="L10_1.Observable" target="L10_1.QuackObservable">
+              <point x="0.0" y="-14.5" />
+              <point x="370.1825446216896" y="178.0" />
+              <point x="745.5119047619048" y="178.0" />
+              <point x="-52.875" y="14.5" />
+            </edge>
+            <edge source="L10_1.MallardDuck" target="L10_1.Observable">
+              <point x="-14.25" y="-14.5" />
+              <point x="350.8690476190477" y="476.0" />
+              <point x="356.6825446216896" y="476.0" />
+              <point x="-13.5" y="14.5" />
+            </edge>
+            <edge source="L10_1.AbstractDuckFactory" target="L10_1.Quackable">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="L10_1.GooseAdapter" target="L10_1.Observer">
+              <point x="-51.66666666666663" y="-14.5" />
+              <point x="20.5" y="476.0" />
+              <point x="0.0" y="476.0" />
+              <point x="0.0" y="49.0" />
+              <point x="547.9940476190476" y="49.0" />
+              <point x="-44.0" y="14.5" />
+            </edge>
+            <edge source="L10_1.Flock" target="L10_1.Quackable">
+              <point x="0.0" y="-14.5" />
+              <point x="1165.5119047619048" y="277.0" />
+              <point x="824.1303258145365" y="277.0" />
+              <point x="43.36842105263156" y="14.5" />
+            </edge>
+            <edge source="L10_1.CountingDuckFactory" target="L10_1.QuackCounter">
+              <point x="69.42857142857144" y="-14.5" />
+              <point x="720.361116050261" y="615.0" />
+              <point x="910.0119047619048" y="615.0" />
+              <point x="-30.75" y="14.5" />
+            </edge>
+            <edge source="L10_1.Quackologist" target="L10_1.Observer">
+              <point x="39.33333333333326" y="-14.5" />
+              <point x="1321.345238095238" y="347.0" />
+              <point x="1307.1785714285716" y="347.0" />
+              <point x="1307.1785714285716" y="49.0" />
+              <point x="635.9940476190476" y="49.0" />
+              <point x="44.0" y="14.5" />
+            </edge>
+            <edge source="L10_1.Quackable" target="L10_1.QuackObservable">
+              <point x="0.0" y="-14.5" />
+              <point x="-17.625" y="14.5" />
+            </edge>
+            <edge source="L10_1.CountingDuckFactory" target="L10_1.RedHeadDuck">
+              <point x="-23.142857142857224" y="-14.5" />
+              <point x="627.7896874788323" y="545.0" />
+              <point x="534.3690476190477" y="545.0" />
+              <point x="30.75" y="14.5" />
+            </edge>
+            <edge source="L10_1.Observer" target="L10_1.QuackObservable">
+              <point x="20.0" y="14.5" />
+              <point x="611.9940476190476" y="79.0" />
+              <point x="833.6369047619048" y="79.0" />
+              <point x="35.25" y="-14.5" />
+            </edge>
+            <edge source="L10_1.QuackCounter" target="L10_1.Quackable">
+              <point x="10.25" y="-14.5" />
+              <point x="951.0119047619048" y="476.0" />
+              <point x="955.7619047619048" y="476.0" />
+              <point x="955.7619047619048" y="337.0" />
+              <point x="791.6040100250627" y="337.0" />
+              <point x="10.842105263157919" y="14.5" />
+            </edge>
+            <edge source="L10_1.Quackologist" target="L10_1.QuackObservable">
+              <point x="0.0" y="-14.5" />
+              <point x="1282.011904761905" y="347.0" />
+              <point x="1296.1785714285716" y="347.0" />
+              <point x="1296.1785714285716" y="168.0" />
+              <point x="851.2619047619048" y="168.0" />
+              <point x="52.875" y="14.5" />
+            </edge>
+            <edge source="L10_1.Test" target="L10_1.CountingDuckFactory">
+              <point x="-17.25" y="-14.5" />
+              <point x="1026.4720183059" y="704.0" />
+              <point x="610.4325446216895" y="704.0" />
+              <point x="-40.5" y="14.5" />
+            </edge>
+            <edge source="L10_1.QuackObservable" target="L10_1.Observer">
+              <point x="-35.25" y="-14.5" />
+              <point x="763.1369047619048" y="89.0" />
+              <point x="603.9940476190476" y="89.0" />
+              <point x="12.0" y="14.5" />
+            </edge>
+            <edge source="L10_1.QuackCounter" target="L10_1.Observable">
+              <point x="-30.75" y="-14.5" />
+              <point x="910.0119047619048" y="416.0" />
+              <point x="419.6825446216896" y="416.0" />
+              <point x="49.5" y="14.5" />
+            </edge>
+            <edge source="L10_1.DuckFactory" target="L10_1.MallardDuck">
+              <point x="-9.416666666666686" y="-14.5" />
+              <point x="391.39087795502286" y="595.0" />
+              <point x="336.6190476190477" y="595.0" />
+              <point x="-28.5" y="14.5" />
+            </edge>
+            <edge source="L10_1.DuckFactory" target="L10_1.RubberDuck">
+              <point x="-28.25" y="-14.5" />
+              <point x="372.55754462168954" y="605.0" />
+              <point x="203.3690476190476" y="605.0" />
+              <point x="-28.25" y="14.5" />
+            </edge>
+            <edge source="L10_1.CountingDuckFactory" target="L10_1.MallardDuck">
+              <point x="-46.285714285714334" y="-14.5" />
+              <point x="604.6468303359752" y="555.0" />
+              <point x="393.6190476190477" y="555.0" />
+              <point x="28.5" y="14.5" />
+            </edge>
+            <edge source="L10_1.Observable" target="L10_1.Observer">
+              <point x="-43.19999999999999" y="-14.5" />
+              <point x="326.9825446216896" y="257.0" />
+              <point x="317.910920459934" y="257.0" />
+              <point x="317.910920459934" y="79.0" />
+              <point x="571.9940476190476" y="79.0" />
+              <point x="-20.0" y="14.5" />
+            </edge>
+            <edge source="L10_1.GooseAdapter" target="L10_1.Goose">
+              <point x="-10.333333333333329" y="-14.5" />
+              <point x="61.83333333333326" y="476.0" />
+              <point x="72.0" y="476.0" />
+              <point x="20.5" y="14.5" />
+            </edge>
+            <edge source="L10_1.Test" target="L10_1.Quackologist">
+              <point x="31.049999999999955" y="-14.5" />
+              <point x="1074.7720183059" y="724.0" />
+              <point x="1284.6720183059" y="724.0" />
+              <point x="1284.6720183059" y="476.0" />
+              <point x="1311.511904761905" y="476.0" />
+              <point x="29.5" y="14.5" />
+            </edge>
+            <edge source="L10_1.CountingDuckFactory" target="L10_1.AbstractDuckFactory">
+              <point x="46.285714285714334" y="-14.5" />
+              <point x="697.2182589074039" y="605.0" />
+              <point x="780.7619047619048" y="605.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="L10_1.Quackologist" target="L10_1.Quackable">
+              <point x="-39.33333333333326" y="-14.5" />
+              <point x="1242.6785714285716" y="267.0" />
+              <point x="829.5513784461155" y="267.0" />
+              <point x="48.78947368421052" y="14.5" />
+            </edge>
+            <edge source="L10_1.Test" target="L10_1.QuackCounter">
+              <point x="-3.4500000000000455" y="-14.5" />
+              <point x="1040.2720183059" y="684.0" />
+              <point x="971.5119047619048" y="684.0" />
+              <point x="30.75" y="14.5" />
+            </edge>
+            <edge source="L10_1.Observable" target="L10_1.Quackable">
+              <point x="43.19999999999999" y="-14.5" />
+              <point x="413.3825446216896" y="307.0" />
+              <point x="753.65664160401" y="307.0" />
+              <point x="-27.105263157894797" y="14.5" />
+            </edge>
+            <edge source="L10_1.GooseAdapter" target="L10_1.Observable">
+              <point x="51.66666666666667" y="-14.5" />
+              <point x="123.83333333333326" y="446.0" />
+              <point x="329.6825446216896" y="446.0" />
+              <point x="-40.5" y="14.5" />
+            </edge>
+            <edge source="L10_1.DuckSimulator" target="L10_1.AbstractDuckFactory">
+              <point x="-31.25" y="-14.5" />
+              <point x="1013.2619047619048" y="605.0" />
+              <point x="833.0952380952383" y="605.0" />
+              <point x="52.33333333333337" y="14.5" />
+            </edge>
+            <edge source="L10_1.DuckFactory" target="L10_1.RedHeadDuck">
+              <point x="9.416666666666686" y="-14.5" />
+              <point x="410.22421128835623" y="575.0" />
+              <point x="472.8690476190477" y="575.0" />
+              <point x="-30.75" y="14.5" />
+            </edge>
+            <edge source="L10_1.MallardDuck" target="L10_1.Observer">
+              <point x="-42.75" y="-14.5" />
+              <point x="322.3690476190477" y="426.0" />
+              <point x="275.410920459934" y="426.0" />
+              <point x="275.410920459934" y="69.0" />
+              <point x="563.9940476190476" y="69.0" />
+              <point x="-28.0" y="14.5" />
+            </edge>
+            <edge source="L10_1.Test" target="L10_1.Flock">
+              <point x="17.25" y="-14.5" />
+              <point x="1060.9720183059" y="704.0" />
+              <point x="1168.9619047619049" y="704.0" />
+              <point x="1168.9619047619049" y="476.0" />
+              <point x="1184.2619047619048" y="476.0" />
+              <point x="18.75" y="14.5" />
+            </edge>
+            <edge source="L10_1.CountingDuckFactory" target="L10_1.Quackable">
+              <point x="23.14285714285711" y="-14.5" />
+              <point x="674.0754017645467" y="585.0" />
+              <point x="691.7619047619048" y="585.0" />
+              <point x="691.7619047619048" y="347.0" />
+              <point x="775.3408521303259" y="347.0" />
+              <point x="-5.421052631578959" y="14.5" />
+            </edge>
+            <edge source="L10_1.CountingDuckFactory" target="L10_1.DuckCall">
+              <point x="0.0" y="-14.5" />
+              <point x="650.9325446216895" y="585.0" />
+              <point x="654.8690476190477" y="585.0" />
+              <point x="23.25" y="14.5" />
+            </edge>
+            <edge source="L10_1.DuckCall" target="L10_1.Quackable">
+              <point x="34.87499999999994" y="-14.5" />
+              <point x="666.4940476190477" y="476.0" />
+              <point x="660.8986969111971" y="476.0" />
+              <point x="660.8986969111971" y="337.0" />
+              <point x="769.9197994987469" y="337.0" />
+              <point x="-10.842105263157919" y="14.5" />
+            </edge>
+            <edge source="L10_1.DuckFactory" target="L10_1.DuckCall">
+              <point x="28.25" y="-14.5" />
+              <point x="429.05754462168954" y="585.0" />
+              <point x="608.3690476190477" y="585.0" />
+              <point x="-23.25" y="14.5" />
+            </edge>
+            <edge source="L10_1.DuckFactory" target="L10_1.AbstractDuckFactory">
+              <point x="47.083333333333314" y="-14.5" />
+              <point x="447.89087795502286" y="595.0" />
+              <point x="728.4285714285716" y="595.0" />
+              <point x="-52.33333333333337" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.8" x="721.75" y="305.625" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Hibernate</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>JPA|SDALab10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Java EE 6-Java EE 6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

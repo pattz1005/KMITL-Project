@@ -1,0 +1,36 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\fnil\fcharset222 Thonburi;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww12000\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Model
+\f1 -based
+\f0  reflex agent\
+simple enemies\
+P- execute\
+E- energy in sight\
+
+\f1 A- strolling, chasing\
+S- microphone, GPS, camera\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0 \cf2 If patrolling and no enemy in sight then Patrol predefined path\
+If patrolling and enemy in sight, switch mode from patrolling to chasing\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 If chasing and enemy in sight , move towards enemy\
+If chasing and enemy not in sight move towards enemy's last location\
+If at enemy's last location and enemy not in sight and cooldown timer not started then start cooldown timer\
+If at enemy's last location and enemy not in sight and cooldown timer expired then change mode to returning to post\
+if returning to post and enemy in sight then set mode to chasing\
+if returning to post and reached patrolling path and set mode to patrolling\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf2 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+}

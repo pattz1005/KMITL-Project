@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="flyweight">
+  <ClassDiagramComponents>
+    <Class name="AbstractIcon" package="flyweight" visibility="public" isAbstract="true" xPosition="825.0" yPosition="68.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="draw" returnType="void" visibility="public" isAbstract="true">
+          <Argument type="Graphics" name="g"/>
+          <Argument type="int" name="tx"/>
+          <Argument type="int" name="ty"/>
+          <Argument type="String" name="name"/>
+          <Argument type="boolean" name="selected"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FlyweightDemo" package="flyweight" visibility="public" xPosition="1954.0" yPosition="68.0">
+      <Fields>
+        <Field name="items" type="ArrayList" visibility="private"/>
+        <Field name="factory" type="IconFactory" visibility="private"/>
+        <Field name="Top" type="int" visibility="private" isFinal="true"/>
+        <Field name="W" type="int" visibility="private" isFinal="true"/>
+        <Field name="VSpace" type="int" visibility="private" isFinal="true"/>
+        <Field name="selectedName" type="String" visibility="private"/>
+        <Field name="iconType" type="String[]" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="loadItems" returnType="void" visibility="private"/>
+        <Method name="genRandomType" returnType="String" visibility="private"/>
+        <Method name="paint" returnType="void" visibility="public">
+          <Argument type="Graphics" name="g"/>
+        </Method>
+        <Method name="mouseMoved" returnType="void" visibility="public">
+          <Argument type="MouseEvent" name="e"/>
+        </Method>
+        <Method name="mouseDragged" returnType="void" visibility="public">
+          <Argument type="MouseEvent" name="e"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FolderIcon" package="flyweight" visibility="public" xPosition="764.0" yPosition="379.0">
+      <Fields>
+        <Field name="H" type="int" visibility="private" isFinal="true"/>
+        <Field name="iconSel" type="ImageIcon" visibility="private"/>
+        <Field name="iconUnsel" type="ImageIcon" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="package"/>
+      </Constructors>
+      <Methods>
+        <Method name="draw" returnType="void" visibility="public">
+          <Argument type="Graphics" name="g"/>
+          <Argument type="int" name="tx"/>
+          <Argument type="int" name="ty"/>
+          <Argument type="String" name="name"/>
+          <Argument type="boolean" name="sel"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="IconFactory" package="flyweight" visibility="public" xPosition="1550.0" yPosition="68.0">
+      <Fields>
+        <Field name="iconmap" type="Map&lt;String, AbstractIcon&gt;" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="createIcon" returnType="AbstractIcon" visibility="public">
+          <Argument type="String" name="key"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="JavaIcon" package="flyweight" visibility="public" xPosition="1513.0" yPosition="379.0">
+      <Fields>
+        <Field name="H" type="int" visibility="private" isFinal="true"/>
+        <Field name="icon" type="ImageIcon" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="package"/>
+      </Constructors>
+      <Methods>
+        <Method name="draw" returnType="void" visibility="public">
+          <Argument type="Graphics" name="g"/>
+          <Argument type="int" name="tx"/>
+          <Argument type="int" name="ty"/>
+          <Argument type="String" name="name"/>
+          <Argument type="boolean" name="sel"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="PdfIcon" package="flyweight" visibility="public" xPosition="1138.0" yPosition="381.0">
+      <Fields>
+        <Field name="H" type="int" visibility="private" isFinal="true"/>
+        <Field name="icon" type="ImageIcon" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="package"/>
+      </Constructors>
+      <Methods>
+        <Method name="draw" returnType="void" visibility="public">
+          <Argument type="Graphics" name="g"/>
+          <Argument type="int" name="tx"/>
+          <Argument type="int" name="ty"/>
+          <Argument type="String" name="name"/>
+          <Argument type="boolean" name="sel"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="PictureIcon" package="flyweight" visibility="public" xPosition="15.0" yPosition="187.0">
+      <Fields>
+        <Field name="H" type="int" visibility="private" isFinal="true"/>
+        <Field name="icon" type="ImageIcon" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="package"/>
+      </Constructors>
+      <Methods>
+        <Method name="draw" returnType="void" visibility="public">
+          <Argument type="Graphics" name="g"/>
+          <Argument type="int" name="tx"/>
+          <Argument type="int" name="ty"/>
+          <Argument type="String" name="name"/>
+          <Argument type="boolean" name="sel"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TextIcon" package="flyweight" visibility="public" xPosition="15.0" yPosition="379.0">
+      <Fields>
+        <Field name="H" type="int" visibility="private" isFinal="true"/>
+        <Field name="icon" type="ImageIcon" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="package"/>
+      </Constructors>
+      <Methods>
+        <Method name="draw" returnType="void" visibility="public">
+          <Argument type="Graphics" name="g"/>
+          <Argument type="int" name="tx"/>
+          <Argument type="int" name="ty"/>
+          <Argument type="String" name="name"/>
+          <Argument type="boolean" name="sel"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="UnknownIcon" package="flyweight" visibility="public" xPosition="391.0" yPosition="379.0">
+      <Fields>
+        <Field name="H" type="int" visibility="private" isFinal="true"/>
+        <Field name="icon" type="ImageIcon" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="package"/>
+      </Constructors>
+      <Methods>
+        <Method name="draw" returnType="void" visibility="public">
+          <Argument type="Graphics" name="g"/>
+          <Argument type="int" name="tx"/>
+          <Argument type="int" name="ty"/>
+          <Argument type="String" name="name"/>
+          <Argument type="boolean" name="sel"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="flyweight.FolderIcon" target="flyweight.AbstractIcon"/>
+    <HasRelation name="factory" source="flyweight.FlyweightDemo" target="flyweight.IconFactory" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="flyweight.UnknownIcon" target="flyweight.AbstractIcon"/>
+    <IsRelation name="is" source="flyweight.PictureIcon" target="flyweight.AbstractIcon"/>
+    <HasRelation name="iconmap" source="flyweight.IconFactory" target="flyweight.AbstractIcon" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="Map&lt;String, AbstractIcon&gt;"/>
+    <IsRelation name="is" source="flyweight.JavaIcon" target="flyweight.AbstractIcon"/>
+    <IsRelation name="is" source="flyweight.PdfIcon" target="flyweight.AbstractIcon"/>
+    <IsRelation name="is" source="flyweight.TextIcon" target="flyweight.AbstractIcon"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

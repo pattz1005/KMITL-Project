@@ -1,0 +1,1 @@
+clcclose allclear% load wave data into numeric[y fs] = wavread("low.wav");n = length(y);t = 0 : 1/fs : n/fs - 1/fs;% FFT methodfx = fft(y, fs);fq = 0:length(fx)-1;afx = abs(fx);% Determine Maximum Frequency[magnitude fmax] = max(afx);fmax = fmax - 1; % frequency starts at 0plot(t, y);figurestem(fq, afx)

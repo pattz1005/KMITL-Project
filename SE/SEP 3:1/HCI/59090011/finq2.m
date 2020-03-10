@@ -1,0 +1,1 @@
+clcclearclose ally = -5:0.01:5;x = -5:0.01:5;x1 = sqrt(cos(x));y1 = sqrt(sin(y));z = abs(x1 + y1);mesh(z)

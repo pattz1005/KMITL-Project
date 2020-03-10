@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="singleton">
+  <ClassDiagramComponents>
+    <Class name="Bar" package="singleton" visibility="public" isAbstract="true" xPosition="905.0" yPosition="66.0">
+      <Fields>
+        <Field name="id" type="int" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="BarProducer" package="singleton" visibility="public" xPosition="1101.0" yPosition="585.0">
+      <Fields>
+        <Field name="wonka" type="Factory" visibility="package"/>
+        <Field name="count" type="int" visibility="public"/>
+        <Field name="id" type="int" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="identifier"/>
+          <Argument type="Factory" name="f"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="run" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="OompaBar" package="singleton" visibility="public" xPosition="1267.0" yPosition="344.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="identifier"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="OompaBarFactory" package="singleton" visibility="public" xPosition="606.0" yPosition="306.0">
+      <Fields>
+        <Field name="counter" type="int" visibility="private"/>
+        <Field name="uniqueInstance" type="OompaBarFactory" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="private"/>
+      </Constructors>
+      <Methods>
+        <Method name="create" returnType="Bar" visibility="public" isSynchronized="true">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="getInstance" returnType="OompaBarFactory" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="SingletonfactoryTest" package="singleton" visibility="public" xPosition="249.0" yPosition="100.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="WonkaBar" package="singleton" visibility="public" xPosition="1079.0" yPosition="344.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="identifier"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="WonkaBarFactory" package="singleton" visibility="public" xPosition="209.0" yPosition="306.0">
+      <Fields>
+        <Field name="counter" type="int" visibility="private"/>
+        <Field name="uniqueInstance" type="WonkaBarFactory" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="private"/>
+      </Constructors>
+      <Methods>
+        <Method name="create" returnType="Bar" visibility="public" isSynchronized="true">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="getInstance" returnType="WonkaBarFactory" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Interface name="Factory" package="singleton" visibility="public" xPosition="888.0" yPosition="629.0">
+      <Methods>
+        <Method name="create" returnType="Bar" visibility="package">
+          <Argument type="int" name="id"/>
+        </Method>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="singleton.WonkaBarFactory" target="singleton.Factory"/>
+    <UseRelation source="singleton.WonkaBarFactory" target="singleton.WonkaBarFactory" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="singleton.WonkaBarFactory" target="singleton.Bar" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="singleton.OompaBarFactory" target="singleton.Bar" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="wonka" source="singleton.BarProducer" target="singleton.Factory" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="uniqueInstance" source="singleton.OompaBarFactory" target="singleton.OompaBarFactory" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="singleton.Factory" target="singleton.Bar" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="singleton.WonkaBar" target="singleton.Bar"/>
+    <UseRelation source="singleton.OompaBarFactory" target="singleton.OompaBarFactory" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="uniqueInstance" source="singleton.WonkaBarFactory" target="singleton.WonkaBarFactory" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="singleton.OompaBarFactory" target="singleton.Factory"/>
+    <IsRelation name="is" source="singleton.OompaBar" target="singleton.Bar"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

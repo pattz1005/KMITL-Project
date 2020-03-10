@@ -1,0 +1,1 @@
+pattern.flyweight.FolderIcon

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="breakfast">
+  <ClassDiagramComponents>
+    <Class name="EatBreakfast" package="breakfast" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="EggRecipe" package="breakfast" visibility="public" isAbstract="true" xPosition="270.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="make" returnType="void" visibility="public" isFinal="true">
+          <Argument type="int" name="n"/>
+        </Method>
+        <Method name="crackEggs" returnType="void" visibility="public">
+          <Argument type="int" name="n"/>
+        </Method>
+        <Method name="prepareEggs" returnType="void" visibility="public" isAbstract="true"/>
+        <Method name="cook" returnType="void" visibility="public" isAbstract="true"/>
+        <Method name="isAddSaltPepper" returnType="boolean" visibility="public"/>
+        <Method name="addSaltPepper" returnType="void" visibility="public"/>
+        <Method name="serve" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Omelette" package="breakfast" visibility="public" xPosition="55.0" yPosition="351.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="prepareEggs" returnType="void" visibility="public"/>
+        <Method name="cook" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ScrambledEggs" package="breakfast" visibility="public" xPosition="270.0" yPosition="351.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="isAddSaltPepper" returnType="boolean" visibility="public"/>
+        <Method name="prepareEggs" returnType="void" visibility="public"/>
+        <Method name="cook" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="SunnySide" package="breakfast" visibility="public" xPosition="503.0" yPosition="351.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="prepareEggs" returnType="void" visibility="public"/>
+        <Method name="cook" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="breakfast.Omelette" target="breakfast.EggRecipe"/>
+    <IsRelation name="is" source="breakfast.SunnySide" target="breakfast.EggRecipe"/>
+    <IsRelation name="is" source="breakfast.ScrambledEggs" target="breakfast.EggRecipe"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

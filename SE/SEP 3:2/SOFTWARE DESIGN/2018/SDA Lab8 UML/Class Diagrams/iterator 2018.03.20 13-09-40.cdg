@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="iterator">
+  <ClassDiagramComponents>
+    <Class name="DinerMenu" package="iterator" visibility="public" xPosition="1007.0" yPosition="768.0">
+      <Fields>
+        <Field name="MAX_ITEMS" type="int" visibility="package" isStatic="true" isFinal="true"/>
+        <Field name="numberOfItems" type="int" visibility="package"/>
+        <Field name="menuItems" type="MenuItem[]" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="addItem" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="description"/>
+          <Argument type="boolean" name="vegetarian"/>
+          <Argument type="double" name="price"/>
+        </Method>
+        <Method name="getMenuItems" returnType="MenuItem[]" visibility="public"/>
+        <Method name="createIterator" returnType="Iterator" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="DinerMenuIterator" package="iterator" visibility="public" xPosition="770.0" yPosition="345.0">
+      <Fields>
+        <Field name="menuItems" type="MenuItem[]" visibility="private"/>
+        <Field name="counter" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="MenuItem[]" name="menuItems"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="hasNext" returnType="boolean" visibility="public"/>
+        <Method name="next" returnType="Object" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="MenuItem" package="iterator" visibility="public" xPosition="204.0" yPosition="269.0">
+      <Fields>
+        <Field name="name" type="String" visibility="package"/>
+        <Field name="description" type="String" visibility="package"/>
+        <Field name="vegetarian" type="boolean" visibility="package"/>
+        <Field name="price" type="double" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="description"/>
+          <Argument type="boolean" name="vegetarian"/>
+          <Argument type="double" name="price"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="getDescription" returnType="String" visibility="public"/>
+        <Method name="getPrice" returnType="double" visibility="public"/>
+        <Method name="isVegetarian" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="MenuTestDrive" package="iterator" visibility="public" xPosition="603.0" yPosition="49.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="PancakeHouseMenu" package="iterator" visibility="public" xPosition="541.0" yPosition="778.0">
+      <Fields>
+        <Field name="menuItems" type="ArrayList" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="addItem" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="description"/>
+          <Argument type="boolean" name="vegetarian"/>
+          <Argument type="double" name="price"/>
+        </Method>
+        <Method name="getMenuItems" returnType="ArrayList" visibility="public"/>
+        <Method name="createIterator" returnType="Iterator" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="PancakeHouseMenuIterator" package="iterator" visibility="public" xPosition="1066.0" yPosition="345.0">
+      <Fields>
+        <Field name="menuItems" type="ArrayList" visibility="private"/>
+        <Field name="counter" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="ArrayList" name="menuItems"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="hasNext" returnType="boolean" visibility="public"/>
+        <Method name="next" returnType="Object" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Waitress" package="iterator" visibility="public" xPosition="167.0" yPosition="778.0">
+      <Fields>
+        <Field name="pancakeHouseMenu" type="Menu" visibility="package"/>
+        <Field name="dinerMenu" type="Menu" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Menu" name="pancakeHouseMenu"/>
+          <Argument type="Menu" name="dinerMenu"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="printMenu" returnType="void" visibility="public"/>
+        <Method name="printMenu" returnType="void" visibility="private">
+          <Argument type="Iterator" name="iterator"/>
+        </Method>
+        <Method name="printVegetarianMenu" returnType="void" visibility="public"/>
+        <Method name="isItemVegetarian" returnType="boolean" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="printVegetarianMenu" returnType="void" visibility="private">
+          <Argument type="Iterator" name="iterator"/>
+        </Method>
+        <Method name="isVegetarian" returnType="boolean" visibility="private">
+          <Argument type="String" name="name"/>
+          <Argument type="Iterator" name="iterator"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="Iterator" package="iterator" visibility="public" xPosition="988.0" yPosition="95.0">
+      <Methods>
+        <Method name="hasNext" returnType="boolean" visibility="public"/>
+        <Method name="next" returnType="Object" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="Menu" package="iterator" visibility="public" xPosition="603.0" yPosition="565.0">
+      <Methods>
+        <Method name="createIterator" returnType="Iterator" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="pancakeHouseMenu" source="iterator.Waitress" target="iterator.Menu" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="iterator.PancakeHouseMenuIterator" target="iterator.Iterator"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="iterator.DinerMenuIterator" target="iterator.Iterator"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="iterator.PancakeHouseMenu" target="iterator.Menu"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="iterator.DinerMenu" target="iterator.Menu"/>
+    <HasRelation name="dinerMenu" source="iterator.Waitress" target="iterator.Menu" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

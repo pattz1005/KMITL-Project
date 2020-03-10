@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="decorator">
+  <ClassDiagramComponents>
+    <Class name="Balsam" package="decorator" visibility="public" xPosition="1053.0" yPosition="564.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="cost" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="BlueBall" package="decorator" visibility="public" xPosition="277.0" yPosition="725.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Tree" name="tree"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDescription" returnType="String" visibility="public"/>
+        <Method name="cost" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="BlueSpruce" package="decorator" visibility="public" xPosition="1053.0" yPosition="423.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="cost" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Douglas" package="decorator" visibility="public" xPosition="1053.0" yPosition="702.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="cost" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Fraser" package="decorator" visibility="public" xPosition="1053.0" yPosition="270.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="cost" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Leds" package="decorator" visibility="public" xPosition="74.0" yPosition="665.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Tree" name="tree"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDescription" returnType="String" visibility="public"/>
+        <Method name="cost" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Lights" package="decorator" visibility="public" xPosition="74.0" yPosition="308.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Tree" name="tree"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDescription" returnType="String" visibility="public"/>
+        <Method name="cost" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="RealStar" package="decorator" visibility="public" xPosition="652.0" yPosition="725.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Tree" name="t"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDescription" returnType="String" visibility="public"/>
+        <Method name="cost" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="RedBall" package="decorator" visibility="public" xPosition="691.0" yPosition="179.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Tree" name="tree"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDescription" returnType="String" visibility="public"/>
+        <Method name="cost" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ribbons" package="decorator" visibility="public" xPosition="473.0" yPosition="725.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Tree" name="tree"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDescription" returnType="String" visibility="public"/>
+        <Method name="cost" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ruffles" package="decorator" visibility="public" xPosition="277.0" yPosition="179.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Tree" name="tree"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDescription" returnType="String" visibility="public"/>
+        <Method name="cost" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="SilverBall" package="decorator" visibility="public" xPosition="473.0" yPosition="179.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Tree" name="tree"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDescription" returnType="String" visibility="public"/>
+        <Method name="cost" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Star" package="decorator" visibility="public" xPosition="74.0" yPosition="487.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Tree" name="tree"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDescription" returnType="String" visibility="public"/>
+        <Method name="cost" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Test_tree" package="decorator" visibility="public" xPosition="39.0" yPosition="147.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Tree" package="decorator" visibility="public" isAbstract="true" xPosition="774.0" yPosition="404.0">
+      <Fields>
+        <Field name="description" type="String" visibility="package"/>
+        <Field name="hasastar" type="boolean" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getDescription" returnType="String" visibility="public"/>
+        <Method name="hasStar" returnType="boolean" visibility="public"/>
+        <Method name="setStar" returnType="void" visibility="public"/>
+        <Method name="cost" returnType="double" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="TreeDecorator" package="decorator" visibility="public" isAbstract="true" xPosition="494.0" yPosition="423.0">
+      <Fields>
+        <Field name="tree" type="Tree" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getDescription" returnType="String" visibility="public" isAbstract="true"/>
+        <Method name="cost" returnType="double" visibility="public" isAbstract="true"/>
+        <Method name="setStar" returnType="void" visibility="public"/>
+        <Method name="hasStar" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="decorator.BlueSpruce" target="decorator.Tree"/>
+    <IsRelation name="is" source="decorator.Star" target="decorator.TreeDecorator"/>
+    <IsRelation name="is" source="decorator.BlueBall" target="decorator.TreeDecorator"/>
+    <IsRelation name="is" source="decorator.Douglas" target="decorator.Tree"/>
+    <IsRelation name="is" source="decorator.Lights" target="decorator.TreeDecorator"/>
+    <IsRelation name="is" source="decorator.Balsam" target="decorator.Tree"/>
+    <IsRelation name="is" source="decorator.TreeDecorator" target="decorator.Tree"/>
+    <IsRelation name="is" source="decorator.RealStar" target="decorator.TreeDecorator"/>
+    <IsRelation name="is" source="decorator.RedBall" target="decorator.TreeDecorator"/>
+    <IsRelation name="is" source="decorator.Ribbons" target="decorator.TreeDecorator"/>
+    <IsRelation name="is" source="decorator.Ruffles" target="decorator.TreeDecorator"/>
+    <HasRelation name="tree" source="decorator.TreeDecorator" target="decorator.Tree" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="decorator.Leds" target="decorator.TreeDecorator"/>
+    <IsRelation name="is" source="decorator.Fraser" target="decorator.Tree"/>
+    <IsRelation name="is" source="decorator.SilverBall" target="decorator.TreeDecorator"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

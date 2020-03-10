@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="midterm">
+  <ClassDiagramComponents>
+    <Class name="AddBookCommand" package="midterm" visibility="public" xPosition="349.0" yPosition="319.0">
+      <Fields>
+        <Field name="book" type="Book" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Book" name="b"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="execute" returnType="void" visibility="public">
+          <Argument type="Inventory" name="i"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Book" package="midterm" visibility="public" xPosition="444.0" yPosition="578.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="price" type="double" visibility="private"/>
+        <Field name="quantity" type="int" visibility="private"/>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="id_counter_path" type="String" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="double" name="price"/>
+          <Argument type="int" name="quantity"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getPrice" returnType="double" visibility="public"/>
+        <Method name="setPrice" returnType="void" visibility="public">
+          <Argument type="double" name="price"/>
+        </Method>
+        <Method name="getQuantity" returnType="int" visibility="public"/>
+        <Method name="setQuantity" returnType="void" visibility="public">
+          <Argument type="int" name="quantity"/>
+        </Method>
+        <Method name="getID" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="CareTaker" package="midterm" visibility="public" xPosition="115.0" yPosition="941.0">
+      <Fields>
+        <Field name="mementos" type="ArrayList&lt;Memento&gt;" visibility="private"/>
+        <Field name="folder_path" type="String" visibility="private"/>
+        <Field name="suffix" type="String" visibility="private"/>
+        <Field name="latestMementoTime" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="addMemento" returnType="void" visibility="public">
+          <Argument type="Memento" name="m"/>
+        </Method>
+        <Method name="getMemento" returnType="Memento" visibility="public">
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="getLatestMementoTime" returnType="String" visibility="public"/>
+        <Method name="getLatestMemento" returnType="Memento" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="EditBookCommand" package="midterm" visibility="public" xPosition="825.0" yPosition="319.0">
+      <Fields>
+        <Field name="book_id" type="int" visibility="private"/>
+        <Field name="quantity" type="int" visibility="private"/>
+        <Field name="price" type="double" visibility="private"/>
+        <Field name="name" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="b_id"/>
+          <Argument type="int" name="q"/>
+          <Argument type="double" name="p"/>
+          <Argument type="String" name="n"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="execute" returnType="void" visibility="public">
+          <Argument type="Inventory" name="i"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Inventory" package="midterm" visibility="public" xPosition="825.0" yPosition="591.0">
+      <Fields>
+        <Field name="books" type="ArrayList&lt;Book&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getBooks" returnType="ArrayList&lt;Book&gt;" visibility="public"/>
+        <Method name="addBook" returnType="void" visibility="public">
+          <Argument type="Book" name="b"/>
+        </Method>
+        <Method name="sellBook" returnType="void" visibility="public">
+          <Argument type="int" name="book_id"/>
+          <Argument type="int" name="quantity"/>
+        </Method>
+        <Method name="editBook" returnType="void" visibility="public">
+          <Argument type="int" name="book_id"/>
+          <Argument type="int" name="quantity"/>
+          <Argument type="double" name="price"/>
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="searchBook" returnType="ArrayList&lt;Book&gt;" visibility="public">
+          <Argument type="String" name="term"/>
+        </Method>
+        <Method name="createMemento" returnType="Memento" visibility="public"/>
+        <Method name="setMemento" returnType="void" visibility="public">
+          <Argument type="Memento" name="m"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="InventoryInvoker" package="midterm" visibility="public" xPosition="439.0" yPosition="941.0">
+      <Fields>
+        <Field name="inventory" type="Inventory" visibility="private"/>
+        <Field name="careTaker" type="CareTaker" visibility="private"/>
+        <Field name="observers" type="ArrayList&lt;Observer&gt;" visibility="private"/>
+        <Field name="folder_path" type="String" visibility="private"/>
+        <Field name="suffix" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="addObserver" returnType="void" visibility="public">
+          <Argument type="Observer" name="o"/>
+        </Method>
+        <Method name="notifyObserver" returnType="void" visibility="public"/>
+        <Method name="addBook" returnType="void" visibility="public">
+          <Argument type="Book" name="b"/>
+        </Method>
+        <Method name="sellBook" returnType="void" visibility="public">
+          <Argument type="int" name="book_id"/>
+          <Argument type="int" name="quantity"/>
+        </Method>
+        <Method name="editBook" returnType="void" visibility="public">
+          <Argument type="int" name="book_id"/>
+          <Argument type="int" name="quantity"/>
+          <Argument type="double" name="price"/>
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="searchBook" returnType="ArrayList&lt;Book&gt;" visibility="public">
+          <Argument type="String" name="term"/>
+        </Method>
+        <Method name="saveState" returnType="void" visibility="public"/>
+        <Method name="saveCommand" returnType="void" visibility="private">
+          <Argument type="Command" name="c"/>
+        </Method>
+        <Method name="getBooks" returnType="ArrayList&lt;Book&gt;" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Memento" package="midterm" visibility="public" xPosition="115.0" yPosition="634.0">
+      <Fields>
+        <Field name="books" type="ArrayList&lt;Book&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="ArrayList&lt;Book&gt;" name="books"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getBooks" returnType="ArrayList&lt;Book&gt;" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="SellBookCommand" package="midterm" visibility="public" xPosition="573.0" yPosition="319.0">
+      <Fields>
+        <Field name="book_id" type="int" visibility="private"/>
+        <Field name="quantity" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="b_id"/>
+          <Argument type="int" name="q"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="execute" returnType="void" visibility="public">
+          <Argument type="Inventory" name="i"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Test" package="midterm" visibility="public" xPosition="56.0" yPosition="319.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="Command" package="midterm" visibility="public" xPosition="578.0" yPosition="38.0">
+      <Methods>
+        <Method name="execute" returnType="void" visibility="public">
+          <Argument type="Inventory" name="inventory"/>
+        </Method>
+      </Methods>
+    </Interface>
+    <Interface name="Observer" package="midterm" visibility="public" xPosition="964.0" yPosition="964.0">
+      <Methods>
+        <Method name="update" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="observers" source="midterm.InventoryInvoker" target="midterm.Observer" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Observer&gt;"/>
+    <HasRelation name="careTaker" source="midterm.InventoryInvoker" target="midterm.CareTaker" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="midterm.AddBookCommand" target="midterm.Command"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="midterm.SellBookCommand" target="midterm.Command"/>
+    <HasRelation name="book" source="midterm.AddBookCommand" target="midterm.Book" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="books" source="midterm.Memento" target="midterm.Book" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Book&gt;"/>
+    <HasRelation name="mementos" source="midterm.CareTaker" target="midterm.Memento" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Memento&gt;"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="midterm.EditBookCommand" target="midterm.Command"/>
+    <HasRelation name="books" source="midterm.Inventory" target="midterm.Book" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Book&gt;"/>
+    <HasRelation name="inventory" source="midterm.InventoryInvoker" target="midterm.Inventory" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

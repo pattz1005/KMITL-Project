@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fcb7695e-2789-49f6-be98-7debbca36ebe" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Pattern/PieChartObserver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="87" column="43" lean-forward="true" selection-start-line="87" selection-start-column="43" selection-end-line="87" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>observer</find>
+      <find>attach</find>
+      <find>barcha</find>
+      <find>bar</find>
+      <find>scrollp</find>
+      <find>scrollpa</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Pattern/PieChartObserver.java" />
+        <option value="$PROJECT_DIR$/src/Pattern/CourseController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="90" />
+    <option name="y" value="204" />
+    <option name="width" value="1848" />
+    <option name="height" value="975" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Pattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pattern" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pattern" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pattern" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Pattern" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548688832514" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Pattern" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Def" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Pattern.CourseController" />
+      <module name="Pattern" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fcb7695e-2789-49f6-be98-7debbca36ebe" name="Default Changelist" comment="" />
+      <created>1548218571703</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1548218571703</updated>
+      <workItem from="1548218572937" duration="1057000" />
+      <workItem from="1548335252277" duration="1739000" />
+      <workItem from="1548338845044" duration="1812000" />
+      <workItem from="1548685654149" duration="1964000" />
+      <workItem from="1548738719954" duration="39000" />
+      <workItem from="1548760125628" duration="5000" />
+      <workItem from="1551230056231" duration="48000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="6664000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="23" width="1295" height="704" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14574899" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Project Explorer" order="7" />
+      <window_info id="Properties Pane" order="8" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32867134" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32867134" />
+      <window_info anchor="bottom" id="Sequence" order="13" weight="0.32867134" />
+      <window_info anchor="bottom" id="Message Pane" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Pattern/BarChartObserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/Pattern.CourseController">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>Pattern.CourseController</OriginalElement>
+          <nodes>
+            <node x="618.75" y="237.0">javax.swing.JComponent</node>
+            <node x="314.0" y="316.0">java.awt.event.ActionListener</node>
+            <node x="0.0" y="316.0">java.lang.SuppressWarnings</node>
+            <node x="438.25" y="158.0">javax.swing.TransferHandler.HasGetTransferHandler</node>
+            <node x="612.25" y="0.0">java.awt.MenuContainer</node>
+            <node x="496.75" y="237.0">javax.accessibility.Accessible</node>
+            <node x="620.75" y="79.0">java.awt.Component</node>
+            <node x="463.25" y="0.0">java.awt.image.ImageObserver</node>
+            <node x="307.0" y="395.0">Pattern.CourseController</node>
+            <node x="760.25" y="0.0">java.io.Serializable</node>
+            <node x="244.5" y="237.0">java.util.EventListener</node>
+            <node x="456.0" y="316.0">Pattern.Observer</node>
+            <node x="166.0" y="316.0">javax.swing.event.ChangeListener</node>
+            <node x="627.25" y="158.0">java.awt.Container</node>
+            <node x="572.0" y="316.0">javax.swing.JPanel</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="javax.swing.JPanel" target="javax.swing.JComponent">
+              <point x="20.0" y="-14.5" />
+              <point x="632.0" y="291.0" />
+              <point x="676.25" y="291.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="javax.swing.JComponent" target="javax.swing.TransferHandler.HasGetTransferHandler">
+              <point x="-38.333333333333314" y="-14.5" />
+              <point x="637.9166666666666" y="212.0" />
+              <point x="522.75" y="212.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="javax.swing.JComponent" target="java.awt.Container">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="java.awt.Component" target="java.awt.MenuContainer">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="javax.swing.JPanel" target="javax.accessibility.Accessible">
+              <point x="-20.0" y="-14.5" />
+              <point x="592.0" y="291.0" />
+              <point x="547.75" y="291.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="Pattern.CourseController" target="java.lang.SuppressWarnings">
+              <point x="-54.39999999999998" y="-14.5" />
+              <point x="320.6" y="375.0" />
+              <point x="73.0" y="375.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="java.awt.Component" target="java.awt.image.ImageObserver">
+              <point x="-37.0" y="-14.5" />
+              <point x="639.25" y="54.0" />
+              <point x="527.75" y="54.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="java.awt.Component" target="java.io.Serializable">
+              <point x="37.0" y="-14.5" />
+              <point x="713.25" y="54.0" />
+              <point x="786.75" y="54.0" />
+              <point x="-26.5" y="14.5" />
+            </edge>
+            <edge source="Pattern.CourseController" target="javax.swing.JPanel">
+              <point x="54.39999999999998" y="-14.5" />
+              <point x="429.4" y="375.0" />
+              <point x="612.0" y="375.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="Pattern.CourseController" target="javax.swing.event.ChangeListener">
+              <point x="-27.200000000000045" y="-14.5" />
+              <point x="347.79999999999995" y="365.0" />
+              <point x="230.0" y="365.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="java.awt.event.ActionListener" target="java.util.EventListener">
+              <point x="0.0" y="-14.5" />
+              <point x="375.0" y="291.0" />
+              <point x="331.5" y="291.0" />
+              <point x="29.0" y="14.5" />
+            </edge>
+            <edge source="java.awt.Container" target="java.awt.Component">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="Pattern.CourseController" target="Pattern.Observer">
+              <point x="27.200000000000045" y="-14.5" />
+              <point x="402.20000000000005" y="365.0" />
+              <point x="504.0" y="365.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="javax.swing.event.ChangeListener" target="java.util.EventListener">
+              <point x="0.0" y="-14.5" />
+              <point x="230.0" y="291.0" />
+              <point x="273.5" y="291.0" />
+              <point x="-29.0" y="14.5" />
+            </edge>
+            <edge source="Pattern.CourseController" target="java.awt.event.ActionListener">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="javax.swing.JComponent" target="java.io.Serializable">
+              <point x="38.333333333333314" y="-14.5" />
+              <point x="714.5833333333333" y="212.0" />
+              <point x="839.75" y="212.0" />
+              <point x="26.5" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="434.0" y="212.0" />
+          <SelectedNodes>
+            <node>Pattern.CourseController</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pattern/CourseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="138" column="24" selection-start-line="138" selection-start-column="24" selection-end-line="138" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pattern/CourseData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pattern/LayoutConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pattern/Observable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pattern/Observer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pattern/CourseRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pattern/PieChartObserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="87" column="43" lean-forward="true" selection-start-line="87" selection-start-column="43" selection-end-line="87" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="facade">
+  <ClassDiagramComponents>
+    <Class name="Tea" package="facade" visibility="public" xPosition="592.0" yPosition="738.0">
+      <Fields>
+        <Field name="flavor" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="flavor"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getflavor" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="TeaCup" package="facade" visibility="public" xPosition="1140.0" yPosition="531.0">
+      <Fields>
+        <Field name="DEFAULT_STEEP" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="infuser" type="TeaInfuser" visibility="private"/>
+        <Field name="water" type="Water" visibility="private"/>
+        <Field name="steepTime" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="infuseTea" returnType="void" visibility="public">
+          <Argument type="TeaInfuser" name="infuser"/>
+        </Method>
+        <Method name="addWater" returnType="void" visibility="public">
+          <Argument type="Water" name="water"/>
+        </Method>
+        <Method name="setSteepTime" returnType="void" visibility="public">
+          <Argument type="int" name="steepTime"/>
+        </Method>
+        <Method name="steep" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="TeaFacade" package="facade" visibility="public" xPosition="787.0" yPosition="182.0">
+      <Fields>
+        <Field name="teacup" type="TeaCup" visibility="private"/>
+        <Field name="water" type="Water" visibility="private"/>
+        <Field name="teaInfuser" type="TeaInfuser" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="TeaCup" name="teacup"/>
+          <Argument type="Water" name="water"/>
+          <Argument type="TeaInfuser" name="teaInfuser"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="makeTea" returnType="void" visibility="public">
+          <Argument type="String" name="teaType"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TeaInfuser" package="facade" visibility="public" xPosition="592.0" yPosition="531.0">
+      <Fields>
+        <Field name="INFUSE_TIME" type="int" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="tea" type="Tea" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="addTea" returnType="void" visibility="public">
+          <Argument type="Tea" name="tea"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TestFacade" package="facade" visibility="public" xPosition="515.0" yPosition="182.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Water" package="facade" visibility="public" xPosition="855.0" yPosition="470.0">
+      <Fields>
+        <Field name="BOIL_TIME" type="int" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="x" type="int" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="boilWater" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="teacup" source="facade.TeaFacade" target="facade.TeaCup" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="water" source="facade.TeaFacade" target="facade.Water" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="tea" source="facade.TeaInfuser" target="facade.Tea" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="water" source="facade.TeaCup" target="facade.Water" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="teaInfuser" source="facade.TeaFacade" target="facade.TeaInfuser" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="infuser" source="facade.TeaCup" target="facade.TeaInfuser" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

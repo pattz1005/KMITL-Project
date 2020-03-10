@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f2d62bbc-88b6-4206-9b44-82b2629e5236" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../SDALab2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SDALab2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SDALab2X/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SDALab2X/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SDALab3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SDALab3/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SingletonFactory/SingletonfactoryTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SingletonFactory/Bar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/SingletonFactory/BarProducer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SingletonFactory/WonkaBar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SingletonFactory/WonkaBarFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SingletonFactory/Factory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/AbstractFactory/BonusSlot.java" />
+        <option value="$PROJECT_DIR$/src/AbstractFactory/Cabinet.java" />
+        <option value="$PROJECT_DIR$/src/AbstractFactory/Display.java" />
+        <option value="$PROJECT_DIR$/src/AbstractFactory/largeCabinet.java" />
+        <option value="$PROJECT_DIR$/src/AbstractFactory/LCD.java" />
+        <option value="$PROJECT_DIR$/src/AbstractFactory/NJSlotComponentFactory.java" />
+        <option value="$PROJECT_DIR$/src/AbstractFactory/NJSlotFactory.java" />
+        <option value="$PROJECT_DIR$/src/AbstractFactory/NVSlotComponentFactory.java" />
+        <option value="$PROJECT_DIR$/src/AbstractFactory/NVSlotFactory.java" />
+        <option value="$PROJECT_DIR$/src/AbstractFactory/ProgressiveSlot.java" />
+        <option value="$PROJECT_DIR$/src/AbstractFactory/Reels.java" />
+        <option value="$PROJECT_DIR$/src/AbstractFactory/Slot.java" />
+        <option value="$PROJECT_DIR$/src/AbstractFactory/SlotComponentFactory.java" />
+        <option value="$PROJECT_DIR$/src/AbstractFactory/SlotFactory.java" />
+        <option value="$PROJECT_DIR$/src/AbstractFactory/SlotMachineApp.java" />
+        <option value="$PROJECT_DIR$/src/AbstractFactory/smallCabinet.java" />
+        <option value="$PROJECT_DIR$/src/SingletonFactory/Bar.java" />
+        <option value="$PROJECT_DIR$/src/SingletonFactory/BarProducer.java" />
+        <option value="$PROJECT_DIR$/src/SingletonFactory/Factory.java" />
+        <option value="$PROJECT_DIR$/src/SingletonFactory/SingletonfactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/SingletonFactory/WonkaBar.java" />
+        <option value="$PROJECT_DIR$/src/SingletonFactory/WonkaBarFactory.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-12" />
+    <option name="y" value="45" />
+    <option name="width" value="981" />
+    <option name="height" value="1044" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SDALab4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SDALab4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SDALab4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SDALab4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SDALab4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SDALab4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="AbstractFactory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SDALab4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SDALab4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="SingletonFactory" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550033108836" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SDALab5" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f2d62bbc-88b6-4206-9b44-82b2629e5236" name="Default Changelist" comment="" />
+      <created>1549418930544</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1549418930544</updated>
+      <workItem from="1549418931994" duration="599000" />
+      <workItem from="1549426286267" duration="1248000" />
+      <workItem from="1549428506201" duration="11000" />
+      <workItem from="1550033054365" duration="8000" />
+      <workItem from="1550033066989" duration="58000" />
+      <workItem from="1551812877177" duration="119000" />
+      <workItem from="1552452177191" duration="4000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2047000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="23" width="1295" height="704" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27611336" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Sequence" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/AbstractFactory/Cabinet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AbstractFactory/Display.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AbstractFactory/largeCabinet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AbstractFactory/LCD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AbstractFactory/NJSlotComponentFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AbstractFactory/NJSlotFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AbstractFactory/NVSlotComponentFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AbstractFactory/NVSlotFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AbstractFactory/ProgressiveSlot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AbstractFactory/Reels.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AbstractFactory/Slot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AbstractFactory/SlotComponentFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AbstractFactory/SlotFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AbstractFactory/SlotMachineApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AbstractFactory/smallCabinet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AbstractFactory/BonusSlot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/design_lab4_1/src/Android.java" />
+    <entry file="uml://JAVA/AbstractFactory">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>AbstractFactory</OriginalElement>
+          <nodes>
+            <node x="84.0" y="306.0">AbstractFactory.Slot</node>
+            <node x="121.0" y="385.0">AbstractFactory.ProgressiveSlot</node>
+            <node x="95.0" y="538.0">AbstractFactory.LCD</node>
+            <node x="110.25" y="0.0">AbstractFactory.SlotComponentFactory</node>
+            <node x="140.0" y="232.0">AbstractFactory.NVSlotFactory</node>
+            <node x="77.25" y="153.0">AbstractFactory.SlotFactory</node>
+            <node x="0.0" y="232.0">AbstractFactory.NJSlotFactory</node>
+            <node x="206.0" y="79.0">AbstractFactory.NJSlotComponentFactory</node>
+            <node x="430.0" y="385.0">AbstractFactory.largeCabinet</node>
+            <node x="0.0" y="538.0">AbstractFactory.Reels</node>
+            <node x="209.0" y="459.0">AbstractFactory.SlotMachineApp</node>
+            <node x="295.0" y="385.0">AbstractFactory.smallCabinet</node>
+            <node x="375.75" y="306.0">AbstractFactory.Cabinet</node>
+            <node x="0.0" y="79.0">AbstractFactory.NVSlotComponentFactory</node>
+            <node x="40.5" y="459.0">AbstractFactory.Display</node>
+            <node x="0.0" y="385.0">AbstractFactory.BonusSlot</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="AbstractFactory.largeCabinet" target="AbstractFactory.Cabinet">
+              <point x="0.0" y="-14.5" />
+              <point x="487.0" y="360.0" />
+              <point x="441.75" y="360.0" />
+              <point x="22.0" y="14.5" />
+            </edge>
+            <edge source="AbstractFactory.BonusSlot" target="AbstractFactory.Slot">
+              <point x="0.0" y="-14.5" />
+              <point x="50.5" y="360.0" />
+              <point x="101.0" y="360.0" />
+              <point x="-17.0" y="14.5" />
+            </edge>
+            <edge source="AbstractFactory.Reels" target="AbstractFactory.Display">
+              <point x="0.0" y="-14.5" />
+              <point x="37.5" y="513.0" />
+              <point x="62.0" y="513.0" />
+              <point x="-21.5" y="14.5" />
+            </edge>
+            <edge source="AbstractFactory.LCD" target="AbstractFactory.Display">
+              <point x="0.0" y="-14.5" />
+              <point x="129.5" y="513.0" />
+              <point x="105.0" y="513.0" />
+              <point x="21.5" y="14.5" />
+            </edge>
+            <edge source="AbstractFactory.NJSlotComponentFactory" target="AbstractFactory.SlotComponentFactory">
+              <point x="0.0" y="-14.5" />
+              <point x="297.5" y="54.0" />
+              <point x="237.75" y="54.0" />
+              <point x="42.5" y="14.5" />
+            </edge>
+            <edge source="AbstractFactory.ProgressiveSlot" target="AbstractFactory.Slot">
+              <point x="0.0" y="-14.5" />
+              <point x="185.5" y="360.0" />
+              <point x="135.0" y="360.0" />
+              <point x="17.0" y="14.5" />
+            </edge>
+            <edge source="AbstractFactory.NVSlotComponentFactory" target="AbstractFactory.SlotComponentFactory">
+              <point x="0.0" y="-14.5" />
+              <point x="93.0" y="54.0" />
+              <point x="152.75" y="54.0" />
+              <point x="-42.5" y="14.5" />
+            </edge>
+            <edge source="AbstractFactory.NJSlotFactory" target="AbstractFactory.SlotFactory">
+              <point x="0.0" y="-14.5" />
+              <point x="60.0" y="207.0" />
+              <point x="104.0" y="207.0" />
+              <point x="-26.75" y="14.5" />
+            </edge>
+            <edge source="AbstractFactory.NVSlotFactory" target="AbstractFactory.SlotFactory">
+              <point x="0.0" y="-14.5" />
+              <point x="201.5" y="207.0" />
+              <point x="157.5" y="207.0" />
+              <point x="26.75" y="14.5" />
+            </edge>
+            <edge source="AbstractFactory.smallCabinet" target="AbstractFactory.Cabinet">
+              <point x="0.0" y="-14.5" />
+              <point x="352.5" y="360.0" />
+              <point x="397.75" y="360.0" />
+              <point x="-22.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.8875638841567292" x="35.0" y="260.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/SingletonFactory">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>SingletonFactory</OriginalElement>
+          <nodes>
+            <node x="27.0" y="0.0">SingletonFactory.Factory</node>
+            <node x="0.0" y="227.0">SingletonFactory.BarProducer</node>
+            <node x="0.0" y="79.0">SingletonFactory.WonkaBarFactory</node>
+            <node x="204.0" y="0.0">SingletonFactory.Bar</node>
+            <node x="0.0" y="153.0">SingletonFactory.SingletonfactoryTest</node>
+            <node x="185.0" y="79.0">SingletonFactory.WonkaBar</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="SingletonFactory.WonkaBar" target="SingletonFactory.Bar">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="SingletonFactory.WonkaBarFactory" target="SingletonFactory.Factory">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-66.0" y="108.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SingletonFactory/SingletonfactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SingletonFactory/Bar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SingletonFactory/WonkaBar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SingletonFactory/WonkaBarFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SingletonFactory/Factory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SingletonFactory/BarProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>SDALab4</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Nonpattern">
+  <ClassDiagramComponents>
+    <Class name="CourseRecord" package="Nonpattern" visibility="public" xPosition="138.0" yPosition="404.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="numOfStudents" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="courseName"/>
+          <Argument type="int" name="numOfStudents"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNumOfStudents" returnType="int" visibility="public"/>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setNumOfStudents" returnType="void" visibility="public">
+          <Argument type="int" name="numOfStudents"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="CourseViewer" package="Nonpattern" visibility="public" xPosition="162.0" yPosition="16.0">
+      <Fields>
+        <Field name="sliderPanel" type="JPanel" visibility="private"/>
+        <Field name="coursePanel" type="JPanel" visibility="private"/>
+        <Field name="sliders" type="ArrayList&lt;JSlider&gt;" visibility="private"/>
+        <Field name="scrollPane" type="JScrollPane" visibility="private"/>
+        <Field name="button" type="JButton" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="addCourse" returnType="void" visibility="public">
+          <Argument type="CourseRecord" name="courseRecord"/>
+        </Method>
+        <Method name="paint" returnType="void" visibility="public">
+          <Argument type="Graphics" name="g"/>
+        </Method>
+        <Method name="actionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="arg0"/>
+        </Method>
+        <Method name="stateChanged" returnType="void" visibility="public">
+          <Argument type="ChangeEvent" name="arg0"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="LayoutConstants" package="Nonpattern" visibility="public" xPosition="507.0" yPosition="54.0">
+      <Fields>
+        <Field name="xOffset" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="yOffset" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="graphHeight" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="maxValue" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="barHeight" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="barWidth" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="barSpacing" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="courseColours" type="Color[]" visibility="public" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="paintBarChartOutline" returnType="void" visibility="public" isStatic="true">
+          <Argument type="Graphics" name="g"/>
+          <Argument type="int" name="noOfBars"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="Nonpattern.CourseViewer" target="Nonpattern.CourseRecord" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

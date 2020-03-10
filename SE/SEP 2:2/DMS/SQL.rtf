@@ -1,0 +1,179 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset222 Thonburi;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww17680\viewh9120\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Subqueries  which marriages have number of children greater than the average?\
+		Select AVG(nr_children)\
+		From pres_marriage\
+\
+		Select *\
+		From pres_marriage\
+		where nr_children >  (Select AVG(nr_children)\
+						 From pres_marriage)\
+\
+\
+List pres_name, death_age of president who died the youngest\
+		Select pres_name, death_age\
+		From president\
+		where death_age = (select min(death_age)\
+						from president) \
+\
+List pres_name, death_age of president who died the 2nd youngest\
+		Select pres_name, death_age\
+		From president\
+		where death_age = ( Select min(death_age)\
+						from president\
+						where death_age >\
+							   ( select min(death_age)\
+							     from president))\
+\
+Subqueries which return set of values \
+\
+List pres_name, death_age of president who died the youngest (do not use min)\
+		Select pres_name, death_age\
+		Form president\
+		where death_age <= all (select death_age\
+							from president\
+							where death_age is not null )\
+		and death_age is not null \
+\
+ \
+List pres_name, birthyr of married presidents\
+		Select pres_name, birth_yr\
+		from president\
+		where pres_name = any (select pres_name\
+							from pres_marriage)\
+\
+(other way)	Select distinct p1.pres_name, birth_yr\
+			from president p1, pres_marriage p2\
+			where p1.pres_name = p2.pres_name\
+\
+\
+List row of demorcatic presidents who married twice\
+		Select 
+\f1 *\
+		from president\
+		where pres_name in (select pres_name\
+							from pres_marriage\
+							group by pres_name\
+							having count(*) = 2)\
+		and party = \'91Democratic\'92\
+
+\f0 \
+\
+\
+List row of demorcatic presidents who married twice have more than 2 children in total \
+		Select 
+\f1 *\
+		from president\
+		where pres_name in (select pres_name\
+							from pres_marriage\
+							group by pres_name\
+							having count(*) = 2\
+							and sum(nr_children) > 2)\
+		and party = \'91Democratic\'92\
+\
+\
+
+\f0 \
+\
+List row of demorcatic presidents who married twice have more than 2 children in total \
+		Select 
+\f1 *\
+		from president\
+		where pres_name in (select pres_name\
+							from pres_marriage\
+							group by pres_name\
+							having count(*) = 2\
+							and sum(nr_children) > 2)\
+		and party = \'91Democratic\'92\
+		and pres_name in (select pres_name\
+						from pres_hobby \
+						where hobby = \'91Golf\'92\
+\
+\
+For these parties which have more than 8 presidents born after 1850, list the name and total number of presidents\
+		select party, count(*)\
+		from president\
+		where party in ( select party\
+						from president\
+						where birth_yr > 1850\
+						group by party \
+						having count(*) > 8)\
+		Group by party\
+
+\f0 \
+Which state provided the largest number of presidents, and what is number\
+		select state_born, count(*)\
+		from president\
+		group by state_born \
+		having count(*) >= all\
+		(select count(*)\
+		 from president\
+		 group by state_born)\
+\
+\
+List hobby that has the highest number of president enjoy\
+		select HOBBY, count(*)\
+		from PRES_HOBBY\
+		group by HOBBY\
+		having count(*) >= all(select count(*) from PRES_HOBBY group by HOBBY);\
+\
+
+\f1 \
+List pres_name of presidents who were born in the same year\
+		
+\f0 select PRES_NAME, BIRTH_YR\
+		from PRESIDENT\
+		where BIRTH_YR in (select BIRTH_YR\
+						from PRESIDENT\
+						group by BIRTH_YR\
+                                    		having count(*) > 1)		\
+\
+\
+Normalization(do not split table if not necessary ) Given input: all attributes and all dependencies between attributes.\
+			        output: relational\
+					   which generate minimum or no 9\
+\
+Process 	1. Group related attributes to from 1st draft tables.\
+		2. For each table, test it against a higher normal form definition. If it passes, do nothing, if 		    not split it until it pass.\
+		3. Repeat step 2 until meet the highest normal form.\
+\
+R can be split, if and only if R has MVDs.\
+\
+When can a table split without information loss? \
+A table can be non loss- decomposed into smaller tables, if the joining of these projections give the original table. (Lossless join table)\
+\
+ETXN can no be split\
+\
+A fact is a ground atomic predicate which two the forth value \'93true\'94 \
+\
+Atomic mean can not split, can not be compose\
+\
+5NF (informal)\
+If R can not be split, R is in 5NF\
+If R can be split and the small tables(projection) after the split always have at least a candidate key of R, R is in 5NF\
+\
+
+\f1 R is equal to the join of x, y, z means R can be split into x, y, z \
+A JD is a split ability property of a relation table.\
+\
+Entity relationship model ( ER model)\
+The ER model is a conceptual- level model (Peter P. Chen)\
+\
+Entity - object of interact \
+			-concrete(tangible)\
+			-abstract(intangible)\
+Attribute - property of entity\
+\
+
+\f0 \
+\
+\
+\
+\
+\
+}

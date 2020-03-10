@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="editor">
+  <ClassDiagramComponents>
+    <Class name="Document" package="editor" visibility="public" xPosition="814.0" yPosition="43.0">
+      <Fields>
+        <Field name="textArray" type="ArrayList&lt;String&gt;" visibility="private"/>
+        <Field name="name" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="Write" returnType="void" visibility="public">
+          <Argument type="String" name="text"/>
+        </Method>
+        <Method name="Erase" returnType="void" visibility="public">
+          <Argument type="String" name="text"/>
+        </Method>
+        <Method name="Bold" returnType="void" visibility="public">
+          <Argument type="int" name="number"/>
+        </Method>
+        <Method name="RemoveBold" returnType="void" visibility="public">
+          <Argument type="int" name="number"/>
+        </Method>
+        <Method name="Erase" returnType="void" visibility="public">
+          <Argument type="int" name="number"/>
+        </Method>
+        <Method name="Read" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="DocumentBoldCommand" package="editor" visibility="public" xPosition="6.0" yPosition="411.0">
+      <Fields>
+        <Field name="editableDoc" type="Document" visibility="private"/>
+        <Field name="line" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Document" name="doc"/>
+          <Argument type="int" name="line"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="undo" returnType="void" visibility="public"/>
+        <Method name="redo" returnType="void" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="DocumentEraseCommand" package="editor" visibility="public" xPosition="1131.0" yPosition="411.0">
+      <Fields>
+        <Field name="editableDoc" type="Document" visibility="private"/>
+        <Field name="text" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Document" name="doc"/>
+          <Argument type="String" name="text"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="undo" returnType="void" visibility="public"/>
+        <Method name="redo" returnType="void" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="DocumentInvoker" package="editor" visibility="public" xPosition="1550.0" yPosition="411.0">
+      <Fields>
+        <Field name="commands" type="ArrayList&lt;Command&gt;" visibility="private"/>
+        <Field name="currentdoc" type="Document" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="Undo" returnType="void" visibility="public"/>
+        <Method name="Redo" returnType="void" visibility="public"/>
+        <Method name="Redo" returnType="void" visibility="public">
+          <Argument type="int" name="level"/>
+        </Method>
+        <Method name="Undo" returnType="void" visibility="public">
+          <Argument type="int" name="level"/>
+        </Method>
+        <Method name="Write" returnType="void" visibility="public">
+          <Argument type="String" name="text"/>
+        </Method>
+        <Method name="Erase" returnType="void" visibility="public">
+          <Argument type="String" name="text"/>
+        </Method>
+        <Method name="Bold" returnType="void" visibility="public">
+          <Argument type="int" name="line"/>
+        </Method>
+        <Method name="RemoveBold" returnType="void" visibility="public">
+          <Argument type="int" name="line"/>
+        </Method>
+        <Method name="Read" returnType="String" visibility="public"/>
+        <Method name="printCommandBuffer" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="DocumentRemoveBoldCommand" package="editor" visibility="public" xPosition="354.0" yPosition="411.0">
+      <Fields>
+        <Field name="editableDoc" type="Document" visibility="private"/>
+        <Field name="line" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Document" name="doc"/>
+          <Argument type="int" name="line"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="undo" returnType="void" visibility="public"/>
+        <Method name="redo" returnType="void" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="DocumentWriteCommand" package="editor" visibility="public" xPosition="750.0" yPosition="411.0">
+      <Fields>
+        <Field name="editableDoc" type="Document" visibility="private"/>
+        <Field name="text" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Document" name="doc"/>
+          <Argument type="String" name="text"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="undo" returnType="void" visibility="public"/>
+        <Method name="redo" returnType="void" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="TestEditor" package="editor" visibility="public" xPosition="118.0" yPosition="109.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="Command" package="editor" visibility="public" xPosition="679.0" yPosition="805.0">
+      <Methods>
+        <Method name="undo" returnType="void" visibility="public"/>
+        <Method name="redo" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="editor.DocumentRemoveBoldCommand" target="editor.Command"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="editor.DocumentBoldCommand" target="editor.Command"/>
+    <HasRelation name="editableDoc" source="editor.DocumentRemoveBoldCommand" target="editor.Document" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="editor.DocumentWriteCommand" target="editor.Command"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="editor.DocumentEraseCommand" target="editor.Command"/>
+    <HasRelation name="editableDoc" source="editor.DocumentEraseCommand" target="editor.Document" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="editableDoc" source="editor.DocumentWriteCommand" target="editor.Document" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="editableDoc" source="editor.DocumentBoldCommand" target="editor.Document" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="commands" source="editor.DocumentInvoker" target="editor.Command" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Command&gt;"/>
+    <HasRelation name="currentdoc" source="editor.DocumentInvoker" target="editor.Document" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

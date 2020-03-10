@@ -1,0 +1,95 @@
+MODULE main
+VAR
+  switch : array 1..4 of {straight,divert};
+  trainA_power : boolean;
+  trainB_power : boolean;
+  trainC_power : boolean;
+  trainA : Train( 1, east, trainA_power, switch);
+  trainB : Train( 2, east, trainB_power, switch);
+  trainC : Train(11, west, trainC_power, switch);
+  crash : boolean;
+  
+  -- Declare additional variables here
+  
+ASSIGN
+  init(switch[1]) := straight;
+  init(switch[2]) := straight;
+  init(switch[3]) := straight;
+  init(switch[4]) := straight;
+  init(trainA_power) := TRUE;
+  init(trainB_power) := FALSE;
+  init(trainC_power) := FALSE;
+  init(crash) := FALSE;
+  next(crash) := 
+    (trainA.position = trainB.position
+    |trainA.position = trainC.position
+    |trainB.position = trainC.position
+    |(trainA.position = next(trainB.position)) & (trainB.position = next(trainA.position))
+    |(trainA.position = next(trainC.position)) & (trainC.position = next(trainA.position))
+    |(trainB.position = next(trainC.position)) & (trainC.position = next(trainB.position))
+    );
+  
+  -- Add your code here 
+
+
+LTLSPEC
+  ( G(trainA_power) &
+    G(!crash) &
+    G(!trainA.blocked) & G(!trainB.blocked) & G(!trainC.blocked) &
+    G(F(trainA.position in 1..2)) & G(F(trainA.position in 11..12)) &
+    G(F(trainB.position in 1..2)) & G(F(trainB.position in 11..12)) &
+    G(F(trainC.position in 1..2)) & G(F(trainC.position in 11..12))
+  )
+
+
+MODULE Train(initialPosition, initialDirection, power, switch)
+VAR
+  position : 1..12;
+  direction : {west, east};
+ASSIGN
+  init(position) := initialPosition;
+  init(direction) := initialDirection;
+  next(position) := 
+    case
+      !power : position;
+      (position =  1 & direction = east & switch[1]=straight) : 3;
+      (position =  2 & direction = east & switch[1]=divert) : 3;
+      (position =  3 & direction = west & switch[1]=straight) : 1;
+      (position =  3 & direction = west & switch[1]=divert) : 2;
+      (position in 3..5 & direction = east) : position + 1;
+      (position in 4..6 & direction = west) : position - 1;
+      (position =  6 & direction = east & switch[2]=straight) : 7;
+      (position =  6 & direction = east & switch[2]=divert) : 8;
+      (position =  7 & direction = west & switch[2]=straight) : 6;
+      (position =  8 & direction = west & switch[2]=divert) : 6;
+      (position =  7 & direction = east & switch[3]=straight) : 9;
+      (position =  8 & direction = east & switch[3]=divert) : 9;
+      (position =  9 & direction = west & switch[3]=straight) : 7;
+      (position =  9 & direction = west & switch[3]=divert) : 8;
+      (position =  9 & direction = east) : 10;
+      (position = 10 & direction = west) : 9;
+      (position = 10 & direction = east & switch[4]=straight) : 11;
+      (position = 10 & direction = east & switch[4]=divert) : 12;
+      (position = 11 & direction = west & switch[4]=straight) : 10;
+      (position = 12 & direction = west & switch[4]=divert) : 10;
+      TRUE : position;
+    esac;
+
+  next(direction) :=
+    case
+      (position in  1..2  & direction = west) : east;
+      (position in 11..12 & direction = east) : west;
+      TRUE : direction;
+    esac;
+  
+DEFINE
+  blocked := power & 
+    ((position =   1 & direction = east & switch[1]=divert)
+    |(position =   2 & direction = east & switch[1]=straight)
+    |(position =   7 & direction = west & switch[2]=divert)
+    |(position =   8 & direction = west & switch[2]=straight)
+    |(position =   7 & direction = east & switch[3]=divert)
+    |(position =   8 & direction = east & switch[3]=straight)
+    |(position =  11 & direction = west & switch[4]=divert)
+    |(position =  12 & direction = west & switch[4]=straight)
+    );

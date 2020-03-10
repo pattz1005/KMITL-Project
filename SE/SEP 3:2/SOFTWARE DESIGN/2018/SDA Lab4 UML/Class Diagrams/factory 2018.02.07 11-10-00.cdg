@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="factory">
+  <ClassDiagramComponents>
+    <Class name="Android" package="factory" visibility="public" xPosition="1828.0" yPosition="293.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ARM" package="factory" visibility="public" xPosition="1249.0" yPosition="531.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Bill" package="factory" visibility="public" xPosition="1670.0" yPosition="154.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="BonusSlot" package="factory" visibility="public" xPosition="303.0" yPosition="531.0">
+      <Fields>
+        <Field name="componentFactory" type="SlotComponentFactory" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="SlotComponentFactory" name="componentFactory"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="build" returnType="void" visibility="package"/>
+      </Methods>
+    </Class>
+    <Class name="Coin" package="factory" visibility="public" xPosition="1249.0" yPosition="154.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="CRT" package="factory" visibility="public" xPosition="1450.0" yPosition="652.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="largeCabinet" package="factory" visibility="public" xPosition="1450.0" yPosition="412.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="LCD" package="factory" visibility="public" xPosition="1259.0" yPosition="652.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Linux" package="factory" visibility="public" xPosition="1259.0" yPosition="293.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="mediumCabinet" package="factory" visibility="public" xPosition="1259.0" yPosition="412.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="NJSlotComponentFactory" package="factory" visibility="public" xPosition="326.0" yPosition="1126.0">
+      <Fields>
+        <Field name="type" type="String" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="s"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="createCabinet" returnType="Cabinet" visibility="public"/>
+        <Method name="createDisplay" returnType="Display" visibility="public"/>
+        <Method name="createGPU" returnType="GPU" visibility="public"/>
+        <Method name="createOS" returnType="OS" visibility="public"/>
+        <Method name="createPayment" returnType="Payment" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="NJSlotFactory" package="factory" visibility="public" xPosition="1608.0" yPosition="1136.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="makeSlot" returnType="Slot" visibility="protected">
+          <Argument type="String" name="item"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="NVSlotComponentFactory" package="factory" visibility="public" xPosition="604.0" yPosition="1126.0">
+      <Fields>
+        <Field name="type" type="String" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="s"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="createCabinet" returnType="Cabinet" visibility="public"/>
+        <Method name="createDisplay" returnType="Display" visibility="public"/>
+        <Method name="createGPU" returnType="GPU" visibility="public"/>
+        <Method name="createOS" returnType="OS" visibility="public"/>
+        <Method name="createPayment" returnType="Payment" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="NVSlotFactory" package="factory" visibility="public" xPosition="1163.0" yPosition="1136.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="makeSlot" returnType="Slot" visibility="protected">
+          <Argument type="String" name="item"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ProgressiveSlot" package="factory" visibility="public" xPosition="604.0" yPosition="531.0">
+      <Fields>
+        <Field name="componentFactory" type="SlotComponentFactory" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="SlotComponentFactory" name="componentFactory"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="build" returnType="void" visibility="package"/>
+      </Methods>
+    </Class>
+    <Class name="Reels" package="factory" visibility="public" xPosition="1627.0" yPosition="652.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Slot" package="factory" visibility="public" isAbstract="true" xPosition="390.0" yPosition="45.0">
+      <Fields>
+        <Field name="cabinet" type="Cabinet" visibility="package"/>
+        <Field name="display" type="Display" visibility="package"/>
+        <Field name="gpu" type="GPU" visibility="package"/>
+        <Field name="payment" type="Payment" visibility="package"/>
+        <Field name="software" type="OS" visibility="package"/>
+        <Field name="name" type="String" visibility="package"/>
+        <Field name="components" type="ArrayList" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="build" returnType="void" visibility="package" isAbstract="true"/>
+        <Method name="collectParts" returnType="void" visibility="package"/>
+        <Method name="assembleParts" returnType="void" visibility="package"/>
+        <Method name="test" returnType="void" visibility="package">
+          <Argument type="String" name="type"/>
+        </Method>
+        <Method name="uploadSoftware" returnType="void" visibility="package"/>
+        <Method name="ship" returnType="void" visibility="package"/>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="n"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="SlotFactory" package="factory" visibility="public" isAbstract="true" xPosition="1372.0" yPosition="904.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="orderSlot" returnType="Slot" visibility="public">
+          <Argument type="String" name="type"/>
+        </Method>
+        <Method name="makeSlot" returnType="Slot" visibility="package" isAbstract="true">
+          <Argument type="String" name="type"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="SlotMachineApp" package="factory" visibility="public" xPosition="1592.0" yPosition="904.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="smallCabinet" package="factory" visibility="public" xPosition="1637.0" yPosition="412.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="StraightSlot" package="factory" visibility="public" xPosition="24.0" yPosition="531.0">
+      <Fields>
+        <Field name="componentFactory" type="SlotComponentFactory" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="SlotComponentFactory" name="componentFactory"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="build" returnType="void" visibility="package"/>
+      </Methods>
+    </Class>
+    <Class name="Symbian" package="factory" visibility="public" xPosition="1450.0" yPosition="293.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ticket" package="factory" visibility="public" xPosition="1459.0" yPosition="154.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="VGA" package="factory" visibility="public" xPosition="1808.0" yPosition="652.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="WASlotComponentFactory" package="factory" visibility="public" xPosition="37.0" yPosition="1126.0">
+      <Fields>
+        <Field name="type" type="String" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="s"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="createCabinet" returnType="Cabinet" visibility="public"/>
+        <Method name="createDisplay" returnType="Display" visibility="public"/>
+        <Method name="createGPU" returnType="GPU" visibility="public"/>
+        <Method name="createOS" returnType="OS" visibility="public"/>
+        <Method name="createPayment" returnType="Payment" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="WASlotFactory" package="factory" visibility="public" xPosition="1382.0" yPosition="1136.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="makeSlot" returnType="Slot" visibility="protected">
+          <Argument type="String" name="item"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="WindowME" package="factory" visibility="public" xPosition="2027.0" yPosition="287.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="WindowXP" package="factory" visibility="public" xPosition="1650.0" yPosition="293.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="X77" package="factory" visibility="public" xPosition="1627.0" yPosition="531.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="X86" package="factory" visibility="public" xPosition="1450.0" yPosition="531.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="Cabinet" package="factory" visibility="public" xPosition="1024.0" yPosition="412.0">
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="Display" package="factory" visibility="public" xPosition="1024.0" yPosition="652.0">
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="GPU" package="factory" visibility="public" xPosition="1024.0" yPosition="531.0">
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="OS" package="factory" visibility="public" xPosition="1024.0" yPosition="293.0">
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="Payment" package="factory" visibility="public" xPosition="1024.0" yPosition="165.0">
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="SlotComponentFactory" package="factory" visibility="public" xPosition="380.0" yPosition="797.0">
+      <Methods>
+        <Method name="createCabinet" returnType="Cabinet" visibility="public"/>
+        <Method name="createDisplay" returnType="Display" visibility="public"/>
+        <Method name="createPayment" returnType="Payment" visibility="public"/>
+        <Method name="createGPU" returnType="GPU" visibility="public"/>
+        <Method name="createOS" returnType="OS" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="factory.WASlotComponentFactory" target="factory.Payment" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="factory.NVSlotFactory" target="factory.Slot" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="factory.smallCabinet" target="factory.Cabinet"/>
+    <UseRelation source="factory.NVSlotComponentFactory" target="factory.Payment" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="factory.NVSlotComponentFactory" target="factory.Display" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="factory.NVSlotComponentFactory" target="factory.GPU" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="factory.NVSlotComponentFactory" target="factory.OS" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="factory.WASlotComponentFactory" target="factory.Display" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="factory.NVSlotFactory" target="factory.SlotFactory"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="factory.LCD" target="factory.Display"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="factory.X86" target="factory.GPU"/>
+    <HasRelation name="componentFactory" source="factory.StraightSlot" target="factory.SlotComponentFactory" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="factory.SlotComponentFactory" target="factory.Cabinet" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="factory.Coin" target="factory.Payment"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="factory.WindowME" target="factory.OS"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="factory.CRT" target="factory.Display"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="factory.largeCabinet" target="factory.Cabinet"/>
+    <HasRelation name="cabinet" source="factory.Slot" target="factory.Cabinet" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="factory.WASlotComponentFactory" target="factory.OS" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="display" source="factory.Slot" target="factory.Display" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="factory.Ticket" target="factory.Payment"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="factory.X77" target="factory.GPU"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="factory.mediumCabinet" target="factory.Cabinet"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="factory.Bill" target="factory.Payment"/>
+    <UseRelation source="factory.WASlotComponentFactory" target="factory.GPU" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="factory.WASlotFactory" target="factory.Slot" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="factory.NJSlotFactory" target="factory.SlotFactory"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="factory.NJSlotComponentFactory" target="factory.SlotComponentFactory"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="factory.VGA" target="factory.Display"/>
+    <UseRelation source="factory.NJSlotComponentFactory" target="factory.Cabinet" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="factory.NJSlotFactory" target="factory.Slot" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="factory.Reels" target="factory.Display"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="factory.Symbian" target="factory.OS"/>
+    <UseRelation source="factory.SlotComponentFactory" target="factory.Payment" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="factory.NJSlotComponentFactory" target="factory.Payment" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="factory.WASlotFactory" target="factory.SlotFactory"/>
+    <UseRelation source="factory.NJSlotComponentFactory" target="factory.OS" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="payment" source="factory.Slot" target="factory.Payment" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="factory.StraightSlot" target="factory.Slot"/>
+    <UseRelation source="factory.SlotComponentFactory" target="factory.OS" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="factory.SlotComponentFactory" target="factory.GPU" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="factory.NVSlotComponentFactory" target="factory.Cabinet" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="factory.WindowXP" target="factory.OS"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="factory.Android" target="factory.OS"/>
+    <UseRelation source="factory.WASlotComponentFactory" target="factory.Cabinet" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="software" source="factory.Slot" target="factory.OS" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="factory.SlotFactory" target="factory.Slot" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="factory.NVSlotComponentFactory" target="factory.SlotComponentFactory"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="factory.WASlotComponentFactory" target="factory.SlotComponentFactory"/>
+    <HasRelation name="gpu" source="factory.Slot" target="factory.GPU" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="factory.SlotComponentFactory" target="factory.Display" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="factory.NJSlotComponentFactory" target="factory.GPU" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="factory.ARM" target="factory.GPU"/>
+    <UseRelation source="factory.NJSlotComponentFactory" target="factory.Display" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="factory.Linux" target="factory.OS"/>
+    <IsRelation name="is" source="factory.ProgressiveSlot" target="factory.Slot"/>
+    <IsRelation name="is" source="factory.BonusSlot" target="factory.Slot"/>
+    <HasRelation name="componentFactory" source="factory.BonusSlot" target="factory.SlotComponentFactory" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="componentFactory" source="factory.ProgressiveSlot" target="factory.SlotComponentFactory" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

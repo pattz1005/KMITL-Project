@@ -1,0 +1,15 @@
+MODULE main
+
+VAR
+  b0 : boolean;
+  b1 : boolean;
+
+ASSIGN
+  init(b0) := FALSE;
+  init(b1) := FALSE;
+  
+  next(b0) := !b0;
+
+LTLSPEC
+  G(b0=b1)
+  

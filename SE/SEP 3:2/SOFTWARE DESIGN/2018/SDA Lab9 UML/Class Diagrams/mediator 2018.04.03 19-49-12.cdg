@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="mediator">
+  <ClassDiagramComponents>
+    <Class name="AmericanSeller" package="mediator" visibility="public" xPosition="847.0" yPosition="458.0">
+      <Fields>
+        <Field name="mediator" type="Mediator" visibility="package"/>
+        <Field name="priceInDollars" type="float" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Mediator" name="mediator"/>
+          <Argument type="float" name="priceInDollars"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="isBidAccepted" returnType="boolean" visibility="public">
+          <Argument type="float" name="bidInDollars"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Buyer" package="mediator" visibility="public" xPosition="266.0" yPosition="79.0">
+      <Fields>
+        <Field name="mediator" type="Mediator" visibility="package"/>
+        <Field name="unitOfCurrency" type="String" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Mediator" name="mediator"/>
+          <Argument type="String" name="unitOfCurrency"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="attemptToPurchase" returnType="boolean" visibility="public">
+          <Argument type="float" name="bid"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Demo" package="mediator" visibility="public" xPosition="1373.0" yPosition="458.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="DollarConverter" package="mediator" visibility="public" xPosition="1315.0" yPosition="59.0">
+      <Fields>
+        <Field name="mediator" type="Mediator" visibility="package"/>
+        <Field name="DOLLAR_UNIT" type="float" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="EURO_UNIT" type="float" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="KRONA_UNIT" type="float" visibility="public" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Mediator" name="mediator"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="convertEurosToDollars" returnType="float" visibility="private">
+          <Argument type="float" name="euros"/>
+        </Method>
+        <Method name="convertKronorToDollars" returnType="float" visibility="private">
+          <Argument type="float" name="kronor"/>
+        </Method>
+        <Method name="convertCurrencyToDollars" returnType="float" visibility="public">
+          <Argument type="float" name="amount"/>
+          <Argument type="String" name="unitOfCurrency"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FrenchBuyer" package="mediator" visibility="public" xPosition="221.0" yPosition="396.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Mediator" name="mediator"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Mediator" package="mediator" visibility="public" xPosition="847.0" yPosition="49.0">
+      <Fields>
+        <Field name="frenchBuyer" type="Buyer" visibility="private"/>
+        <Field name="swedishBuyer" type="Buyer" visibility="private"/>
+        <Field name="americanSeller" type="AmericanSeller" visibility="private"/>
+        <Field name="dollarConverter" type="DollarConverter" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="registerFrenchBuyer" returnType="void" visibility="public">
+          <Argument type="Buyer" name="b"/>
+        </Method>
+        <Method name="registerSwedishBuyer" returnType="void" visibility="public">
+          <Argument type="Buyer" name="b"/>
+        </Method>
+        <Method name="registerAmericanSeller" returnType="void" visibility="public">
+          <Argument type="AmericanSeller" name="a"/>
+        </Method>
+        <Method name="registerDollarConverter" returnType="void" visibility="public">
+          <Argument type="DollarConverter" name="d"/>
+        </Method>
+        <Method name="placeBid" returnType="boolean" visibility="public">
+          <Argument type="float" name="bid"/>
+          <Argument type="String" name="unitOfCurrency"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="SwedishBuyer" package="mediator" visibility="public" xPosition="466.0" yPosition="396.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Mediator" name="mediator"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="mediator.FrenchBuyer" target="mediator.Buyer"/>
+    <HasRelation name="dollarConverter" source="mediator.Mediator" target="mediator.DollarConverter" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="mediator" source="mediator.Buyer" target="mediator.Mediator" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="swedishBuyer" source="mediator.Mediator" target="mediator.Buyer" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="mediator.SwedishBuyer" target="mediator.Buyer"/>
+    <HasRelation name="mediator" source="mediator.DollarConverter" target="mediator.Mediator" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="frenchBuyer" source="mediator.Mediator" target="mediator.Buyer" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="mediator" source="mediator.AmericanSeller" target="mediator.Mediator" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="americanSeller" source="mediator.Mediator" target="mediator.AmericanSeller" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

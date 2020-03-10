@@ -1,0 +1,1 @@
+clcclearclose all% time variablefs = 100; % sampling ratet = 0:1/fs:1; % time in one secondfn = 5; % original frequencyft = sin(2*pi*fn*t);% frequency domain by FFT methodfx = fft(ft, fs);fq = 0:length(fx)-1;afx = abs(fx);plot(t, ft);figurestem(fq, afx)

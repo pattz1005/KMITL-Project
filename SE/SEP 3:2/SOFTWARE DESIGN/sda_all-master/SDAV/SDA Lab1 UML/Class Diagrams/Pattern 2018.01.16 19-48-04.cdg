@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Pattern">
+  <ClassDiagramComponents>
+    <Class name="BarChartObserver" package="Pattern" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="courseData" type="ArrayList&lt;CourseRecord&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="CourseData" name="data"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="paint" returnType="void" visibility="public">
+          <Argument type="Graphics" name="g"/>
+        </Method>
+        <Method name="update" returnType="void" visibility="public">
+          <Argument type="Object" name="o"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="CourseController" package="Pattern" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="courseData" type="CourseData" visibility="private"/>
+        <Field name="sliders" type="ArrayList&lt;JSlider&gt;" visibility="private"/>
+        <Field name="coursePanel" type="JPanel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="CourseData" name="courses"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="addCourse" returnType="void" visibility="public">
+          <Argument type="CourseRecord" name="record"/>
+        </Method>
+        <Method name="update" returnType="void" visibility="public">
+          <Argument type="Object" name="o"/>
+        </Method>
+        <Method name="actionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="arg0"/>
+        </Method>
+        <Method name="stateChanged" returnType="void" visibility="public">
+          <Argument type="ChangeEvent" name="arg0"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="CourseData" package="Pattern" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="courseData" type="ArrayList&lt;CourseRecord&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="addCourseRecord" returnType="void" visibility="public">
+          <Argument type="CourseRecord" name="courseRecord"/>
+        </Method>
+        <Method name="changeCourseRecord" returnType="void" visibility="public">
+          <Argument type="String" name="subjectName"/>
+          <Argument type="int" name="numOfStudents"/>
+        </Method>
+        <Method name="getUpdate" returnType="ArrayList&lt;CourseRecord&gt;" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="CourseRecord" package="Pattern" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="numOfStudents" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="courseName"/>
+          <Argument type="int" name="numOfStudents"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNumOfStudents" returnType="int" visibility="public"/>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setNumOfStudents" returnType="void" visibility="public">
+          <Argument type="int" name="numOfStudents"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="LayoutConstants" package="Pattern" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="xOffset" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="yOffset" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="graphHeight" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="maxValue" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="barHeight" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="barWidth" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="barSpacing" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="courseColours" type="Color[]" visibility="public" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="paintBarChartOutline" returnType="void" visibility="public" isStatic="true">
+          <Argument type="Graphics" name="g"/>
+          <Argument type="int" name="noOfBars"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Observable" package="Pattern" visibility="public" isAbstract="true" xPosition="1520.0" yPosition="20.0">
+      <Fields>
+        <Field name="observers" type="ArrayList&lt;Observer&gt;" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="attach" returnType="void" visibility="public">
+          <Argument type="Observer" name="o"/>
+        </Method>
+        <Method name="detach" returnType="void" visibility="public">
+          <Argument type="Observer" name="o"/>
+        </Method>
+        <Method name="notifyObservers" returnType="void" visibility="public">
+          <Argument type="Object" name="o"/>
+        </Method>
+        <Method name="getUpdate" returnType="Object" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Interface name="Observer" package="Pattern" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Methods>
+        <Method name="update" returnType="void" visibility="public">
+          <Argument type="Object" name="o"/>
+        </Method>
+      </Methods>
+    </Interface>
+    <Class name="PieChartObserver" package="Pattern" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields>
+        <Field name="courseData" type="ArrayList&lt;CourseRecord&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="CourseData" name="data"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="paint" returnType="void" visibility="public">
+          <Argument type="Graphics" name="g"/>
+        </Method>
+        <Method name="update" returnType="void" visibility="public">
+          <Argument type="Object" name="o"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Pattern.PieChartObserver" target="Pattern.Observer"/>
+    <HasRelation name="observers" source="Pattern.Observable" target="Pattern.Observer" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Observer&gt;"/>
+    <HasRelation name="courseData" source="Pattern.CourseController" target="Pattern.CourseData" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="courseData" source="Pattern.CourseData" target="Pattern.CourseRecord" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;CourseRecord&gt;"/>
+    <HasRelation name="courseData" source="Pattern.PieChartObserver" target="Pattern.CourseRecord" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;CourseRecord&gt;"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Pattern.CourseController" target="Pattern.Observer"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Pattern.BarChartObserver" target="Pattern.Observer"/>
+    <UseRelation source="Pattern.CourseController" target="Pattern.CourseRecord" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Pattern.CourseData" target="Pattern.Observable"/>
+    <UseRelation source="Pattern.CourseData" target="Pattern.CourseRecord" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Pattern.Observable" target="Pattern.Observer" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="courseData" source="Pattern.BarChartObserver" target="Pattern.CourseRecord" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;CourseRecord&gt;"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

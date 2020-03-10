@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:lang="http://www.springframework.org/schema/lang"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-2.5.xsd">
+
+  <bean id="source" class="L11_3.MessageSource">
+    <constructor-arg index="0" value="Hello XML Spring" />
+  </bean>
+
+  <bean id="destination" class="L11_3.StdoutMessageDestination" />
+
+  <bean id="service" class="L11_3.DefaultMessageService">
+    <property name="source" ref="source" />
+    <property name="destination" ref="destination" />
+  </bean>
+  
+</beans>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="bridge">
+  <ClassDiagramComponents>
+    <Class name="BridgeTest" package="bridge" visibility="public" xPosition="487.0" yPosition="63.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Circle" package="bridge" visibility="public" xPosition="487.0" yPosition="385.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="DrawingService" name="drawingService"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="draw" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="DrawingService" package="bridge" visibility="public" isAbstract="true" xPosition="1701.0" yPosition="63.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="drawLine" returnType="void" visibility="public" isAbstract="true">
+          <Argument type="int" name="x1"/>
+          <Argument type="int" name="y1"/>
+          <Argument type="int" name="x2"/>
+          <Argument type="int" name="y2"/>
+        </Method>
+        <Method name="drawPixel" returnType="void" visibility="public" isAbstract="true">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Method>
+        <Method name="drawCircle" returnType="void" visibility="public" isAbstract="true">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+          <Argument type="int" name="r"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Polygon" package="bridge" visibility="public" xPosition="1063.0" yPosition="385.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="DrawingService" name="drawingService"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="draw" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Printer" package="bridge" visibility="public" xPosition="1410.0" yPosition="682.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="print_line" returnType="void" visibility="public">
+          <Argument type="int" name="x1"/>
+          <Argument type="int" name="y1"/>
+          <Argument type="int" name="x2"/>
+          <Argument type="int" name="y2"/>
+        </Method>
+        <Method name="print_pixel" returnType="void" visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Method>
+        <Method name="print_circle" returnType="void" visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+          <Argument type="int" name="r"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Rectangle" package="bridge" visibility="public" xPosition="762.0" yPosition="385.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="DrawingService" name="drawingService"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="draw" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Screen" package="bridge" visibility="public" xPosition="1964.0" yPosition="682.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="draw_line" returnType="void" visibility="public">
+          <Argument type="int" name="x1"/>
+          <Argument type="int" name="y1"/>
+          <Argument type="int" name="x2"/>
+          <Argument type="int" name="y2"/>
+        </Method>
+        <Method name="draw_pixel" returnType="void" visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Method>
+        <Method name="draw_circle" returnType="void" visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+          <Argument type="int" name="r"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Shape" package="bridge" visibility="public" isAbstract="true" xPosition="782.0" yPosition="63.0">
+      <Fields>
+        <Field name="drawingService" type="DrawingService" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="protected">
+          <Argument type="DrawingService" name="drawingService"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="draw" returnType="void" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="WrapPrinter" package="bridge" visibility="public" xPosition="1410.0" yPosition="371.0">
+      <Fields>
+        <Field name="printer" type="Printer" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="drawLine" returnType="void" visibility="public">
+          <Argument type="int" name="x1"/>
+          <Argument type="int" name="y1"/>
+          <Argument type="int" name="x2"/>
+          <Argument type="int" name="y2"/>
+        </Method>
+        <Method name="drawPixel" returnType="void" visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Method>
+        <Method name="drawCircle" returnType="void" visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+          <Argument type="int" name="r"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="WrapScreen" package="bridge" visibility="public" xPosition="1967.0" yPosition="371.0">
+      <Fields>
+        <Field name="screen" type="Screen" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="drawLine" returnType="void" visibility="public">
+          <Argument type="int" name="x1"/>
+          <Argument type="int" name="y1"/>
+          <Argument type="int" name="x2"/>
+          <Argument type="int" name="y2"/>
+        </Method>
+        <Method name="drawPixel" returnType="void" visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Method>
+        <Method name="drawCircle" returnType="void" visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+          <Argument type="int" name="r"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="WrapXmlWriter" package="bridge" visibility="public" xPosition="1683.0" yPosition="371.0">
+      <Fields>
+        <Field name="xmlWriter" type="XmlWriter" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="drawLine" returnType="void" visibility="public">
+          <Argument type="int" name="x1"/>
+          <Argument type="int" name="y1"/>
+          <Argument type="int" name="x2"/>
+          <Argument type="int" name="y2"/>
+        </Method>
+        <Method name="drawPixel" returnType="void" visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Method>
+        <Method name="drawCircle" returnType="void" visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+          <Argument type="int" name="r"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="XmlWriter" package="bridge" visibility="public" xPosition="1682.0" yPosition="682.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="write_line" returnType="void" visibility="public">
+          <Argument type="int" name="x1"/>
+          <Argument type="int" name="y1"/>
+          <Argument type="int" name="x2"/>
+          <Argument type="int" name="y2"/>
+        </Method>
+        <Method name="write_pixel" returnType="void" visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Method>
+        <Method name="write_circle" returnType="void" visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+          <Argument type="int" name="r"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="bridge.Rectangle" target="bridge.Shape"/>
+    <HasRelation name="drawingService" source="bridge.Shape" target="bridge.DrawingService" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="bridge.WrapPrinter" target="bridge.DrawingService"/>
+    <IsRelation name="is" source="bridge.WrapXmlWriter" target="bridge.DrawingService"/>
+    <IsRelation name="is" source="bridge.Polygon" target="bridge.Shape"/>
+    <HasRelation name="screen" source="bridge.WrapScreen" target="bridge.Screen" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="printer" source="bridge.WrapPrinter" target="bridge.Printer" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="bridge.WrapScreen" target="bridge.DrawingService"/>
+    <HasRelation name="xmlWriter" source="bridge.WrapXmlWriter" target="bridge.XmlWriter" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="bridge.Circle" target="bridge.Shape"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

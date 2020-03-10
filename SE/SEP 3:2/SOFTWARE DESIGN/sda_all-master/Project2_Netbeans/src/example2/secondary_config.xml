@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+">
+  <bean id="movie" class="example2.movielister.Movie_1" scope="prototype"/>
+  
+  <bean id="list" class="java.util.ArrayList"  scope="prototype"/>
+  
+  <bean id="string_buffer" class="java.lang.StringBuffer"  scope="prototype"/>
+  
+  <bean id="file_name" class="java.lang.String"  scope="prototype">
+    <constructor-arg type="java.lang.String" value="C:\Users\alok\Documents\NetBeansProjects\MovieLister\src\movies.txt" />
+  </bean>
+  
+  <bean id="file" class="java.io.File"  scope="prototype">
+    <constructor-arg index="0" ref="file_name" />
+  </bean>
+  
+  <bean id="file_reader" class="java.io.FileReader"  scope="prototype">
+    <constructor-arg index="0" ref="file" />
+  </bean>
+  
+  <bean id="buffered_reader" class="java.io.BufferedReader"  scope="prototype">
+    <constructor-arg index="0" ref="file_reader" />
+  </bean>
+</beans>

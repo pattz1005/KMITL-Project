@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <context:property-placeholder location="classpath:example1/context.properties"/>
+    
+    <bean id="textDatabase" 
+          class="example1.movie.TabDelimitedMovieFinder">
+        <constructor-arg index="0" value="${database.textFilename}"/>
+    </bean>
+    
+    <bean id="realDatabase"
+          class="example1.movie.DatabaseMovieFinder"
+          destroy-method="cleanUp">
+        <constructor-arg index="0" value="${database.configFilename}"/>
+    </bean>
+    
+    <bean id="lister"
+          class="example1.movie.MovieLister">
+        <property name="movieFinder" ref="textDatabase"/>
+    </bean>
+
+</beans>

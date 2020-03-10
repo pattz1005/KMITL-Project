@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="proxy">
+  <ClassDiagramComponents>
+    <Class name="Client" package="proxy" visibility="public" xPosition="993.0" yPosition="382.0">
+      <Fields>
+        <Field name="fileName" type="String" visibility="private" isStatic="true"/>
+        <Field name="COUNT" type="int" visibility="private" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Map" package="proxy" visibility="public" xPosition="327.0" yPosition="382.0">
+      <Fields>
+        <Field name="fileName" type="String" visibility="private"/>
+        <Field name="header" type="String" visibility="private" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="fileName"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="find" returnType="String" visibility="public">
+          <Argument type="String" name="key"/>
+        </Method>
+        <Method name="add" returnType="void" visibility="public">
+          <Argument type="String" name="key"/>
+          <Argument type="String" name="value"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MapProxy" package="proxy" visibility="public" xPosition="691.0" yPosition="344.0">
+      <Fields>
+        <Field name="fileName" type="String" visibility="private"/>
+        <Field name="map" type="Map" visibility="private"/>
+        <Field name="hashtable" type="HashMap&lt;String, String&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="fileName"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="find" returnType="String" visibility="public">
+          <Argument type="String" name="key"/>
+        </Method>
+        <Method name="add" returnType="void" visibility="public">
+          <Argument type="String" name="key"/>
+          <Argument type="String" name="value"/>
+        </Method>
+        <Method name="getMap" returnType="Map" visibility="private"/>
+        <Method name="get" returnType="String" visibility="private">
+          <Argument type="String" name="key"/>
+        </Method>
+        <Method name="put" returnType="void" visibility="private">
+          <Argument type="String" name="key"/>
+          <Argument type="String" name="value"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MapProxyTest" package="proxy" visibility="public" xPosition="993.0" yPosition="87.0">
+      <Fields>
+        <Field name="fileName" type="String" visibility="private"/>
+        <Field name="COUNT" type="int" visibility="private" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+        <Method name="suite" returnType="Test" visibility="public" isStatic="true"/>
+        <Method name="setUp" returnType="void" visibility="public"/>
+        <Method name="test1" returnType="void" visibility="public"/>
+        <Method name="test2" returnType="void" visibility="public"/>
+        <Method name="test3" returnType="void" visibility="public"/>
+        <Method name="tearDown" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="MapTest" package="proxy" visibility="public" xPosition="1227.0" yPosition="87.0">
+      <Fields>
+        <Field name="fileName" type="String" visibility="private"/>
+        <Field name="COUNT" type="int" visibility="private" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+        <Method name="suite" returnType="Test" visibility="public" isStatic="true"/>
+        <Method name="setUp" returnType="void" visibility="public"/>
+        <Method name="test1" returnType="void" visibility="public"/>
+        <Method name="test2" returnType="void" visibility="public"/>
+        <Method name="test3" returnType="void" visibility="public"/>
+        <Method name="tearDown" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="AbstractMap" package="proxy" visibility="public" xPosition="496.0" yPosition="111.0">
+      <Methods>
+        <Method name="find" returnType="String" visibility="public">
+          <Argument type="String" name="key"/>
+        </Method>
+        <Method name="add" returnType="void" visibility="public">
+          <Argument type="String" name="key"/>
+          <Argument type="String" name="value"/>
+        </Method>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="proxy.MapProxy" target="proxy.AbstractMap"/>
+    <HasRelation name="map" source="proxy.MapProxy" target="proxy.Map" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="Map"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="proxy.Map" target="proxy.AbstractMap"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

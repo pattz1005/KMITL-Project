@@ -1,0 +1,1 @@
+clcclearclose allx = -2:0.01:2;t = (abs(x) - 1).^2;w= 1-((abs(x)./2).^2);y1 = sqrt(1-t);y2 = -3.*(sqrt(w)); plot(y1)figureplot(y2)

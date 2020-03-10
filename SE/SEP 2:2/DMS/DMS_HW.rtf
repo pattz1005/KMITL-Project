@@ -1,0 +1,21 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+select *\
+from pres_marriage p1\
+where p1.pr_age = (select min(p2.pr_age)\
+                from pres_marriage p2\
+                where p1.pres_name = p2.pres_name\
+                and p2.pr_age != (select min(p3.pr_age)\
+                                  from pres_marriage p3 \
+                                  where p2.pres_name = p3.pres_name \
+                                  group by p3.pres_name\
+                                  having count(*) >= 2)\
+)\
+order by p1.pres_name\
+}
