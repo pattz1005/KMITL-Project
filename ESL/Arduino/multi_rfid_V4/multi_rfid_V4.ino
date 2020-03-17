@@ -163,9 +163,9 @@ void getProtocol(){
   switch(protocolUart){
     case HEADER :
       inputByte = queue.pop();
-      Serial.println("HEADER");
+      /*Serial.println("HEADER");
       Serial.print("header = ");
-      Serial.println(inputByte);
+      Serial.println(inputByte);*/
       if(inputByte == 0x02){
         protocolUart = COMMAND;
       }
@@ -173,9 +173,9 @@ void getProtocol(){
 
      case COMMAND :
       inputByte = queue.pop();
-      Serial.println("COMMAND");
+      /*Serial.println("COMMAND");
       Serial.print("command = ");
-      Serial.println(inputByte);
+      Serial.println(inputByte);*/
       if(inputByte == 0x21){
         command  = 0x21;
       }
@@ -191,58 +191,64 @@ void getProtocol(){
         command = 0x23;
       }
       else{
+        Serial.println("protocol fail");
         protocolUart = HEADER;
       }
       protocolUart = SIZE;
       break;
 
      case SIZE : 
-      Serial.println("SIZE");
+      //Serial.println("SIZE");
       dataSize = queue.pop();
-      Serial.print("size = ");
+      /*Serial.print("size = ");
       Serial.println(dataSize); 
       Serial.print("command = ");
-      Serial.println(command);
+      Serial.println(command);*/
 
       if(command == 0x22){
-        Serial.println("s22");
+        //Serial.println("s22");
         if(dataSize == 0x01){
           protocolUart = CHECK;
         }
         else {
+          Serial.println("protocol fail");
           protocolUart = HEADER;
         }
       }
       else if (command == 0x21){
-        Serial.println("s21");
+        //Serial.println("s21");
         if(dataSize == 0x01){
           protocolUart == RESET;
         }
         else {
+          Serial.println("protocol fail");
           protocolUart = HEADER;
         }
       }
 
       else if (command == 0x23){
-        Serial.println("s23");
+        //Serial.println("s23");
         if(dataSize == 0x01){
           protocolUart = CODE;
         }
         else {
+          Serial.println("protocol fail");
           protocolUart = HEADER;
         }
       }
 
       else if (command ==0x20){
-        Serial.println("s20");
+       // Serial.println("s20");
         if(dataSize == 0x01){
           protocolUart = MODULE;
         }
         else {
+          Serial.println("protocol fail");
           protocolUart = HEADER;
         }
       }
       else{
+        Serial.println("protocol fail");
         protocolUart = HEADER;
       }
       break;
@@ -251,13 +257,14 @@ void getProtocol(){
       inputByte = queue.pop();
       if(inputByte >= 0x00 && inputByte < 0x10){
         index = inputByte; 
-        Serial.println("CHECK");
+       // Serial.println("CHECK");
         protocolUart = END;
       }
       else if (inputByte == 0xFF){
         command = 0xFF;
       }
       else {
+        Serial.println("protocol fail");
         protocolUart = HEADER;
       }
       break;
@@ -265,13 +272,14 @@ void getProtocol(){
       case CODE : 
         inputByte = queue.pop();
         if(inputByte >= 0x00 && inputByte < 0x10){
-          Serial.println("CODE");
+         // Serial.println("CODE");
           index = inputByte;
-          Serial.print("index = ");
-          Serial.println(index);
+          //Serial.print("index = ");
+         // Serial.println(index);
           protocolUart = END;
         }
         else {
+          Serial.println("protocol fail");
           protocolUart = HEADER;
         }
         break;
@@ -279,10 +287,11 @@ void getProtocol(){
      case MODULE : 
       inputByte = queue.pop();
       if(inputByte == 0x00){
-        Serial.println("MODULE");
+        //Serial.println("MODULE");
         protocolUart = END;
       }
       else{
+        Serial.println("protocol fail");
         protocolUart = HEADER;
       }
       break;
@@ -293,6 +302,7 @@ void getProtocol(){
         protocolUart = END;
       }
       else {
+        Serial.println("protocol fail");
         protocolUart = HEADER;
       }
       break;
@@ -300,8 +310,11 @@ void getProtocol(){
      case END :
       inputByte = queue.pop();
       if(inputByte == 0x03){
-        Serial.println("END");
+        //Serial.println("END");
         processProtocol();
+      }
+      else{
+        Serial.println("protocol fail");
       }
       protocolUart = HEADER;
       break;
@@ -337,9 +350,9 @@ void readR(int n){
   Serial.println("readR");
   for ( int i = 0; i <5; i++){
     code[i] = locker[n].serNum[i];
-    Serial.print(code[i]);
+   /* Serial.print(code[i]);
     Serial.print(" ");
-    Serial.println(locker[n].serNum[i]);
+    Serial.println(locker[n].serNum[i]);*/
   }
   codeToString(code);
 }
@@ -367,10 +380,10 @@ void codeToString(uint8_t a[]){
   
   string_code = "";
 
-    Serial.println("print char");
+    /*Serial.println("print char");
   for(int i = 0; i < 10; i++){
-    //Serial.println(char_code[i]);
-  }
+    Serial.println(char_code[i]);
+  }*/
 }
 
 byte nibble(char c) {
@@ -400,18 +413,35 @@ void loop(){
 }
  
 void requestEvent() {
+   Serial.print("sending code : ");
   if (command == 0x20){
     Wire.write(0x02);
+    Serial.print(0x02);
+    Serial.print(" ");
     Wire.write(0x20);
+    Serial.print(0x20);
+    Serial.print(" ");
     Wire.write(0x01);
+    Serial.print(0x01);
+    Serial.print(" ");
     Wire.write(0x31);
+    Serial.print(0x31);
+    Serial.print(" ");
     Wire.write(0x03);
+    Serial.println(0x03);
+    
   }
   if (command == 0x22){
     if(index == 0xFF){
       Wire.write(0x02);
+      Serial.print(0x02);
+      Serial.print(" ");
       Wire.write(0x22);
+      Serial.print(0x22);
+      Serial.print(" ");
       Wire.write(0x0F);
+      Serial.print(0x0F);
+      Serial.print(" ");
       for(int i = 0; i < 16; i++){
        Serial.print("locker no. ");
        Serial.print(i);
@@ -419,30 +449,45 @@ void requestEvent() {
        Serial.println(resultAll[i]);
         Wire.write(resultAll[i]);
      }
+    Serial.print(" ");
+    Serial.println(0x03);
     Wire.write(0x03);
+    
     }
     else {
-      Serial.print("locker no. ");
-      Serial.print(index);
-      Serial.print(" : ");
-      Serial.println(result);
       Wire.write(0x02);
+      Serial.print(0x02);
+      Serial.print(" ");
       Wire.write(0x22);
+      Serial.print(0x22);
+      Serial.print(" ");
       Wire.write(0x01);
+      Serial.print(0x01);
+      Serial.print(" ");
       Wire.write(result);
+      Serial.print(result);
+      Serial.print(" ");
       Wire.write(0x03);
+      Serial.print(0x03);
+      Serial.println(" ");
     }
     
   }
 
   else if ( command == 0x23){
     Wire.write(0x02);
+    Serial.print(0x02);
+    Serial.print(" ");
     Wire.write(0x23);
+    Serial.print(0x23);
+    Serial.print(" ");
     Wire.write(0x0A);
     for(int i = 0; i <10 ; i++){
       Serial.println(char_code[i]);
       Wire.write(char_code[i]);
     }
+    Serial.print(" ");
+    Serial.println(0x03);
     Wire.write(0x03);
   }
 }
