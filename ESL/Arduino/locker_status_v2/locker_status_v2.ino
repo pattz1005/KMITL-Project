@@ -142,9 +142,9 @@ void getProtocol() {
   switch (protocolUart) {
     case HEADER :
       inputByte = queue.pop();
-      Serial.println("HEADER");
-      Serial.print("inputByte = ");
-      Serial.println(inputByte);
+      //Serial.println("HEADER");
+     // Serial.print("inputByte = ");
+      //Serial.println(inputByte);
       if (inputByte == 0x02) {
         protocolUart = COMMAND;
       }
@@ -152,8 +152,8 @@ void getProtocol() {
 
     case COMMAND :
       inputByte = queue.pop();
-      Serial.println("COMMAND");
-      Serial.println(inputByte);
+      //Serial.println("COMMAND");
+      //Serial.println(inputByte);
       if (inputByte == 0x21) {
         command = 0x21;
       }
@@ -165,27 +165,29 @@ void getProtocol() {
       }
       else if (inputByte == 0x23){
         command = 0x23;
-        Serial.print("command = ");
-        Serial.println(command);
+        //Serial.print("command = ");
+        //Serial.println(command);
       }
       else {
+        Serial.println("protocol fail");
         protocolUart = HEADER;
       }
       protocolUart = SIZE;
       break;
 
     case SIZE :
-      Serial.println("SIZE");
+      //Serial.println("SIZE");
       dataSize = queue.pop();
-      Serial.print("size = ");
-      Serial.println(dataSize);
-      Serial.println(command);
+      //Serial.print("size = ");
+      //Serial.println(dataSize);
+      //Serial.println(command);
 
       if (command == 0x21) {
         if (dataSize == 0x01) {
           protocolUart = RESET;
         }
         else {
+          Serial.println("protocol fail");
           protocolUart = HEADER;
         }
       }
@@ -195,6 +197,7 @@ void getProtocol() {
           protocolUart = MODULE;
         }
         else{
+          Serial.println("protocol fail");
           protocolUart = HEADER;
         }
       }
@@ -203,6 +206,7 @@ void getProtocol() {
           protocolUart = STATUS;
         }
         else {
+          Serial.println("protocol fail");
           protocolUart = HEADER;
         }
       }
@@ -211,10 +215,12 @@ void getProtocol() {
           protocolUart = CHECK;
         }
         else {
+          Serial.println("protocol fail");
           protocolUart = HEADER;
         }
       }
       else{
+        Serial.println("protocol fail");
         protocolUart = HEADER;
       }
       break;
@@ -222,9 +228,10 @@ void getProtocol() {
     case RESET :
       inputByte = queue.pop();
       if (inputByte == 0x00) {
-        Serial.println("RESET");
+        //Serial.println("RESET");
         protocolUart = END;
       } else {
+        Serial.println("protocol fail");
         protocolUart = HEADER;
       }
       break;
@@ -232,9 +239,10 @@ void getProtocol() {
     case STATUS :
       inputByte = queue.pop();
       if (inputByte == 0x00) {
-        Serial.println("STATUS");
+        //Serial.println("STATUS");
         protocolUart = END;
       } else {
+        Serial.println("protocol fail");
         protocolUart = HEADER;
       }
       break;
@@ -242,9 +250,10 @@ void getProtocol() {
      case MODULE :
       inputByte = queue.pop();
       if(inputByte == 0x00){
-        Serial.println("MODULE");
+        //Serial.println("MODULE");
         protocolUart = END;
       }else{
+        Serial.println("protocol fail");
         protocolUart = HEADER;
       }
       break;
@@ -252,12 +261,13 @@ void getProtocol() {
      case CHECK:
       inputByte = queue.pop();
       if(inputByte >= 0x00 && inputByte < 0x10){
-        Serial.println("CHECK");
+        //Serial.println("CHECK");
         num = inputByte;
-        Serial.print("inputByte = ");
-        Serial.println(inputByte);
+       // Serial.print("inputByte = ");
+       // Serial.println(inputByte);
         protocolUart = END;
       } else{
+        Serial.println("protocol fail");
         protocolUart = HEADER;
       }
       break;
@@ -265,13 +275,13 @@ void getProtocol() {
 
     case END :
       inputByte = queue.pop();
-      Serial.println(inputByte);
+      //Serial.println(inputByte);
       if (inputByte == 0x03) {
-        Serial.println("END");
+        //Serial.println("END");
         processProtocol();
       }
       else{
-        Serial.println("fail");
+        Serial.println("protocol fail");
       }
       protocolUart = HEADER;
       break;
@@ -310,8 +320,8 @@ void checkStatus() {
   for (int i = 15; i >= 0; i--){
     index = (index << 1);
     index += locker[i].Status;
-    Serial.print("index = ");
-    Serial.println(index, BIN);
+    //Serial.print("index = ");
+    //Serial.println(index, BIN);
   }
 
   Serial.print("index = ");
@@ -332,25 +342,36 @@ void readS(int n){
 void checkS(int n){
   Serial.println("checkS");
   bool temp = locker[n].Status;
-  Serial.print("temp = ");
-  Serial.println(temp);
+  //Serial.print("temp = ");
+  //Serial.println(temp);
   if(temp == 1){
-    result = 0x31;
+    result = 0x32;
   }
   else if (temp == 0){
-    result = 0x30;
+    result = 0x31;
   }
-  Serial.print("result = ");
-  Serial.println(result);
+  //Serial.print("result = ");
+  //Serial.println(result);
 }
 
 void requestEvent() {
+  Serial.println("respond");
   if(command == 0x20){
     Wire.write(0x02);
+    Serial.print(0x02);
+    Serial.print(" ");
     Wire.write(0x20);
+    Serial.print(0x20);
+    Serial.print(" ");
     Wire.write(0x01);
+    Serial.print(0x01);
+    Serial.print(" ");
     Wire.write(0x31);
+    Serial.print(0x31);
+    Serial.print(" ");
     Wire.write(0x03);
+    Serial.print(0x03);
+    Serial.println(" ");
   }
   else if(command == 0x22){
     Wire.write(0x02);
@@ -370,7 +391,7 @@ void requestEvent() {
     Serial.print(" ");
     Wire.write(0x03);
     Serial.print(0x03);
-    Serial.print(" ");
+    Serial.println(" ");
   }
   else if (command == 0x23){
     Wire.write(0x02);
@@ -387,7 +408,7 @@ void requestEvent() {
     Serial.print(" ");
     Wire.write(0x03);
     Serial.print(0x03);
-    Serial.print(" ");
+    Serial.println(" ");
   }
   
 }
