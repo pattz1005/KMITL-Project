@@ -10,7 +10,7 @@ int cnt;
 String nodeName = "3G Module-test";
 String payload;
 
-const long interval = 1800000;  //millisecond
+const long interval = 10000;  //millisecond
 unsigned long previousMillis = 0;
 
 //SIM TRUE  internet
@@ -19,40 +19,44 @@ unsigned long previousMillis = 0;
 #define PASS ""
 
 
-AltSoftSerial mySerial;
+//AltSoftmySerial mymySerial;
+SoftwareSerial mySerial(8,9);
+
+//mySerial mymySerial;
 
 void debug(String data)
 {
-  Serial.println(data);
+  mySerial.println(data);
 }
 void setup()
 {
-  Serial.begin(9600);
-  gsm.begin(&mySerial, 9600);
+ // mySerial.begin(9600);
+  mySerial.begin(9600);
+  gsm.begin(&Serial, 9600);
   gsm.Event_debug = debug;
   cnt = 0;
-  Serial.println(F("UC20"));
+  mySerial.println(F("UC20"));
   gsm.PowerOn();
   while (gsm.WaitReady()) {}
 
-  Serial.print(F("GetOperator --> "));
-  Serial.println(gsm.GetOperator());
-  Serial.print(F("SignalQuality --> "));
-  Serial.println(gsm.SignalQuality());
+ mySerial.print(F("GetOperator --> "));
+  mySerial.println(gsm.GetOperator());
+  mySerial.print(F("SignalQuality --> "));
+  mySerial.println(gsm.SignalQuality());
 
-  Serial.println(F("Disconnect net"));
+  mySerial.println(F("Disconnect net"));
   net.DisConnect();
-  Serial.println(F("Set APN and Password"));
+  mySerial.println(F("Set APN and Password"));
   net.Configure(APN, USER, PASS);
-  Serial.println(F("Connect net"));
+ mySerial.println(F("Connect net"));
   net.Connect();
-  Serial.println(F("Show My IP"));
-  Serial.println(net.GetIP());
-  Serial.print(F("GetOperator --> "));
-  Serial.println(gsm.GetOperator());
-  Serial.print(F("SignalQuality --> "));
-  Serial.println(gsm.SignalQuality());
-  Serial.println(tcp.CheckConnection());
+  mySerial.println(F("Show My IP"));
+  mySerial.println(net.GetIP());
+  mySerial.print(F("GetOperator --> "));
+  mySerial.println(gsm.GetOperator());
+  mySerial.print(F("SignalQuality --> "));
+  mySerial.println(gsm.SignalQuality());
+  mySerial.println(tcp.CheckConnection());
   open_tcp();
 }
 void loop()
@@ -83,33 +87,33 @@ void send_tcp()
     cnt++;
     payload = String(nodeName + ","
                      + cnt);
-    Serial.println("TCP sent");
+    mySerial.println("TCP sent");
     tcp.print(payload);
     tcp.StopSend();
-    Serial.println("Stop");
-    // Serial.println("TCP Close");
+    mySerial.println("Stop");
+     mySerial.println("TCP Close");
     // tcp.Close();
 
   }
 }
 void open_tcp()
 {
-  Serial.println();
-  Serial.println(F("Connect Server"));
+  mySerial.println();
+  mySerial.println(F("Connect Server"));
   bool ret = tcp.Open("139.59.242.154", "5007");
 }
 
 void read_tcp() {
   int len = tcp.ReadBuffer();
-  Serial.println(len);
-  while (len)
+  mySerial.println(len);
+ while (len)
   {
     if (gsm.available())
     {
-      Serial.write(gsm.read());
+      mySerial.write(gsm.read());
       len--;
     }
   }
-  Serial.println();
-  Serial.println("Finish");
+ mySerial.println();
+  mySerial.println("Finish");
 }
